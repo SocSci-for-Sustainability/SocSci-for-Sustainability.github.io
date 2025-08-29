@@ -1,0 +1,57 @@
+project:
+  type: book
+  
+book:
+  title: "Social Science for Sustainability"
+  subtitle: "Many Voices. One sustainable future."
+  author: Matthew A Turner
+  date: 28 August 2025
+  sidebar:
+    logo: SS4S.key.png
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - diffusion.qmd
+    - cooperation.qmd
+    - references.qmd
+  appendices:
+    - about.qmd
+    - part: curriculum.qmd
+      chapters:
+        - syllabus-introduction.qmd
+        - syllabus-agent-based-modeling.qmd
+        - syllabus-opinion-change.qmd
+  navbar:
+    right:
+      - text: "Home"
+        href: index.qmd
+      - text: "About"
+        href: about.qmd
+      - text: "Curriculum"
+        href: curriculum.qmd
+      - text: "Subscribe"
+        href: "https://matphd.substack.com"
+    collapse: true
+    pinned: true
+    search: true
+
+bibliography: 
+  - /Users/mt/workspace/Writing/library.bib
+  - references.bib
+
+format:
+  html:
+    toc: true
+    include-in-header: header.html
+    theme: 
+      light:
+        - theme-light.scss
+        - styles.scss
+      dark:
+        - darkly 
+        - theme-dark.scss
+        - styles.scss
+    fontsize: 1.0em
+    linestretch: 1.2
+    number-sections: true
+    number-depth: 3

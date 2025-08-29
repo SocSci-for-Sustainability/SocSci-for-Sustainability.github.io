@@ -1,0 +1,83 @@
+# Welcome and preface {.unnumbered}
+
+Thanks for your interest in this short course on Computational Social Science
+for Sustainability. Please note there is a Quarto worksheet that we will work through as part of the tutorial: [css4s/IC2S2-Tutorial-Worksheet](https://github.com/CSS4S/IC2S2-Tutorial-Worksheet).
+
+Briefly about me, the instructor, my name is Matt Turner. 
+I am a lecturer in the Stanford Doerr School of Sustainability in
+the department of Environmental Social Sciences. So far I have developed two
+courses for the department: *Computational Social Science for Sustainability*
+and *Agent-based Modeling*. This short course for IC2S2 is a sampling of
+material from the two.
+
+The question of our age is whether people can join forces to collectively
+and meaningfully push history out of its current rut of rapid ecological
+collapse towards a sustainable future. Technological solutions to the climate and general ecological crisis are proliferating. But will enough people do them to matter? How can we design
+social interventions with confidence to promote sustainable practices to replace 
+maladaptive behaviors that exhaust local resources? 
+
+The model framework I develop here can help, or so I believe and hope you agree. 
+The following chapters explain the theoretical and modeling framework for
+modeling social behavior with applications to behavior diffusion, 
+cooperation for natural resource conservation, norm inversion, and opinion
+change. I will frame social science theory and computational model development
+in terms of various problems in sustainability to demonstrate intended use and
+to introduce sustainability to newcomers. 
+
+We will see together
+through programming examples how to rigorously test 
+different intervention strategies. We will effectively prototype these
+interventions as software simulations in a sort of "wind tunnel" like used to
+design cars to instead choose between
+different designs for convincing an initial group of people to, first, adopt a
+sustainable practice. The second, but equally important, goal of sustainability
+interventions is to induce a self-sustaining process of behavior diffusion,
+where one by one people learn a sustainable practice through social interaction
+over time. 
+
+Sincere thanks again for your time and attention. [Feedback via
+email](mailto:maturner@stanford.edu) is appreciated.
+
+This book's source code is available on GitHub: [css4s/IC2S2-Tutorial]()
+
+This website and associated course content is and will always be free, licensed under the [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/) License.
+
+
+## Prefatory notes
+
+The structure of this framework emerged as I developed my course
+*Computational Social Science for Sustainability*, with the selection pressure
+of being digestible and useful for students in the sustainability school. 
+In the course we present models of social behavior diffusion to understand how
+sustainable practices spread in different idealized social contexts. 
+
+This IC2S2 tutorial introduces a framework for models of social behavior to
+organize them based on their assumptions, structure, applications, and other
+details. This is meant to complement data-driven approaches such as data
+analysis to incentivize and optimize real-world sustainable behaviors such as
+coordinated charging.
+
+Developing theories of why some sustainable practices spread but others don't
+is essential to promote sustainable adaptation to climate change and other
+pressing sustainability problems. Sustainability encompasses many dimensions of human life, which are thoroughly encapsulated in the
+[United Nation's Sustainable Development Goals](https://sdgs.un.org/goals) (aka SDGs). There are  seventeen Sustainable Development Goals, which can address how to build strong Vibrant Institutions that
+protect Basic rights including sustainable access to resources. This requires
+Environmental and Ecological protection, especially climate action. Together I call this the Sustainability VIBE, which is the vibe we're trying to promote. 
+
+Theoretical modeling is a powerful way to predict how common contextual
+differences, such as the heterogeneity of social contacts in a population, 
+will affect outcomes, so a general strategy can be chosen for an application
+of interest. In modern best-practices for social science, 
+any collection of data-driven approaches are most useful when they utilize 
+at least a common vocabulary or framework [@Deffner2024]. 
+
+This work provides a new framework to accommodate alternative mechanistic formulations
+of the cognitive and social factors that power social diffusion. I designed this framework and 
+software to introduce newcomers 
+to the field so they can fluently put social science to good use. 
+It seemed no single resource existed to
+do this in a highly-transferable programming language like R. R, furthermore,
+has a wide, active, disciplined, diverse, and vibrant set of scientific developers
+who could collectively be called the *tidyverse*, led by Hadley Wickham and
+the Posit Developers who create the RStudio IDE. The `socmod` software being developed along with the conceptual framework is designed to fit *tidily* within this system.
+
