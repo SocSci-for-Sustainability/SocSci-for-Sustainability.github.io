@@ -24,7 +24,7 @@ lecture previews and summaries; lecture scheduling
 reminders; video shorts on technical topics; and 
 opinions, news and reviews about research in social science and beyond.
 
-I use **Substack** to handle Subscription and content publishing. When you click
+I use **Substack** to handle subscriptions and content publishing. When you click
 the button below to subscribe, you will be taken to my substack publication
 *Social Science for Sustainability by Matt Turner*.
 

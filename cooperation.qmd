@@ -19,13 +19,13 @@ Cooperation is a correlative coordination problem, meaning that payoffs are maxi
 
 It is costly to cooperate with groundwater pumping limits from the point of view of agricultural producers. For example, less water input might mean lower almond yield and fewer profits in the short term. If enough other orchards defect, this could lead to dry wells, and it would prove to have been unwise to cooperate since defectors made the most money while it lasted, multiplied in effect if defectors evaded accountability for their behavior.
 
-## Cultural evolutionary game theory
+### Cultural evolutionary game theory
 
 Under success-biased learning, culture can be said to *evolve*. A behavior is like a phenotype, and knowledge of or capacity for a behavior is like genes or alleles that encode a phenotype. Fitness in either case is the benefit received from the phenotype expression.
 
 To study how the prevalence of cooperation varies over time and as $t \to \infty$, we assume each agent does one of two behaviors: *Cooperate* or *Defect*. In our approach here and in many cases, it is unnecessary to represent knowledge of *how* to cooperate itself, including the acquisition of this knowledge. In other words, doing a behavior implies having already learned how to do it. This strategic abstraction is called the *phenotypic gambit*, with "gambit" really meaning something more like "assumption".
 
-## Inspiration behind this article
+### Inspiration behind this article
 
 One of the goals of this article is to demonstrate `socmod` use by analyzing a game theory model of cooperation between agents on a spatial grid. The other goal is to motivate the study with a real-world sustainability problem, groundwater conservation. The model and analysis is inspired by Ch. 6 in Paul Smaldino's book *Modeling Social Behavior*, including some of the exercises below that Paul includes in his analysis: Paul's model is written in NetLogo, with analysis and visualizations done in R, it appears. See Paul's book for how alternative assumptions enable the formal, mathematical analysis of cooperation prevalence in different spatial contexts with migration, as opposed to simulated/generative as done here.
 
@@ -33,7 +33,7 @@ One of the goals of this article is to demonstrate `socmod` use by analyzing a g
 
 The model is implemented in `model.R`. I show code snippets from that file to illustrate how the model works. Agents are located at grid points in a rectangular 2D lattice, though we use a square lattice with $L=21$ agents per side in our analysis here. Agents play a cooperation game, known as the *prisoner's dilemma* game, a common game theory representation of cooperation where a focal agent gets a benefit $b \in [0, \infty)$ if their interaction partner cooperates, but the focal agent pays a cost $-c$ if they choose to cooperate, where $c\in[0, \infty)$. The payoffs from combinations of the four possible combinations of (Cooperate/Defect) x (Cooperate/Defect) for the dyad define the game's *payoff matrix* (@tbl-payoff-matrix).
 
-## Spatial structure
+### Spatial structure
 
 Spatial structure, we hypothesize, provides the substrate for cooperation to take hold since neighbors can form spatially organized *cooperatives*, i.e., clusters of contiguous, connected cooperators. We represent spatial structure by locating agent nodes in a two-dimensional lattice graph we set to be square with side length $L$, so the agent population size is $N = L^2$. The model grid can be rectangular in general, and it is left as an exercise to the reader to test what happens when $N$ is held constant but the aspect ratio of the grid is varied, i.e., the width divided by the height.
 
@@ -72,7 +72,7 @@ abm <- make_cooperation_model(grid_width = 9, grid_height = 4)
 plot_example_adoptnet(abm, layout = NULL)
 ```
 
-## Social interaction and payoffs {#sec-social-interaction-and-payoffs}
+### Social interaction and payoffs {#sec-social-interaction-and-payoffs}
 
 Agents interact with all of their neighbors on each time step, collecting payoffs according to whether an agent and each neighbor is currently doing the "Cooperate" or "Defect" behavior, or equivalently whether each agent is a cooperator or defector.
 
@@ -115,7 +115,7 @@ play_game <- function(focal_agent, partner_agent, model) {
 }
 ```
 
-## Selection for cooperation via social learning
+### Selection for cooperation via social learning
 
 We implement success-biased learning here in a custom `model_step` function called `coop_model_step` used as the sole defining function for the `LearningStrategy` I call `coop_game_strategy`. `coop_game_strategy` uses `NULL` functions for `partner_selection`, since agents interact with all neighbors, and also for `interaction`, since agents accumulate payoffs over all interactions with neighbors. Both of these are implemented in the `coop_model_step` function that defines this learning strategy's `model_step` named constructor parameter (full definition of `coop_model_step` is [given in the Appendix](#sec-coop-model-step)).
 
@@ -131,7 +131,7 @@ coop_game_strategy <- make_learning_strategy(
 )
 ```
 
-## Computational analysis design
+### Computational analysis design
 
 To analyze how cooperation cost and migration rate affect the emergence of cooperatives in a spatial grid, we systematically vary these variables (@tbl-params) and observe the dynamics of cooperation prevalence over time and our main outcome measure, the prevalence of cooperators at $t=50$, $p_C(t=50)$ (@tbl-outcome-measures). Specifically we first vary the cost of cooperation, $\gamma$, setting the migration rate $\mu = 0.0$, and observe the results. Second, we vary $\mu$, setting $\gamma = 0.2$, and observe the results.
 
@@ -188,9 +188,9 @@ To understand how the perceived risk or cost of cooperation and the mutation rat
 
 
 
-![**Defector-turns-cooperator and cooperator-turns defector conditions in the founding and destruction of cooperatives.** Three cooperators in a line will result in new cooperators adjacent to the middle node of the triad if the cost of cooperation is less one quarter of the cooperation benefit, i.e., $\gamma < \gamma_c = \beta / 4$ (A). A five-agent "cross" cooperative is unstable if the cost of cooperation is greater than half of the benefit: $\gamma > \beta / 2$. Adapted from Smaldino (2023), Figure 6.4. ](Figures/transition-conditions.png){#fig-transition-conditions fig-align="center" width="650"}
+![**Defector-turns-cooperator and cooperator-turns defector conditions in the founding and destruction of cooperatives.** Three cooperators in a line will result in new cooperators adjacent to the middle node of the triad if the cost of cooperation is less one quarter of the cooperation benefit, i.e., $\gamma < \gamma_c = \beta / 4$ (A). A five-agent "cross" cooperative is unstable if the cost of cooperation is greater than half of the benefit: $\gamma > \beta / 2$.](Figures/transition-conditions.png){#fig-transition-conditions fig-align="center" width="650"}
 
-#### When does cost of cooperation become prohibitive?
+### When does cost of cooperation become prohibitive?
 
 We see that cooperation emerges at various non-zero equilibrium values for cooperation costs up to 0.25, including up to 0.249 (@fig-cooperation-over-cost)! In our initial conditions with half of the agents starting as cooperators, the prevalence of cooperators decreases initially as the relatively isolated cooperators become defectors (@fig-cooperation-dynamics). Then more and more agents join nascent cooperatives, so the prevalence eventually begins to increase again. When cooperation cost is 0, the dip is lowest, and cooperatives begin to grow and expand cooperator prevalence to their maximum values earlier on compared to  greater cooperation costs with $\gamma < \beta / 4$.
 
@@ -199,7 +199,7 @@ We see that cooperation emerges at various non-zero equilibrium values for coope
 
 ![**Dynamics of cooperator prevalence as a function of cooperation cost.**](Figures/coopcost_outcomes.png){#fig-cooperation-over-cost}
 
-#### When does migration undermine cooperation?
+### When does migration undermine cooperation?
 
 Migration, as hypothesized, can undermine cooperation. Based on our reasoning to explain why cooperation is only supported up to $\gamma = 0.25$, we see that for cooperators to spread, there must be at least three lined up to seed a cooperative that grows into a cluster of cooperators. For this particular choice of parameters, cooperatives can reliably grow only when the migration rate is less than 0.125 (@fig-migration-outcomes), but there is high variability in the cooperator prevalence as $\mu$ approaches 0.125, indicating that the cooperatives are unstable (@fig-migration-dynamics). 
 
@@ -230,10 +230,6 @@ serves as a template for future work with more serious applications. See the
 disaster penalties when two cooperators interact, and how to represent
 different size grids with loose connections, creating a sort of small-world
 network using rewiring.
-
-## Acknowledgements
-
--   Model inspired by Ch. 6 of Paul Smaldino's (2023) *Modeling Social Behavior*. Princeton University Press.
 
 ## Exercises {#sec-exercises}
 
@@ -387,3 +383,4 @@ coop_model_step <- function(abm) {
   iterate_learning_model(abm)
 }
 ```
+
