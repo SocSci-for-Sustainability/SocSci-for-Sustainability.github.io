@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; Diffusion – Social Science for Sustainability</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./cooperation.html" rel="next">
+<link href="./intro.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-eac44e41018956f88012b5b01fb4b211.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-09d0fbc9ad20a915fa4847efc57a3950.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-eac44e41018956f88012b5b01fb4b211.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-d11c93216f89be20dcb0ae15b79eab0b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-c28864e76047d5d6c11eea1813adcefa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-d11c93216f89be20dcb0ae15b79eab0b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<!-- header.html -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&amp;family=Source+Code+Pro:wght@400;500;600;700&amp;display=swap">
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const buttons = document.querySelectorAll('[data-bs-toggle="popover"]');
+
+  buttons.forEach(btn => {
+    const url = btn.getAttribute('data-url');
+
+    if (url) {
+      fetch(url)
+        .then(response => response.text())
+        .then(html => {
+          btn.setAttribute('data-bs-content', html);
+
+          // Create the popover AFTER content is loaded
+          new bootstrap.Popover(btn);
+        });
+    } else {
+      // Fallback for inline content
+      new bootstrap.Popover(btn);
+    }
+  });
+});
+</script>
+
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    window.setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      window.setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    window.hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(darkModeDefault) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const darkModeDefault = false;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !window.hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+    };
+    // Switch to dark mode if need be
+    if (window.hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Social Science for Sustainability</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./curriculum.html"> 
+<span class="menu-text">Curriculum</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://matphd.substack.com"> 
+<span class="menu-text">Subscribe</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./diffusion.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Diffusion</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./SS4S.key.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome and preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./diffusion.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Diffusion</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cooperation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cooperative conservation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./curriculum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Curriculum &amp; Syllabi</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./syllabus-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. <em>Introduction to Social Science for Sustainability</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./syllabus-agent-based-modeling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. <em>Agent-based Modeling</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./syllabus-opinion-change.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. <em>Opinion Change: Modeling and Measurement</em></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><span class="header-section-number">2.1</span> Introduction</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview"><span class="header-section-number">2.1.1</span> Overview</a></li>
+  </ul></li>
+  <li><a href="#model" id="toc-model" class="nav-link" data-scroll-target="#model"><span class="header-section-number">2.2</span> Model</a>
+  <ul class="collapse">
+  <li><a href="#prevalence-dynamic" id="toc-prevalence-dynamic" class="nav-link" data-scroll-target="#prevalence-dynamic"><span class="header-section-number">2.2.1</span> Prevalence Dynamic</a></li>
+  <li><a href="#how-to-compare-different-learning-processes" id="toc-how-to-compare-different-learning-processes" class="nav-link" data-scroll-target="#how-to-compare-different-learning-processes"><span class="header-section-number">2.2.2</span> How to compare different learning processes</a></li>
+  <li><a href="#fixation-probability" id="toc-fixation-probability" class="nav-link" data-scroll-target="#fixation-probability"><span class="header-section-number">2.2.3</span> Fixation probability</a></li>
+  <li><a href="#agent-based-model" id="toc-agent-based-model" class="nav-link" data-scroll-target="#agent-based-model"><span class="header-section-number">2.2.4</span> Agent-based model</a></li>
+  </ul></li>
+  <li><a href="#analysis" id="toc-analysis" class="nav-link" data-scroll-target="#analysis"><span class="header-section-number">2.3</span> Analysis</a>
+  <ul class="collapse">
+  <li><a href="#strength-of-conformity-over-stages-of-diffusion" id="toc-strength-of-conformity-over-stages-of-diffusion" class="nav-link" data-scroll-target="#strength-of-conformity-over-stages-of-diffusion"><span class="header-section-number">2.3.1</span> Strength of conformity over stages of diffusion</a></li>
+  <li><a href="#fixation-probability-over-stages-of-diffusion" id="toc-fixation-probability-over-stages-of-diffusion" class="nav-link" data-scroll-target="#fixation-probability-over-stages-of-diffusion"><span class="header-section-number">2.3.2</span> Fixation probability over stages of diffusion</a></li>
+  <li><a href="#simulations-confirm-both-strength-of-conformity-and-fixation-probability" id="toc-simulations-confirm-both-strength-of-conformity-and-fixation-probability" class="nav-link" data-scroll-target="#simulations-confirm-both-strength-of-conformity-and-fixation-probability"><span class="header-section-number">2.3.3</span> Simulations confirm both strength of conformity and fixation probability</a></li>
+  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">2.4</span> Discussion</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Diffusion</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Social science can help promote the broad diffusion of sustainable practices including public health, socio-economic equality, climate action, and strong institutions. <em>Conformity</em> is theorized as a social learning strategy in which individuals preferentially adopt behaviors that are more common. Conformity is widely believed to be a “substantial”, if not the primary, driver of human cultural adaptation. Some have recognized that, logically, conformity cannot possibly spark <em>and</em> maintain the diffusion of initially rare adaptations. The full consequences of this are not well understood, however. Here we develop a mechanistic model to compare the strength of adaptation diffusion under conformist and <em>success-biased learning</em>. Success-biased learning uses the success of prospective teachers as a heuristic to choose from whom to learn. It stands in for the suite of uniquely powerful human learning capacities beyond conformity. We prove that success-biased learning <em>always</em> provides stronger evolutionary selection signals and greater success promoting widespread diffusion. Conformity, then, at most could help consolidate already-popular adaptations. Encouraging conformity is a risky strategy, however, since it could reduce openness to novel sustainable practices in general. Sustainability, therefore, will never be promoted by conformity alone. Educational campaigns on the benefits of sustainable practices would be more effective <em>and</em> humane.</p>
+<section id="introduction" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="introduction"><span class="header-section-number">2.1</span> Introduction</h2>
+<p>Conformity is hypothesized to explain cultural evolutionary, demographic, and political outcomes in humans <span class="citation" data-cites="Henrich1998 BoydRicherson2005 RichersonBoyd2005_NBGA Morgan2020">(<a href="references.html#ref-Henrich1998" role="doc-biblioref">Henrich and Boyd 1998</a>; <a href="references.html#ref-BoydRicherson2005" role="doc-biblioref">Boyd and Richerson 2005</a>; <a href="references.html#ref-RichersonBoyd2005_NBGA" role="doc-biblioref">Richerson and Boyd 2005</a>; <a href="references.html#ref-Morgan2020" role="doc-biblioref">Morgan, Suchow, and Griffiths 2020</a>)</span>. Conformity has also been recognized as perhaps not the only social learning mechanism that could support human cultural adaptation over time <span class="citation" data-cites="Borofsky2022">(<a href="references.html#ref-Borofsky2022" role="doc-biblioref">Borofsky and Feldman 2022</a>)</span>, and could possibly cause population collapse under environmental variability <span class="citation" data-cites="Whitehead2009">(<a href="references.html#ref-Whitehead2009" role="doc-biblioref">Whitehead and Richerson 2009</a>)</span>. Still, conformist transmission seems to be understood as primary, possibly augmented by additional social cues <span class="citation" data-cites="Gervais2021">(<a href="references.html#ref-Gervais2021" role="doc-biblioref">Gervais 2021</a>)</span>, but likely would be undermined by “biased transformation” by more sophisticated cognitive processes <span class="citation" data-cites="Morgan2020">(<a href="references.html#ref-Morgan2020" role="doc-biblioref">Morgan, Suchow, and Griffiths 2020</a>)</span>. Conformity has been identified experimentally as a critical process, but its “strength” seems to depend on the adaptive value, i.e., the difference in benefit between an <em>adaptation</em> and an alternative behavior that could replace the adaptation. Conformity has been reported in bird <span class="citation" data-cites="Aplin2015">(<a href="references.html#ref-Aplin2015" role="doc-biblioref">Aplin et al. 2015</a>)</span> and . The resulting sigmoidal <em>adoption curves</em>, representing increasing prevalence of an adaptation over time when the adaptation diffuses, is taken as decisive evidence of conformist transmission <span class="citation" data-cites="Smaldino2018b">(<a href="references.html#ref-Smaldino2018b" role="doc-biblioref">Smaldino, Aplin, and Farine 2018</a>)</span>, despite critiques of this approach <span class="citation" data-cites="Acerbi2016">(<a href="references.html#ref-Acerbi2016" role="doc-biblioref">Acerbi et al. 2016</a>)</span>.</p>
+<p>We seek to show conclusively that conformity alone cannot initiate and promote the diffusion of adaptive, sustainable practices. We do this by demonstrating that conformity is vanishingly weak at diffusion onset, entering the entrenchment stage where the prevalence approaches half the population, and entrenchment onset when . Some of these facts are already acknowledged, that conformity <em>cannot</em> trigger the onset of endogenous diffusion of a rare adaptation, and has been thus patched with <em>anti-conformity</em>, which is preferring behaviors practiced by less than half of the population <span class="citation" data-cites="Denton2020">(<a href="references.html#ref-Denton2020" role="doc-biblioref">Kaleda Krebs Denton et al. 2020</a>)</span>. Furthermore, we know that conformity can undo innovations towards more ergonomic, advantageous adaptations <span class="citation" data-cites="Morgan2020">(<a href="references.html#ref-Morgan2020" role="doc-biblioref">Morgan, Suchow, and Griffiths 2020</a>)</span>, which are just the sort of sustainable practice that is most likely to be transmitted. <em>Anti-conformity</em> has been suggested as a means to promote rare adaptations to spark diffusion onset, however it is unclear how anti-conformity could be switched off to allow adaptations to diffuse throughout the population past the 50% prevalence mark <span class="citation" data-cites="Denton2021">(<a href="references.html#ref-Denton2021" role="doc-biblioref">Kaleda K. Denton, Liberman, and Feldman 2021</a>)</span>. Similarly, once the adaptation is practiced by just more than half of the population, with the adaptation on its way to <em>entrenchment</em> where it is practiced by a large majority of the population, should be relatively weak since it is difficult for individuals to sense the true prevalence of different behaviors.</p>
+<p>I formalize these arguments using <em>prevalence dynamic</em>, an abstraction of social learning derived from the standard <em>replicator dynamic</em> that can flexibly represent a range of social learning strategies. This framework can be operationalized as difference or differential equations, stochastic dynamical equations in the Kiumura-Crow-Gillepsie tradition, or agent-based models. We use all three approaches to compare the strength of conformity and success-biased learning, where success-biased learning stands in for a range of adaptive learning mechanisms that use reliable cues other than the adaptation prevalence.</p>
+<p>I demonstrate that at diffusion <em>onset</em>, when few individuals know a behavior, there is no value of anti-conformity or conformity that can match the strength of selection for success-biased learning. At diffusion <em>entrenchment</em>, when the prevalence goes from less than to greater than half the population, anti-conformity can only weakly get prevalence to 1/2, and conformity can only weakly propel prevalence away from 1/2. Success-biased learning provides stronger selective signals in all three cases. Similarly, finite MCMC calculations of the adaptation success rate</p>
+<p>These logical and dynamical problems warrant a revision of the current conformity-centric approach to cultural evolution. These results suggest that success-biased learning should be the focus for interventions to promote sustainable practices, for example, due to the weakness of conformity during critical periods of diffusion. Theoretically, this casts some doubt on the idea that conformity would be selected for when more powerful social learning methods are available, as well as a robust cognitive system for integrating various informational channels and mental computations <span class="citation" data-cites="Witt2024">(<a href="references.html#ref-Witt2024" role="doc-biblioref">Witt et al. 2024</a>)</span>.</p>
+<p>What originally appeared as modeling patches for artefacts of conformist transmission may in fact be deep theoretical problems with current, vague operationalizations of conformist transmission. This work suggests that current operationalizations of conformity may be <em>illogical</em>, in a technical sense. This cannot be handwaved away. Interestingly enough, it seems <em>conformist tendencies in social science itself</em> to have gotten us to this point where theories and models have proliferated under the common banner of “conformity” but their ontological relationship to one another is uncertain. Even if conformity were a major driver of cultural evolution, it is currently impossible to rigorously and thoroughly evaluate different models and theories of conformity, let alone compare conformity effects with other social learning strategies <span class="citation" data-cites="Kendal2018">(<a href="references.html#ref-Kendal2018" role="doc-biblioref">Kendal et al. 2018</a>)</span>.</p>
+<section id="overview" class="level3" data-number="2.1.1">
+<h3 data-number="2.1.1" class="anchored" data-anchor-id="overview"><span class="header-section-number">2.1.1</span> Overview</h3>
+<p>In the remainder of this paper, we operationalize conformity and success-biased learning strategies in terms of the prevalence dynamics. We use a formal differential equation analysis to analyze the relative strength of selection for conformist and success-biased transmission at diffusion <em>onset</em>, when the adaptation is rare, at <em>entrenchment</em>, when the adaptation prevalence passes half the population, and <em>fixation</em>, when the adaptation is adopted by everyone. We then calculate fixation probabilities for different conformity strengths at each of these points in the diffusion for different conformity strengths and learning strategies. Finally, we analyze the dynamics of simulated diffusion in an agent-based social behavior model.</p>
+<p>In the next section we introduce the Model formalism: the differential equation formulation, the stochastic fixation probability model, the agent-based model, and our general analytical strategy. Next, we will demonstrate in the Analysis that in many cases, conformity transmission is significantly weaker than success-biased learning, though still could contribute to adaptation if it could be properly controlled and calibrated. We close with our Discussion of why, all together, adaptation diffusion cannot be due to conformity alone.</p>
+</section>
+</section>
+<section id="model" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="model"><span class="header-section-number">2.2</span> Model</h2>
+<p>To evaluate the strength of conformity compared to success-biased learning, we first specify steps in the learning process as a mechanistic verbal explanation that we represent in a block-and-arrow diagram <a href="#fig-block-arrow" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>. The diagrammatic model describes behavior diffusion as <em>transitions</em> from doing an unsustainable, maladaptive behavior to doing a sustainable, adaptive behavior <a href="#fig-transitions" class="quarto-xref">Figure&nbsp;<span>2.2</span></a>. We label the unsustainable, maladaptive, business-as-usual behavior to be the <em>legacy</em> behavior, or just <span class="math inline">\(L\)</span>. One who does <span class="math inline">\(L\)</span> is an <span class="math inline">\(L\)</span>-doer. The sustainable behavior is the <span class="math inline">\(Adaptive\)</span> behavior, or just <span class="math inline">\(A\)</span>. One who does <span class="math inline">\(A\)</span> is an <span class="math inline">\(A\)</span>-doer. The prevalence of <span class="math inline">\(A\)</span> is <span class="math inline">\(a \in [0, 1]\)</span>. The prevalence of <span class="math inline">\(L\)</span> is just the complement of <span class="math inline">\(a\)</span>, i.e., <span class="math inline">\(1 - a\)</span>.</p>
+<div id="fig-block-arrow" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-block-arrow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figures/model-block-diagram.png" class="img-fluid figure-img" style="width:95.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-block-arrow-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: <strong>Block and arrow diagram of the conceptual model underlying the different analytical approaches used here.</strong>
+</figcaption>
+</figure>
+</div>
+<div id="fig-transitions" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-transitions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figures/transitions.svg" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-transitions-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.2: <strong>Transition types in diffusion of adaptive behaviors.</strong>
+</figcaption>
+</figure>
+</div>
+<p>These transitions drive differential “reproduction” in the cultural evolutionary process. There are three relevant transitions: (1) individuals <em>adopt</em> a behavior an <em>Adaptive</em> behavior, which we call behavior <span class="math inline">\(A\)</span>. We assume there is only one alternative behavior, the <em>Legacy</em> behavior which we label <span class="math inline">\(L\)</span>. An <span class="math inline">\(A\)</span>-doer is one who has adopted, or <em>does</em>, the <span class="math inline">\(A\)</span> behavior. Similarly an <span class="math inline">\(L\)</span>-doer does the legacy behavior. The prevalence of <span class="math inline">\(A\)</span> is <span class="math inline">\(a\)</span>, and the prevalence of <span class="math inline">\(L\)</span> is then the complement, <span class="math inline">\((1-a)\)</span>. We prefer the more compact notation <span class="math inline">\(\dot a\)</span> for the rate of change of <span class="math inline">\(a\)</span>.</p>
+<p>As part of this model of behavior diffusion, we name four stages of the diffusion process in which we evaluate the strength of selection with conformity or success-biased learning <a href="#fig-diffusion-stages" class="quarto-xref">Figure&nbsp;<span>2.3</span></a>. First, diffusion <em>onset</em>, where there are few <span class="math inline">\(A\)</span>-doers so <span class="math inline">\(a &lt;&lt; 1\)</span>. After the adaptation has spread so that <span class="math inline">\(a &lt;&lt; 1\)</span> is no longer valid there is the <em>Entrenchment</em> transition where the prevalence crosses half the population, i.e., from a minority of the population adopting <span class="math inline">\(A\)</span> to a majority adopting. There are two parts to Entrenchment, the <em>Entrenchment Approach</em> stage, where the prevalence is approaching <span class="math inline">\(a = 0.5\)</span>, and the <em>Entrenchment Onset</em> stage, where prevalence begins increasing from <span class="math inline">\(a = 0.5\)</span>. The final stage is <em>Fixation</em>, where the behavior is reaching eveyrone in the population, i.e., <span class="math inline">\(a \to 1\)</span>.</p>
+<div id="fig-diffusion-stages" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-diffusion-stages-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figures/diffusion-stages.svg" class="img-fluid figure-img" style="width:80.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-diffusion-stages-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.3: <strong>Behavioral diffusion stages in which we evaluate strength of selection.</strong>
+</figcaption>
+</figure>
+</div>
+<p>We then formulate a differential equation of the model that we call the <em>prevalence dynamic</em>. We obtain the prevalence dynamic by rewriting the evolutionary <em>replicator dynamic</em> in terms of behavior transitions. Behavior diffusion is an evolutionary process since one behavior out of a set of options will be learned by more people than others, i.e., it is spread through differential replication/reproduction. We use the <em>prevalence dynamic</em> version of the replicator dynamic because replication or reproduction are oblique metaphors for social learning. We are interested in changes in the <em>prevalence</em> of behaviors, not their <em>reproduction</em>, <em>per se</em>, in social diffusion. Implicitly, the replicator/prevalence dynamics assume a well-mixed population, which means every agent is equally likely to partner with any other. The population is also assumed to be so large that it is effectively infinite, but nonetheless individuals reliably sample according to the specified learning rules without error.</p>
+<p>Next, we develop a stochastic prevalence dynamic in a Kimura-Crow style model that accounts for randomness in social interactions in finite populations. This enables us to calculate the probability of <em>fixation</em> of the adaptive behavior, i.e., the probability that all individuals adopt the adaptive behavior via social diffusion. This can be used to show that conformity (or anti-conformity) alone <em>can <strong>sometimes</strong></em> result in fixation, but success-biased learning more frequently leads to adaptation fixation.</p>
+<p>Finally, we develop an agent-based model to evaluate our formal conclusions both about dynamics and success rates for different initial prevalence values. This enables us to get a more grounded understanding of how stochasticity and drift affect dynamics and outcomes.</p>
+<section id="prevalence-dynamic" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="prevalence-dynamic"><span class="header-section-number">2.2.1</span> Prevalence Dynamic</h3>
+<p>The prevalence dynamic expresses change in prevalence in terms of <em>transition probabilities</em> representing the chance that the learning process causes one <span class="math inline">\(L\)</span>-doer to swtich to be an <span class="math inline">\(A\)</span>-doer, and vice-versa. The transition probability of <span class="math inline">\(L \to A\)</span> is <span class="math inline">\(P(A|L)\)</span>. The transition probability of <span class="math inline">\(A \to L\)</span> is <span class="math inline">\(P(L|A)\)</span>. We will derive the prevalence dynamic from the replicator dynamic.</p>
+<p>The replicator dynamic is <span id="eq-replicator-dynamic"><span class="math display">\[
+\dot a= \frac{a}{\bar w}(w_A - \bar w).
+\tag{2.1}\]</span></span> If we multiply through we get <span class="math display">\[
+\dot a= \frac{a w_A}{\bar w} - a.
+\]</span> Note that <span class="math inline">\(w_A / \bar w\)</span> is the per-capita “reproduction rate” of behavior <span class="math inline">\(A\)</span> when <span class="math inline">\(A\)</span> competes with <span class="math inline">\(L\)</span> for prevalence, where <span class="math inline">\(\bar w = a w_A + (1 - a) w_L\)</span>. Therefore, <span class="math inline">\(\frac{a w_A}{\bar w}\)</span> is the total prevalence of <span class="math inline">\(A\)</span> on the next time step. It is equivalently the probability that any one individual will adopt or keep <span class="math inline">\(A\)</span> on the next time step. We write this <span class="math inline">\(P(A)\)</span>, and obtain our prevalence dynamic, <span class="math display">\[
+\dot a= P(i \text{ does } A \text{ at } t + dt) - a,
+\]</span></p>
+<p>Where <span class="math inline">\(i\)</span> could be any individual in the population. Defining <span class="math inline">\(p_A = P(i \text{ does } A \text{ at } t + dt)\)</span>, we have <span id="eq-prevalence-dynamic"><span class="math display">\[
+\dot a= p_A - a.
+\tag{2.2}\]</span></span> This makes sense: the change in prevalence is the prevalence for the next time step minus the current prevalence.</p>
+<section id="conformity-prevalence-dynamic" class="level4">
+<h4 class="anchored" data-anchor-id="conformity-prevalence-dynamic">Conformity Prevalence Dynamic</h4>
+<p>We can use <a href="#eq-prevalence-dynamic" class="quarto-xref">Equation&nbsp;<span>2.2</span></a> directly to write down the conformity prevalence dynamic. In conformity, at each time step individuals adopt a new behavior based on the rule that says more prevalent behaviors are more likely to be adopted compared to less prevalent ones. In that case we have <span class="math display">\[
+P(A; \kappa) \propto a^{\kappa}
+\]</span> where <span class="math inline">\(\kappa\)</span> is a measure of the conformity strength. We’ll set <span class="math inline">\(\kappa\)</span> in a moment, but first we need to normalize this proportional term. Before that, note <span class="math display">\[
+P(L; \kappa) \propto (1-a)^\kappa.
+\]</span> Note that <span class="math inline">\(P(A) + P(L) = 1\)</span>, and so we must normalize by each proportionality and we get <span class="math display">\[
+P(A) = \frac{a^\kappa}{a^\kappa + (1-a)^\kappa} - a.
+\]</span></p>
+<p>Neutral selection (neither anti-conformity or conformity) occurs when <span class="math inline">\(\kappa = 1\)</span>, since <span class="math display">\[
+\dot a= \frac{a}{a + 1 - a} - a = 0
+\]</span> for any <span class="math inline">\(a\)</span> when <span class="math inline">\(\kappa = 1\)</span>. For a more natural value for conformity, let <span class="math inline">\(\kappa = 1 + \gamma\)</span>, so <span class="math inline">\(\gamma = 0\)</span> is the neutral point instead. Then we get anti-conformity when <span class="math inline">\(\gamma &lt; 0\)</span>, conformity when <span class="math inline">\(\gamma &gt; 0\)</span>, and neutral selection with null dynamics when <span class="math inline">\(\gamma = 0\)</span>. With this definition, the full conformity prevalence dynamic is <span id="eq-conformity-prevalence-dynamic"><span class="math display">\[
+\dot a= \frac{a^{1 + \gamma}}{a^{1 + \gamma} + (1-a)^{1 + \gamma}} - a.
+\tag{2.3}\]</span></span></p>
+</section>
+<section id="success-biased-prevalence-dynamic" class="level4">
+<h4 class="anchored" data-anchor-id="success-biased-prevalence-dynamic">Success-biased Prevalence Dynamic</h4>
+<p>Success biased learning specifies that the probability of adopting the adaptive behavior is proportional to the both the fitness of the behavior and the prevalence of <span class="math inline">\(A\)</span>-doers who can act as teachers/demonstrators for <span class="math inline">\(L\)</span>-doers. Therefore we write <span class="math display">\[
+P(A) \propto a f_A
+\]</span> Again since <span class="math inline">\(P(A) + P(L) = 1\)</span>, and <span class="math inline">\(P(L) \propto (1 - a)f_L\)</span>, then the normalization constant for <span class="math inline">\(P(A)\)</span> is the sum of the two proportional terms, so</p>
+<p><span class="math display">\[
+P(A) = \frac{a f_A}{af_A + (1-a)f_L}.
+\]</span> The denominator is actually the mean fitness, so we define <span class="math inline">\(\bar f = af_A + (1-a)f_L\)</span> and we obtain <span class="math display">\[
+\dot a= \frac{af_A}{\bar f} - a = \frac{a}{\bar f}(f_A - \bar f).
+\]</span> When we use success-biased learning we obtain the replicator equation but with fitness replacing reproduction rate! Oftentimes this is <em>assumed</em> instead of <em>derived</em> without derivation, based on a circular definition of “fitness” as being measured in terms of reproduction rates.</p>
+<p>To simplify things, we can set the baseline legacy fitness to be <span class="math inline">\(f_L = 1\)</span> without loss of generality and set <span class="math inline">\(f_A = 1 + s\)</span>, so that <span class="math inline">\(s\)</span> represents the <em>selection</em> pressure towards adopting <span class="math inline">\(A\)</span>. Then we have <span class="math display">\[
+\bar f = a(1 + s) + (1 - a) = 1 + as.
+\]</span> Then the prevalence dynamic becomes <span class="math display">\[
+\dot a= \frac{a(1-a)s}{1 + as}.
+\]</span></p>
+</section>
+</section>
+<section id="how-to-compare-different-learning-processes" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="how-to-compare-different-learning-processes"><span class="header-section-number">2.2.2</span> How to compare different learning processes</h3>
+<p>One problem with comparing different theoretical learning processes is that they use different parameterizations that are difficult to match to real-world situations, much less be compared to one another. To deal with this problem, we use a pair of mathematical procedures to understand how the strength of selection relate to one another, independent of the exact parameterizations. These procedures are common in both dynamical systems and evolutionary theory to achieve exactly this sort of goal: understand in a parameter-agnostic way how variables change with respect to one another in a rigorously qualitative way. I explain further below how this works. If it is still not clear after that explanation, it will hopefully become clear when it is applied to our case of interest. The first procedure is to focus</p>
+<p>The <em>limiting cases</em> we focus on here are defined in terms of the prevalence, <span class="math inline">\(a\)</span>, approaching or being slightly greater than some reference value. Our reference values are related to the <em>onset</em>, <em>entrenchment</em>, and <em>fixation</em> ontology of behavior diffusion <a href="#fig-diffusion-stages" class="quarto-xref">Figure&nbsp;<span>2.3</span></a>. The first limiting case is when <span class="math inline">\(a &lt;&lt; 1\)</span>, or equivalently <span class="math inline">\(a \approx 0\)</span>. In evolutionary theory this is called <em>invasion analysis</em>, but we break for <em>onset analysis</em> in the interest of a more exact, less insular phrase for behavior diffusion and to develop a more humane ontology than what we’ve inherited from behavioral and social science terminology developed in the context of the Red Scare and the Cold War, motivated by a glut of defense department funding. The second limiting case is when <span class="math inline">\(a \to 0.5^-\)</span>, read as <em>a goes to 0.5 from below</em>, i.e., from less than 0.5 to 0.5. This will let us compare the strength of conformity and success-biased learning in entrenchment , a critical period where social momentum can be the difference between successful and failed adaptation diffusion. The <em>entrenchment onset</em> is similarly important, when <span class="math inline">\(a = 0.5 + \epsilon\)</span> and <span class="math inline">\(\epsilon \to 0\)</span>, read “epsilon goes to 0”. This procedure allows us to compare the strength of selection at the critical point when just more than half of the population does <span class="math inline">\(A\)</span>, and successful diffusion is in sight. Finally, when <span class="math inline">\(a\)</span> approaches 1, this is the <em>fixation</em> phase.</p>
+<p>Once the limiting case is identified, we can obtain simplified forms of the prevalence dynamic by removing terms in the dynamic that are small enough to be ignored. In some cases we can do this directly. For example, <span class="math inline">\(1 - a \approx 1\)</span> when <span class="math inline">\(a\)</span> is small. For instance, if <span class="math inline">\(a=0.05\)</span>, then <span class="math inline">\(1 - a = 0.95\)</span>, yielding an error in the approximation of 5%. In other cases, we can harness a more advanced tool from calculus, the <em>Taylor expansion</em>, that can be used to approximate differentiable functions, meaning their derivatives are defined and finite for any input value to the function.</p>
+<section id="taylor-expansion" class="level4">
+<h4 class="anchored" data-anchor-id="taylor-expansion">Taylor expansion</h4>
+<p>The Taylor expansion represents a function, call it <span class="math inline">\(f(x)\)</span>, as an infinite sum…</p>
+</section>
+</section>
+<section id="fixation-probability" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="fixation-probability"><span class="header-section-number">2.2.3</span> Fixation probability</h3>
+</section>
+<section id="agent-based-model" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="agent-based-model"><span class="header-section-number">2.2.4</span> Agent-based model</h3>
+<p>Agent-based models enable the transparent specification of individual-level attributes and interaction structure. We will develop an agent-based model of behavior diffusion based on . confirm results from the two formal analyses of diffusion rate <span class="math inline">\(\dot a(a_0)\)</span> and the success rate <span class="math inline">\(\sigma(a_0)\)</span>.</p>
+</section>
+</section>
+<section id="analysis" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="analysis"><span class="header-section-number">2.3</span> Analysis</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Figures/adot-illustration.svg" class="img-fluid figure-img"></p>
+<figcaption><strong>Illustration of anti-conformity, conformity, and success-biased learning for various learning parameter values.</strong></figcaption>
+</figure>
+</div>
+<section id="strength-of-conformity-over-stages-of-diffusion" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="strength-of-conformity-over-stages-of-diffusion"><span class="header-section-number">2.3.1</span> Strength of conformity over stages of diffusion</h3>
+<section id="onset" class="level4">
+<h4 class="anchored" data-anchor-id="onset">Onset</h4>
+</section>
+<section id="entrenchment-approach" class="level4">
+<h4 class="anchored" data-anchor-id="entrenchment-approach">Entrenchment Approach</h4>
+</section>
+<section id="entrenchment-onset" class="level4">
+<h4 class="anchored" data-anchor-id="entrenchment-onset">Entrenchment Onset</h4>
+</section>
+</section>
+<section id="fixation-probability-over-stages-of-diffusion" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="fixation-probability-over-stages-of-diffusion"><span class="header-section-number">2.3.2</span> Fixation probability over stages of diffusion</h3>
+</section>
+<section id="simulations-confirm-both-strength-of-conformity-and-fixation-probability" class="level3" data-number="2.3.3">
+<h3 data-number="2.3.3" class="anchored" data-anchor-id="simulations-confirm-both-strength-of-conformity-and-fixation-probability"><span class="header-section-number">2.3.3</span> Simulations confirm both strength of conformity and fixation probability</h3>
+</section>
+</section>
+<section id="discussion" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="discussion"><span class="header-section-number">2.4</span> Discussion</h2>
+<p>Perhaps anti-conformity could provide a boost for stimulating diffusion onset, and conformity could support the final stages of diffusion when behavior prevalence is well past half the population. However, it is not clear what sort of meta-learning strategy could cue individual-level switching between anti-conformity and conformity, especially near the entrenchment stage where about half the population has adopted the behavior and confusion reigns, which is predicted to induce chaotic oscillatory dynamics around parity prevalence <span class="citation" data-cites="Denton2021">(<a href="references.html#ref-Denton2021" role="doc-biblioref">Kaleda K. Denton, Liberman, and Feldman 2021</a>)</span>.</p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-Acerbi2016" class="csl-entry" role="listitem">
+Acerbi, Alberto, Edwin J. C. Van Leeuwen, Daniel B. M. Haun, and Claudio Tennie. 2016. <span>“<span class="nocase">Conformity cannot be identified based on population-level signatures</span>.”</span> <em>Scientific Reports</em> 6 (May): 1–9. <a href="https://doi.org/10.1038/srep36068">https://doi.org/10.1038/srep36068</a>.
+</div>
+<div id="ref-Aplin2015" class="csl-entry" role="listitem">
+Aplin, Lucy M., Damien R. Farine, Julie Morand-Ferron, Andrew Cockburn, Alex Thornton, and Ben C. Sheldon. 2015. <span>“<span class="nocase">Experimentally induced innovations lead to persistent culture via conformity in wild birds</span>.”</span> <em>Nature</em> 518 (7540): 538–41. <a href="https://doi.org/10.1038/nature13998">https://doi.org/10.1038/nature13998</a>.
+</div>
+<div id="ref-Borofsky2022" class="csl-entry" role="listitem">
+Borofsky, Talia M., and Marcus W. Feldman. 2022. <span>“<span class="nocase">Static environments with limited resources select for multiple foraging strategies rather than conformity</span>.”</span> <em>Ecological Monographs</em> 92 (1): 1–16. <a href="https://doi.org/10.1002/ecm.1483">https://doi.org/10.1002/ecm.1483</a>.
+</div>
+<div id="ref-BoydRicherson2005" class="csl-entry" role="listitem">
+Boyd, Robert, and Peter J. Richerson. 2005. <em><span class="nocase">The Origin and Evolution of Cultures</span></em>. New York: Oxford University Press.
+</div>
+<div id="ref-Denton2021" class="csl-entry" role="listitem">
+Denton, Kaleda K., Uri Liberman, and Marcus W. Feldman. 2021. <span>“<span class="nocase">On randomly changing conformity bias in cultural transmission</span>.”</span> <em>Proceedings of the National Academy of Sciences</em> 118 (34): e2107204118. <a href="https://doi.org/10.1073/pnas.2107204118">https://doi.org/10.1073/pnas.2107204118</a>.
+</div>
+<div id="ref-Denton2020" class="csl-entry" role="listitem">
+Denton, Kaleda Krebs, Yoav Ram, Uri Liberman, and Marcus W. Feldman. 2020. <span>“<span class="nocase">Cultural evolution of conformity and anticonformity</span>.”</span> <em>Proceedings of the National Academy of Sciences of the United States of America</em> 117 (24): 13603–14. <a href="https://doi.org/10.1073/pnas.2004102117">https://doi.org/10.1073/pnas.2004102117</a>.
+</div>
+<div id="ref-Gervais2021" class="csl-entry" role="listitem">
+Gervais, Will M. 2021. <span>“<span>Practical Methodological Reform Needs Good Theory</span>.”</span> <em>Perspectives on Psychological Science</em>. <a href="https://doi.org/10.1177/1745691620977471">https://doi.org/10.1177/1745691620977471</a>.
+</div>
+<div id="ref-Henrich1998" class="csl-entry" role="listitem">
+Henrich, Joe, and Robert Boyd. 1998. <span>“<span class="nocase">The Evolution of Conformist Transmission and the Emergence of Between-Group Differences</span>.”</span> <em>Evolution and Human Behavior</em> 19 (4): 215–41. <a href="https://doi.org/10.1016/S1090-5138(98)00018-X">https://doi.org/10.1016/S1090-5138(98)00018-X</a>.
+</div>
+<div id="ref-Kendal2018" class="csl-entry" role="listitem">
+Kendal, Rachel L., Neeltje J. Boogert, Luke Rendell, Kevin N. Laland, Mike Webster, and Patricia L. Jones. 2018. <span>“<span class="nocase">Social Learning Strategies: Bridge-Building between Fields</span>.”</span> <em>Trends in Cognitive Sciences</em> 22 (7): 651–65. <a href="https://doi.org/10.1016/j.tics.2018.04.003">https://doi.org/10.1016/j.tics.2018.04.003</a>.
+</div>
+<div id="ref-Morgan2020" class="csl-entry" role="listitem">
+Morgan, Thomas J. H., Jordan W. Suchow, and Thomas L. Griffiths. 2020. <span>“<span class="nocase">What the Baldwin Effect affects depends on the nature of plasticity</span>.”</span> <em>Cognition</em> 197 (December 2019): 104165. <a href="https://doi.org/10.1016/j.cognition.2019.104165">https://doi.org/10.1016/j.cognition.2019.104165</a>.
+</div>
+<div id="ref-RichersonBoyd2005_NBGA" class="csl-entry" role="listitem">
+Richerson, Peter J., and Robert Boyd. 2005. <em><span>Not By Genes Alone</span></em>. Chicago: University of Chicago Press.
+</div>
+<div id="ref-Smaldino2018b" class="csl-entry" role="listitem">
+Smaldino, Paul E., Lucy M. Aplin, and Damien R. Farine. 2018. <span>“<span class="nocase">Sigmoidal Acquisition Curves Are Good Indicators of Conformist Transmission</span>.”</span> <em>Scientific Reports</em> 8 (1): 1–10. <a href="https://doi.org/10.1038/s41598-018-30248-5">https://doi.org/10.1038/s41598-018-30248-5</a>.
+</div>
+<div id="ref-Whitehead2009" class="csl-entry" role="listitem">
+Whitehead, Hal, and Peter J. Richerson. 2009. <span>“<span class="nocase">The evolution of conformist social learning can cause population collapse in realistically variable environments</span>.”</span> <em>Evolution and Human Behavior</em> 30 (4): 261–73. <a href="https://doi.org/10.1016/j.evolhumbehav.2009.02.003">https://doi.org/10.1016/j.evolhumbehav.2009.02.003</a>.
+</div>
+<div id="ref-Witt2024" class="csl-entry" role="listitem">
+Witt, Alexandra, Wataru Toyokawa, Kevin N. Lala, Wolfgang Gaissmaier, and Charley M. Wu. 2024. <span>“<span class="nocase">Humans flexibly integrate social information despite interindividual differences in reward</span>.”</span> <em>Proceedings of the National Academy of Sciences</em> 121 (39). <a href="https://doi.org/10.1073/pnas.2404928121/-/DCSupplemental.Published">https://doi.org/10.1073/pnas.2404928121/-/DCSupplemental.Published</a>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    window.setColorSchemeToggle(window.hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./cooperation.html" class="pagination-link" aria-label="Cooperative conservation">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cooperative conservation</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
