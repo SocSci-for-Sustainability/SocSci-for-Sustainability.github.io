@@ -11,6 +11,7 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
+    - quantitative-techniques.qmd
     - diffusion.qmd
     - cooperation.qmd
     - references.qmd

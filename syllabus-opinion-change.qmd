@@ -1,1 +1,74 @@
 # 3. *Opinion Change: Modeling and Measurement* {.unnumbered}
+
+*Spring 2026 (March 30 – June 23)* 
+
+This course explores **how opinions form, shift, and polarize**, and how these processes shape sustainability outcomes. We combine **cognitive science, sociology, anthropology, and network science** to develop models of opinion change and learn statistical tools to measure it.
+
+Enrollment is **free**. Subscribe on [Substack](https://matphd.substack.com) to get weekly lectures and updates.
+
+{{< include _subscribe-button.html >}}
+
+### Course Overview
+
+Opinions can determine whether societies **achieve sustainable futures** or become locked in harmful trajectories. From online echo chambers to institutional polarization, understanding opinion dynamics is essential for effective interventions.
+
+Students will design **empirically motivated models** of social influence, explore how extremism and polarization emerge, and evaluate strategies to promote consensus or diversity of thought.
+
+
+### Learning Objectives
+
+By the end of the course, you will:
+
+- Understand major theories of **opinion formation and change**  
+- Model **social influence** using agent-based and analytical approaches  
+- Use **network models** to study echo chambers and polarization  
+- Apply **statistical techniques** to measure opinion change reliably  
+- Design and evaluate **social interventions** targeting polarization  
+- Develop transferable skills in **technical writing, data analysis, and computational modeling**
+
+
+### Weekly Topics
+
+::: {.weekly-topics tbl-colspan=4 tbl-colwidths="[8,21,29,42]"}
+
+| Week | Dates      | Topic                                | Description |
+|:------:|:-----------------:|:-------------------------------------:|----------------|
+| 1    | Mar 30 – Apr 5  | **Introduction** | Opinions and sustainability |
+| 2    | Apr 6 – Apr 12  | **Opinions Are Latent**   | We measure behaviors, not opinions |
+| 3    | Apr 13 – Apr 19 | **Social Influence I**  | Cognitive science of influence |
+| 4    | Apr 20 – Apr 26 | **Social Influence II** | Computational models|
+| 5    | Apr 27 – May 3  | **Measuring Change**  | How to avoid false detections  |
+| 6    | May 4 – May 10  | **Abstract+Outline** | Exercise to start capstone project |
+| 7    | May 11 – May 17 | **Social Networks** | Networks structure opinion exposure |
+| 8    | May 18 – May 24 | **Echo Chamber Effects**  |  Modeling influence asymmetries |
+| 9    | May 25 – Jun 1  | **Polarization**  | Social and cognitive factors |
+| 10   | Jun 2 – Jun 8   | **Applications** | Structured student-led discussions |
+| 11   | Jun 9 – Jun 23  | **Student Presentations**      | Share findings |
+| 12   | Jun 24 – Jun 30 | **Final Projects**  | Finish research articles |
+:::
+
+### Tools and Resources
+
+- **R + socmod**: Simulating opinion dynamics and social influence  
+- **Statistical modeling**: Measuring change robustly  
+- **Network science**: Quantifying echo chambers and polarization  
+- **Reproducible workflows**: Open materials and datasets
+
+
+## Placement in the Curriculum
+
+This is the **third course** in the *Social Science for Sustainability*
+curriculum, to be taught **Spring 2026**
+
+**Preceding courses:**
+
+- **Autumn 2025** → *Introduction to Social Science for Sustainability*  
+- **Winter 2026** → *Agent-Based Modeling for Sustainability*  
+
+**Subsequent courses:**
+- **Summer 2026** → TBD
+
+### Join for Free
+
+{{< include _subscribe-button.html >}}
+

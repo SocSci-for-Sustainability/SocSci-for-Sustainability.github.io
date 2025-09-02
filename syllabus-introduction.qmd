@@ -1,1 +1,81 @@
 # 1. *Introduction to Social Science for Sustainability* {.unnumbered}
+
+*Autumn 2025 (September 22 – December 20)*  
+
+This is the **introductory course** in the *Social Science for Sustainability* curriculum.  
+It combines theory, computational modeling, and case studies to help you understand how social processes shape sustainable futures — and how we can intervene.
+
+Enrollment is **free**. Just subscribe on [Substack](https://matphd.substack.com) to receive weekly lectures and resources.  
+
+The educational materials, the `socmod` R package, and any research we produce will always be **openly available**.
+
+
+### Course Overview
+
+This course develops a framework for understanding **how collective behavior emerges** and **how adaptation spreads** in human systems.  
+You’ll learn how to connect models of cultural evolution, cooperation, and coordination to sustainability challenges.
+
+
+### Learning Objectives
+
+By the end of the course, you’ll be able to:
+
+- Understand how different **social learning processes** can promote or inhibit the **diffusion of adaptive behaviors**  
+- Analyze how **networks and social structure** shape cooperation, coordination, and collective decision-making  
+- Use agent-based and mathematical models to explore **policy interventions** for sustainability  
+- Critically evaluate models and evidence to distinguish between robust findings and misleading results
+
+
+### Weekly agenda
+
+::: {.weekly-topics tbl-colspan=4 tbl-colwidths="[7,21,32,40]"}
+
+| Week | Date Range        | Topic                                | Description |
+|:------:|:-------------------:|:-------------------------------------:|----------------|
+| 1    | Sep 22 – Sep 28   | **Preview** | Overview of course material |
+| 2    | Sep 29 – Oct 5    | **Introduction** | Designing sustainable futures |
+| 3    | Oct 6 – Oct 12    | **Behavior Diffusion** | Collective adaptation |
+| 4    | Oct 13 – Oct 19   | **Prevalence Dynamics** | Tracking behavior adoption |
+| 5    | Oct 20 – Oct 26   | **Diffusion In Networks I** | Regular and random networks |
+| 6    | Oct 27 – Nov 2    | **Opinion Dynamics** | Influence, networks, change |
+| 7    | Nov 3 – Nov 9     | **Abstract+Outline** | Exercise to start capstone project |
+| 8    | Nov 10 – Nov 16   | **Cooperative Management** | Resource conservation in space |
+| 9    | Nov 17 – Nov 23   | **Promoting Fairness** | Evolving women leaders |
+| 10   | Dec 1 – Dec 7     | **Diffusion In Networks II** | Group-structured networks |
+| 11   | Dec 8 – Dec 14    | **Student Presentations** | Share findings |
+| 12   | Dec 15 – Dec 21   | **Final Projects** | Finish research articles |
+
+
+:::
+
+*(Thanksgiving break: Nov 24 – Nov 30)*
+
+
+### Format and Access
+
+- **Weekly lectures** released via Substack  
+- **Hands-on exercises** in R 
+- **Interactive discussions**: rolling enrollment lets new learners join anytime  
+
+
+### Tools and Resources
+
+- **R + `socmod`**: Agent-based and equation-based modeling
+- **Quarto**: For reproducible documents and workflows
+
+
+### Placement in the Curriculum
+
+This is the **first course** in the *Social Science for Sustainability*
+curriculum, next being offered Autumn 2025.
+
+- **Winter 2026** → *Agent-Based Modeling*  
+- **Spring 2026** → *Opinion Change: Models and Measurement*  
+- **Summer 2026** → TBD (short course)
+
+
+
+### Join for Free
+
+{{< include _subscribe-button.html >}}
+

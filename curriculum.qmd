@@ -32,24 +32,7 @@ the button below to subscribe, you will be taken to my substack publication
 Substack!**](https://matphd.substack.com){.btn .btn-primary .substack_background
 style="width: 100%; font-size: 1.1rem; padding: 0.8em;"}-->
 
-<div class="enroll-container">
-  <button class="enroll-button">Subscribe here!</button>
-  <button
-    type="button" 
-    class="btn enroll-help-btn"
-    data-bs-toggle="popover"
-    data-bs-placement="bottom"
-    data-bs-html="true"
-    title="How enrollment works"
-    data-bs-content=
-'<p> 
-Participants can enroll any time to join the current course. To enroll,
-just subscribe for free to my Substack publication, <em>Social Science for
-Sustainability by Matt Turner</em>, by clicking "Subscribe here!"  
-</p>'>
-    ?
-  </button>
-</div> 
+{{< include _subscribe-button.html >}}
 
 ---
 
@@ -92,21 +75,4 @@ be openly available to the community**. Subscribing supports the delivery of
 this curriculum *and* the development of tools, datasets, and modeling frameworks that enable **independent scientific research**.
 
 
-<div class="enroll-container">
-  <button class="enroll-button">Subscribe here!</button>
-  <button
-    type="button" 
-    class="btn enroll-help-btn"
-    data-bs-toggle="popover"
-    data-bs-placement="bottom"
-    data-bs-html="true"
-    title="How enrollment works"
-    data-bs-content=
-'<p> 
-Participants can subscribe any time to join the current course. To subscribe,
-just subscribe for free to my Substack publication, <em>Social Science for
-Sustainability by Matt Turner</em>, by clicking "Subscribe here!"  
-</p>'>
-    ?
-  </button>
-</div> 
+{{< include _subscribe-button.html >}}

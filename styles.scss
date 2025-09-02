@@ -291,24 +291,6 @@ $inline-code-purple: #a277ff;
   margin-top: 2rem;
 }
 
-.enroll-button {
-  background-color: #ed7135;
-  border: 2px solid #ed7135;
-  color: white;
-  font-size: 1.1rem;
-  padding: 0.6rem 1.5rem;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  max-width: 250px;
-  width: 100%;
-  margin-bottom: 0.5rem;
-}
-
-.enroll-button:hover {
-  background-color: white;
-  color: #ed7135;
-}
 
 .enroll-help-btn {
   color: #ed7135;
@@ -335,11 +317,57 @@ $inline-code-purple: #a277ff;
   border-color: #ed7135;
 }
 
-
-
 .separator::before {
   content: "•";
   margin: 0 0.5rem;
   color: #888;
+}
+
+.enroll-button {
+  text-decoration: none;
+  display: inline-block;       /* Ensure box sizing like a button */
+  padding: 0.5rem 1rem;
+  border: 2px solid #ed7135;
+  background-color: #ed7135;
+  color: white;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.enroll-button:hover {
+  background-color: white;
+  color: #ed7135;
+  text-decoration: none;       /* Ensure no underline on hover */
+}
+
+
+/* Put this in styles.css and reference it in your .qmd with format: html: css: styles.css */
+table tbody tr {
+  border-bottom: none !important;
+}
+
+table tbody td {
+  border-bottom: none !important;
+}
+
+table td, table th {
+  vertical-align: middle;   /* options: top | middle | bottom */
+}
+
+table.weekly-topics {
+  width: 100%;
+  border-collapse: collapse;
+
+  th, td {
+    padding: 0.5em;
+    text-align: left;
+  }
+
+  th:nth-child(1), td:nth-child(1) { width: 8%; }
+  th:nth-child(2), td:nth-child(2) { width: 15%; }
+  th:nth-child(3), td:nth-child(3) { width: 20%; }
+  th:nth-child(4), td:nth-child(4) { width: 57%; }
 }
 
