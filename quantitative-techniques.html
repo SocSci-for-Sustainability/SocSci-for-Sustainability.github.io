@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>2&nbsp; Quantitative Techniques – Social Science for Sustainability</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./diffusion.html" rel="next">
+<link href="./intro.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-eac44e41018956f88012b5b01fb4b211.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-09d0fbc9ad20a915fa4847efc57a3950.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-eac44e41018956f88012b5b01fb4b211.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-0c073e481e47220cc03c14c6fb9ce08d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-30b6cae2a826812af03821681d41edc7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-0c073e481e47220cc03c14c6fb9ce08d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<!-- header.html -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&amp;family=Source+Code+Pro:wght@400;500;600;700&amp;display=swap">
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const buttons = document.querySelectorAll('[data-bs-toggle="popover"]');
+
+  buttons.forEach(btn => {
+    const url = btn.getAttribute('data-url');
+
+    if (url) {
+      fetch(url)
+        .then(response => response.text())
+        .then(html => {
+          btn.setAttribute('data-bs-content', html);
+
+          // Create the popover AFTER content is loaded
+          new bootstrap.Popover(btn);
+        });
+    } else {
+      // Fallback for inline content
+      new bootstrap.Popover(btn);
+    }
+  });
+});
+</script>
+
+
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    window.setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      window.setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    window.hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(darkModeDefault) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const darkModeDefault = false;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !window.hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+    };
+    // Switch to dark mode if need be
+    if (window.hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Social Science for Sustainability</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./curriculum.html"> 
+<span class="menu-text">Curriculum</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://matphd.substack.com"> 
+<span class="menu-text">Subscribe</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./quantitative-techniques.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Quantitative Techniques</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./SS4S.key.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./quantitative-techniques.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Quantitative Techniques</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./diffusion.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Social Diffusion</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./cooperation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Cooperative conservation</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">References</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Appendices</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./curriculum.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Curriculum &amp; Syllabi</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./syllabus-introduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">1. <em>Introduction to Social Science for Sustainability</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./syllabus-agent-based-modeling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">2. <em>Agent-based Modeling</em></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./syllabus-opinion-change.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3. <em>Opinion Change: Modeling and Measurement</em></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#old-draft-version-of-this-chapter" id="toc-old-draft-version-of-this-chapter" class="nav-link active" data-scroll-target="#old-draft-version-of-this-chapter"><span class="header-section-number">2.1</span> Old Draft Version of this Chapter</a></li>
+  <li><a href="#data-collection-types-in-r" id="toc-data-collection-types-in-r" class="nav-link" data-scroll-target="#data-collection-types-in-r"><span class="header-section-number">2.2</span> Data collection types in R</a>
+  <ul class="collapse">
+  <li><a href="#collections-of-basic-data-types" id="toc-collections-of-basic-data-types" class="nav-link" data-scroll-target="#collections-of-basic-data-types"><span class="header-section-number">2.2.1</span> Collections of basic data types</a></li>
+  <li><a href="#vectors" id="toc-vectors" class="nav-link" data-scroll-target="#vectors"><span class="header-section-number">2.2.2</span> Vectors</a></li>
+  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists"><span class="header-section-number">2.2.3</span> Lists</a></li>
+  <li><a href="#named-lists" id="toc-named-lists" class="nav-link" data-scroll-target="#named-lists"><span class="header-section-number">2.2.4</span> Named lists</a></li>
+  <li><a href="#tibble-and-data.frame" id="toc-tibble-and-data.frame" class="nav-link" data-scroll-target="#tibble-and-data.frame"><span class="header-section-number">2.2.5</span> <code>tibble</code> (and <code>data.frame</code>)</a></li>
+  <li><a href="#difference-between-data.frame-and-tibble" id="toc-difference-between-data.frame-and-tibble" class="nav-link" data-scroll-target="#difference-between-data.frame-and-tibble"><span class="header-section-number">2.2.6</span> Difference between <code>data.frame</code> and <code>tibble</code></a></li>
+  </ul></li>
+  <li><a href="#functional-programming" id="toc-functional-programming" class="nav-link" data-scroll-target="#functional-programming"><span class="header-section-number">2.3</span> Functional programming</a>
+  <ul class="collapse">
+  <li><a href="#higher-order-functions-functions-with-function-arguments" id="toc-higher-order-functions-functions-with-function-arguments" class="nav-link" data-scroll-target="#higher-order-functions-functions-with-function-arguments"><span class="header-section-number">2.3.1</span> Higher-order functions: functions with function arguments</a></li>
+  <li><a href="#map-a-common-useful-higher-order-function-used-often-in-socmod" id="toc-map-a-common-useful-higher-order-function-used-often-in-socmod" class="nav-link" data-scroll-target="#map-a-common-useful-higher-order-function-used-often-in-socmod"><span class="header-section-number">2.3.2</span> <code>map</code>: a common, useful higher-order function used often in <code>socmod</code></a></li>
+  </ul></li>
+  <li><a href="#custom-objects-r6-classes-in-socmod" id="toc-custom-objects-r6-classes-in-socmod" class="nav-link" data-scroll-target="#custom-objects-r6-classes-in-socmod"><span class="header-section-number">2.4</span> Custom objects: R6 classes in socmod</a>
+  <ul class="collapse">
+  <li><a href="#the-agent-class-in-socmod" id="toc-the-agent-class-in-socmod" class="nav-link" data-scroll-target="#the-agent-class-in-socmod"><span class="header-section-number">2.4.1</span> The <code>Agent</code> class in <code>socmod</code></a></li>
+  <li><a href="#exercise-design-and-define-classes-from-scratch" id="toc-exercise-design-and-define-classes-from-scratch" class="nav-link" data-scroll-target="#exercise-design-and-define-classes-from-scratch"><span class="header-section-number">2.4.2</span> Exercise: design and define classes from scratch</a></li>
+  </ul></li>
+  <li><a href="#an-aside-on-copy-vs-reference-semantics-in-r-assignment-and-mutation" id="toc-an-aside-on-copy-vs-reference-semantics-in-r-assignment-and-mutation" class="nav-link" data-scroll-target="#an-aside-on-copy-vs-reference-semantics-in-r-assignment-and-mutation"><span class="header-section-number">2.5</span> An aside on copy vs reference semantics in R: assignment and mutation</a>
+  <ul class="collapse">
+  <li><a href="#the-underlying-tension-how-r-handles-object-copying-and-modification" id="toc-the-underlying-tension-how-r-handles-object-copying-and-modification" class="nav-link" data-scroll-target="#the-underlying-tension-how-r-handles-object-copying-and-modification"><span class="header-section-number">2.5.1</span> 1. The underlying tension: how R handles object copying and modification</a></li>
+  <li><a href="#a-practical-guide-for-navigating-copy-and-reference-semantics" id="toc-a-practical-guide-for-navigating-copy-and-reference-semantics" class="nav-link" data-scroll-target="#a-practical-guide-for-navigating-copy-and-reference-semantics"><span class="header-section-number">2.5.2</span> 2. A practical guide for navigating copy and reference semantics</a></li>
+  <li><a href="#how-igraph-fits-in-working-with-c-backed-graphs-in-r" id="toc-how-igraph-fits-in-working-with-c-backed-graphs-in-r" class="nav-link" data-scroll-target="#how-igraph-fits-in-working-with-c-backed-graphs-in-r"><span class="header-section-number">2.5.3</span> 3. How igraph fits in: working with C-backed graphs in R</a></li>
+  </ul></li>
+  <li><a href="#agent-based-models-of-social-behavior" id="toc-agent-based-models-of-social-behavior" class="nav-link" data-scroll-target="#agent-based-models-of-social-behavior"><span class="header-section-number">2.6</span> Agent-based models of social behavior</a>
+  <ul class="collapse">
+  <li><a href="#example-1-time-series-of-adaptation-diffusion" id="toc-example-1-time-series-of-adaptation-diffusion" class="nav-link" data-scroll-target="#example-1-time-series-of-adaptation-diffusion"><span class="header-section-number">2.6.1</span> Example 1: Time series of adaptation diffusion</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Quantitative Techniques</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>THIS IS A CHAPTER STUB FOR THE SOCIAL SCIENCE FOR SUSTAINABILITY BOOK. IT IS CURRENTLY JUST THE FOLLOWING DRAFT VERSION OF THE CHAPTER THAT WAS MUCH MORE AGENT-BASED MODELING FOCUSED. CALCULUS AND OTHER MATHEMATICAL TOPICS WILL BE INCLUDED IN THE UPDATED VERSION FOR FALL 2025 QUARTER.</p>
+<section id="old-draft-version-of-this-chapter" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="old-draft-version-of-this-chapter"><span class="header-section-number">2.1</span> Old Draft Version of this Chapter</h2>
+<p>This section introduces agent-based modeling in <code>socmod</code> starting with basic functional and object-oriented programming in R. It therefore builds on an assumed knowledge of R basics which can be gained by studying, for example, <a href="https://rstudio-education.github.io/hopr/index.html"><em>Hands-On Programming with R</em></a> or other basic R tutorial introductions.</p>
+<p>To model social behavior it helps to have intuitive software tools grounded in an empirically-motivated, self-consistent scientific theory. <code>socmod</code> provides those tools, but to put it to best use it’s helpful to know how it works, especially for people used to using R in a data science context. Many of the same tools are transferable, especially declarative/functional programming, as is used and encouraged by the <a href="https://r4ds.hadley.nz/">tidy approach in R for Data Science</a>.</p>
+<p>To create simulations that <em>generate</em> social behavior we have to go beyond tabular representations of the world to more complex representations of people and their interactions that can be measured. These measurements are recorded in a standard tabular format, e.g., CSV, which can then be analyzed using tidy/R for Data Science strategies.</p>
+<p>In agent-based modeling, we create software representations of simulated people, i.e.&nbsp;<em>agents</em>, or other interacting entities, including the agents’ environment. <em>Object-oriented programming</em> is the natural choice for software design in this case because it provides a structure for defining custom <em>objects</em> like socially interacting agents. An <em>object</em> is one bit of data that could be a number or character type, but could also be something more complicated. In object-oriented programming we define custom <em>classes</em> that specify various data <em>fields</em> and function <em>methods</em> for maintaining and modifying the state of objects. The fields and methods of a class therefore are sets of related data and functions to represent things in the world.</p>
+<p>To summarize, objects are a way to track and modify the state of different software entities. We can create simulations of real-world systems by defining custom object types called classes whose state and behaviors are modeled on relevant real-world features and behaviors.</p>
+<p>In <code>socmod</code>, we define custom R objects for agent-based models of social behavior using the <code>R6Class</code> method that creates a new object type, i.e., a new <em>class</em>. We use tidy-style functional programming where helpful to represent model features and dynamics.</p>
+<p>In the remainder of this chapter, I will first review variable assignment and data structures in R including vectors, lists, data.frames, and tibbles. We then review relevant topics in functional programming, then demonstrate how to create custom classes in R with the library <a href="https://r6.r-lib.org/">R6</a>. This tutorial then closes with a demonstration of a simple four-agent agent-based model of social behavior, kept simple to highlight the functional and object-oriented design patterns in <code>socmod</code>, representing <code>Agent</code>, an <code>AgentBasedModel</code>, and <code>Trial</code>classes defined using the <a href="https://r6.r-lib.org/reference/R6Class.html"><code>R6Class</code> function</a>.</p>
+</section>
+<section id="data-collection-types-in-r" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="data-collection-types-in-r"><span class="header-section-number">2.2</span> Data collection types in R</h2>
+<p>In R, there is a hierarchy of data collection types that are necessary to know about for functional programming, which often involves applying a function across every element of a collection of data. Data collections include vectors, lists, data.frames, and tibbles, which we’ll cover here.</p>
+<section id="collections-of-basic-data-types" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="collections-of-basic-data-types"><span class="header-section-number">2.2.1</span> Collections of basic data types</h3>
+<p>In computer science, a <em>collection</em> is an abstract data type that organizes and stores instances of other data types. In R, the most basic data types are numbers (e.g., <code>double</code> or <code>integer</code>) and text, whose data type is <code>character</code> in R whether it’s a single character or several:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">typeof</span>(<span class="st">'c'</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "character"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">typeof</span>(<span class="st">"social science is kewl"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "character"</code></pre>
+</div>
+</div>
+</section>
+<section id="vectors" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="vectors"><span class="header-section-number">2.2.2</span> Vectors</h3>
+<p>R vectors are defined using the <code>c()</code> function, e.g., <code>vec &lt;- c(0, 0, 1)</code>. The data type of all vector elements must be the same. This is enforced by R coercing data to different types, for example:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0 0 1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="st">"yo"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "0"  "0"  "yo"</code></pre>
+</div>
+</div>
+<p>We index vectors using single square brackets, with R indexing starting from 1:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>) <span class="co"># equiv to vec &lt;- 1:5 or seq(1, 5)</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(vec[<span class="dv">1</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(vec[<span class="fu">length</span>(vec)])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5</code></pre>
+</div>
+</div>
+</section>
+<section id="lists" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="lists"><span class="header-section-number">2.2.3</span> Lists</h3>
+<p>If one wants to keep elements of different types in a single collection, use the R <code>list</code>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>l <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="dv">0</span>, <span class="dv">542</span>, <span class="st">"yo"</span>)</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(l)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[1]]
+[1] 0
+
+[[2]]
+[1] 542
+
+[[3]]
+[1] "yo"</code></pre>
+</div>
+</div>
+<p>Note the visual representation has changed on printout. We now need to use double-square brackets to index list elements themselves:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(l[[<span class="dv">3</span>]])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "yo"</code></pre>
+</div>
+</div>
+<p>If we leave off one of the square brackets we effectively get a sub-list with just one element:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(l[<span class="dv">3</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[1]]
+[1] "yo"</code></pre>
+</div>
+</div>
+<p>This is useful if you want to create a new sub-list with more than one element:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(l[<span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">3</span>)])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[1]]
+[1] 542
+
+[[2]]
+[1] "yo"</code></pre>
+</div>
+</div>
+</section>
+<section id="named-lists" class="level3" data-number="2.2.4">
+<h3 data-number="2.2.4" class="anchored" data-anchor-id="named-lists"><span class="header-section-number">2.2.4</span> Named lists</h3>
+<p>Named lists are the primary key-value store in R, just like <code>dict</code> in Python. It allows us to label entries of the list and access them using double square brackets with the character name or using the <code>$</code> access operator:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>named_l <span class="ot">&lt;-</span> <span class="fu">list</span>(<span class="at">a =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">6</span>), <span class="at">b =</span> <span class="fu">c</span>(<span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>))</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(named_l<span class="sc">$</span>a <span class="sc">==</span> named_l[[<span class="st">"a"</span>]]) <span class="co"># compares element-by-element</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE TRUE TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">all</span>(named_l<span class="sc">$</span>b <span class="sc">==</span> named_l[[<span class="st">"b"</span>]]))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+</section>
+<section id="tibble-and-data.frame" class="level3" data-number="2.2.5">
+<h3 data-number="2.2.5" class="anchored" data-anchor-id="tibble-and-data.frame"><span class="header-section-number">2.2.5</span> <code>tibble</code> (and <code>data.frame</code>)</h3>
+<p>Both the <code>tibble</code> and <code>data.frame</code> classes represent tabular data, meaning data that can be represented in table format, e.g., in comma- or tab-separated value format. There are some subtle differences listed below, but we’ll use <code>tibble</code> for representing our tables.</p>
+<p>Tibbles are like fancy lists that have special properties that make data manipulation more efficient. The details of how this works aren’t super important at this point. The important thing to know is how one can initialize tibbles and access tibble columns similarly to lists, as shown in the following example:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>tbl <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">tibble</span>(<span class="at">a =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">5</span>, <span class="dv">6</span>), <span class="at">b =</span> <span class="fu">c</span>(<span class="dv">7</span>, <span class="dv">8</span>, <span class="dv">9</span>))</span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(tbl<span class="sc">$</span>a)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0 5 6</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(tbl[[<span class="st">"b"</span>]])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7 8 9</code></pre>
+</div>
+</div>
+<p>Using tibbles ensures that data manipulation and analysis using the tidyverse will work as expected. For example, the tidyverse provides functions for analyzing different groups of data within a larger dataset. This is a common data analysis pattern called split-apply-combine, which in the tidyverse translates to group-by and summarise when using the <code>dplyr</code> library. For example, we can calculate the mean of measurements in “experimental” and “control” conditions in some fake data:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>observations <span class="ot">&lt;-</span> tibble<span class="sc">::</span><span class="fu">tibble</span>(</span>
+<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">condition =</span> <span class="fu">c</span>(<span class="st">"experimental"</span>, <span class="st">"experimental"</span>, <span class="st">"control"</span>, <span class="st">"control"</span>),</span>
+<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">measurement =</span> <span class="fu">c</span>(<span class="fl">13.5</span>, <span class="fl">14.6</span>, <span class="fl">3.4</span>, <span class="fl">5.4</span>)</span>
+<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a>mean_measurement_tbl <span class="ot">&lt;-</span> </span>
+<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a>  observations <span class="sc">%&gt;%</span> </span>
+<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">group_by</span>(condition) <span class="sc">%&gt;%</span> </span>
+<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">mean_measurement =</span> <span class="fu">mean</span>(measurement))</span>
+<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(mean_measurement_tbl)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 2
+  condition    mean_measurement
+  &lt;chr&gt;                   &lt;dbl&gt;
+1 control                   4.4
+2 experimental             14.0</code></pre>
+</div>
+</div>
+</section>
+<section id="difference-between-data.frame-and-tibble" class="level3" data-number="2.2.6">
+<h3 data-number="2.2.6" class="anchored" data-anchor-id="difference-between-data.frame-and-tibble"><span class="header-section-number">2.2.6</span> Difference between <code>data.frame</code> and <code>tibble</code></h3>
+<p>The <code>tibble</code> library provides a table data representation (also called <code>tibble</code>) that is a bit more flexible and intuitive than the R built-in <code>data.frame</code>. One reason I prefer tibbles is because traditional data.frames automatically convert strings to factors unless you tell them not to. Tibbles don’t, so you’re never surprised.</p>
+<p>Column naming is also more flexible with tibbles. A data.frame requires syntactically valid R names, while tibbles can handle column names that include spaces or even non-standard characters. I often use this feature to use column names like <code>Mean adaptation success</code> that print nicely when used as labels in <code>ggplot</code>.</p>
+<p>Finally, tibble operations always return a tibble. For example, if <code>df</code> were a data.frame, the operation <code>df[, 1]</code> would return a vector by default. If it were a tibble it would return another tibble, making behavior more predictable in data analysis pipelines.</p>
+</section>
+</section>
+<section id="functional-programming" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="functional-programming"><span class="header-section-number">2.3</span> Functional programming</h2>
+<p>Functional programming is especially useful for writing code that applies the same function to several inputs, but wants to leave it up to the user to specify exactly which function should be applied. In <code>socmod</code> we pass functions as arguments to other functions to specify how agents pick their interaction partners (i.e., teachers in a learning context) and how social learning works. Here are some simple examples demonstrating the key concepts and techniques of functional programming that could help with <code>socmod</code> programming.</p>
+<section id="higher-order-functions-functions-with-function-arguments" class="level3" data-number="2.3.1">
+<h3 data-number="2.3.1" class="anchored" data-anchor-id="higher-order-functions-functions-with-function-arguments"><span class="header-section-number">2.3.1</span> Higher-order functions: functions with function arguments</h3>
+<p>In R, and other programming languages supporting the functional style, one can treat functions like any other data and pass it as an argument to other functions. A function that accepts a function as an argument is called a <em>higher-order function</em>. Here is a simple example of a higher order function that takes some <code>data</code> as a first argument and applies the function <code>f</code> to that data twice, putting the result of each calculation in a two-element vector.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>repeat_2_higher_order_func <span class="ot">&lt;-</span> <span class="cf">function</span>(data, f) {</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span> (<span class="fu">c</span>(<span class="fu">f</span>(data), <span class="fu">f</span>(data)))</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Below we call this higher order function by providing <code>data=2</code> as the first argument and an <em>anonymous function</em> as the second argument, which can be written using <code>\(arg) { ...function body... }</code> syntax:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="co"># \(x) {...} is equivalent to function(x) { ... }; these are </span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="co"># anonymous functions.</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Expecting to return c(4, 4)</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="fu">repeat_2_higher_order_func</span>(<span class="at">data =</span> <span class="dv">2</span>, <span class="at">f =</span> \(x) { <span class="fu">return</span> (x <span class="sc">*</span> <span class="dv">2</span>) }) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4 4</code></pre>
+</div>
+</div>
+<p>The above is the representation of a vector printed to screen, so we see that our expectations were matched.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 4 4</code></pre>
+</div>
+</div>
+</section>
+<section id="map-a-common-useful-higher-order-function-used-often-in-socmod" class="level3" data-number="2.3.2">
+<h3 data-number="2.3.2" class="anchored" data-anchor-id="map-a-common-useful-higher-order-function-used-often-in-socmod"><span class="header-section-number">2.3.2</span> <code>map</code>: a common, useful higher-order function used often in <code>socmod</code></h3>
+<p>One of the most useful and common higher-order functions is the map function. This function <em>maps</em> a function, denoted <code>.f</code> below, onto every element in a collection, denoted <code>.x</code>. This notation is from the <code>map</code> family of functions in the <a href="https://purrr.tidyverse.org/"><code>purrr</code> library</a> for tidy functional programming.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(purrr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Here is an example of mapping an anonymous function that multiplies its input by 3 onto a vector with entries 2 and 8:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Now get we use map_vec that applies .f to every element of .x,</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="co"># expecting the following to return a vector with elements 3*2 </span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="co"># and 3*8, i.e., c(6, 24).</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>purrr<span class="sc">::</span><span class="fu">map_vec</span>(<span class="at">.x =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">8</span>), <span class="at">.f =</span> \(x) { <span class="fu">return</span>(<span class="dv">3</span> <span class="sc">*</span> x)})</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]  6 24</code></pre>
+</div>
+</div>
+<p>If we want to apply a function that takes two variables, the value and index of an element in a collection, we can use the <code>imap</code> family of functions as follows to return a vector that contains the original element multiplied by its place in the input vector:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a>input_vec <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">5050</span>, <span class="dv">6</span>)</span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a>purrr<span class="sc">::</span><span class="fu">imap_vec</span>(input_vec, \(el, idx) { <span class="fu">return</span> (idx <span class="sc">*</span> el) })</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1]     2 10100    18</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="custom-objects-r6-classes-in-socmod" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="custom-objects-r6-classes-in-socmod"><span class="header-section-number">2.4</span> Custom objects: R6 classes in socmod</h2>
+<p>Classes are ways to <em>encapsulate</em> diverse distinct, but related, processes, behaviors, data, attributes, and other types of information in a single <em>object</em>, i.e., a software representation of an <em>instance</em> of that entity. R6 is a library for creating our own custom classes that serve as an abstract template that specifies what distinguishes different types of objects/entities. Below we show first how to create a new agent, i.e., a new instance of the <code>Agent</code> class that is provided by <code>socmod</code>. After that is a fun example of how we can design a different social behavioral model, one of football/soccer matches. We write classes for players and teams and develop a <code>play_match(team1, team2)</code> function that pits two teams against each other.</p>
+<section id="the-agent-class-in-socmod" class="level3" data-number="2.4.1">
+<h3 data-number="2.4.1" class="anchored" data-anchor-id="the-agent-class-in-socmod"><span class="header-section-number">2.4.1</span> The <code>Agent</code> class in <code>socmod</code></h3>
+<p>Below we create a new instance of the <code>Agent</code> class using the class <em>constructor</em>, the function written <code>socmod::Agent$new()</code> below that creates a new instance of the class.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a>a1 <span class="ot">&lt;-</span> socmod<span class="sc">::</span>Agent<span class="sc">$</span><span class="fu">new</span>(<span class="dv">1</span>, <span class="at">name =</span> <span class="st">"Matt"</span>, </span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a>                        <span class="at">behavior =</span> <span class="st">"Adaptive"</span>, </span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>                        <span class="at">fitness=</span><span class="fl">1e6</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We can use the <em>access operator</em>, <code>$</code> in R, to access the <em>fields</em> (i.e., <em>attributes</em>) of agent <code>a1</code> like so:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(a1<span class="sc">$</span><span class="fu">get_fitness</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1e+06</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(a1<span class="sc">$</span><span class="fu">get_name</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Matt"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(a1<span class="sc">$</span><span class="fu">get_id</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(a1<span class="sc">$</span><span class="fu">get_behavior</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Adaptive"</code></pre>
+</div>
+</div>
+<p>We can also use <code>purrr::map</code> functions over neighbors like so:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign neighbors to a1.</span></span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>a1<span class="sc">$</span><span class="fu">set_neighbors</span>(<span class="fu">c</span>(</span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a>  socmod<span class="sc">::</span>Agent<span class="sc">$</span><span class="fu">new</span>(<span class="at">id =</span> <span class="dv">2</span>, <span class="at">name =</span> <span class="st">"n2"</span>),</span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>  socmod<span class="sc">::</span>Agent<span class="sc">$</span><span class="fu">new</span>(<span class="at">id =</span> <span class="dv">3</span>, <span class="at">name =</span> <span class="st">"n3"</span>)</span>
+<span id="cb50-6"><a href="#cb50-6" aria-hidden="true" tabindex="-1"></a>))</span>
+<span id="cb50-7"><a href="#cb50-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-8"><a href="#cb50-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Get the list of neighbors back to check it worked.</span></span>
+<span id="cb50-9"><a href="#cb50-9" aria-hidden="true" tabindex="-1"></a>neighbors <span class="ot">&lt;-</span> a1<span class="sc">$</span><span class="fu">get_neighbors</span>()</span>
+<span id="cb50-10"><a href="#cb50-10" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">class</span>(neighbors))  <span class="co"># should be [1] "Neighbors" "R6"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "Neighbors" "R6"       </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Neighbors$map() returns a list...</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>neighbor_names <span class="ot">&lt;-</span> neighbors<span class="sc">$</span><span class="fu">map</span>(\(n) n<span class="sc">$</span><span class="fu">get_name</span>())</span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(neighbor_names)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[[1]]
+[1] "n2"
+
+[[2]]
+[1] "n3"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co"># ...use `unlist` to convert it to a vector:</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="fu">unlist</span>(neighbor_names))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "n2" "n3"</code></pre>
+</div>
+</div>
+</section>
+<section id="exercise-design-and-define-classes-from-scratch" class="level3" data-number="2.4.2">
+<h3 data-number="2.4.2" class="anchored" data-anchor-id="exercise-design-and-define-classes-from-scratch"><span class="header-section-number">2.4.2</span> Exercise: design and define classes from scratch</h3>
+<p>In class we started creating our model of a soccer player agent called <code>Footballer</code>, defined below. We ran out of time at the end of class to write <em>methods</em> for <code>Footballer</code>, i.e., ways that a football player could interact with the world, or that the world could act upon a soccer player. However we only had time to create a <em>stub</em> for two methods. A stub is a minimal chunk of code that does very little to nothing, but doesn’t get in the way by causing errors or anything like that. It enables us to document our plans for future development in the exact place where it would happen in the code.</p>
+<p>Below we have stubs for <code>score_goal</code> and <code>get_penalty</code> methods for in-game behaviors. Other possibilities could include <code>get_traded</code> that would change its team and perhaps <code>get_signed</code> for cases where a player is a free agent.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(R6)</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a>Footballer <span class="ot">&lt;-</span> <span class="fu">R6Class</span>(<span class="st">"Footballer"</span>,</span>
+<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>                        </span>
+<span id="cb56-5"><a href="#cb56-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">public =</span> <span class="fu">list</span>(</span>
+<span id="cb56-6"><a href="#cb56-6" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Listing attributes as fields and </span></span>
+<span id="cb56-7"><a href="#cb56-7" aria-hidden="true" tabindex="-1"></a>    <span class="co"># setting to zero for their definition.</span></span>
+<span id="cb56-8"><a href="#cb56-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">speed =</span> <span class="fl">0.0</span>,  <span class="co"># units of max km/h</span></span>
+<span id="cb56-9"><a href="#cb56-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">accuracy =</span> <span class="fl">0.0</span>, <span class="co"># probability of scoring on a shot</span></span>
+<span id="cb56-10"><a href="#cb56-10" aria-hidden="true" tabindex="-1"></a>    <span class="at">market_value =</span> <span class="fl">0.0</span>, <span class="co"># </span></span>
+<span id="cb56-11"><a href="#cb56-11" aria-hidden="true" tabindex="-1"></a>    <span class="at">aggressiveness =</span> <span class="fl">0.0</span>, <span class="co"># units of penalties per match</span></span>
+<span id="cb56-12"><a href="#cb56-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">team =</span> <span class="st">""</span>,</span>
+<span id="cb56-13"><a href="#cb56-13" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb56-14"><a href="#cb56-14" aria-hidden="true" tabindex="-1"></a>    <span class="at">initialize =</span> <span class="cf">function</span>(<span class="at">speed =</span> <span class="dv">15</span>, </span>
+<span id="cb56-15"><a href="#cb56-15" aria-hidden="true" tabindex="-1"></a>                          <span class="at">accuracy =</span> <span class="fl">0.2</span>, <span class="at">market_value =</span> <span class="fl">1e6</span>, </span>
+<span id="cb56-16"><a href="#cb56-16" aria-hidden="true" tabindex="-1"></a>                          <span class="at">aggressiveness =</span> <span class="fl">0.5</span>, </span>
+<span id="cb56-17"><a href="#cb56-17" aria-hidden="true" tabindex="-1"></a>                          <span class="at">team =</span> <span class="st">"Free agent"</span>) {</span>
+<span id="cb56-18"><a href="#cb56-18" aria-hidden="true" tabindex="-1"></a>      self<span class="sc">$</span>speed <span class="ot">=</span> speed</span>
+<span id="cb56-19"><a href="#cb56-19" aria-hidden="true" tabindex="-1"></a>      self<span class="sc">$</span>accuracy <span class="ot">=</span> accuracy</span>
+<span id="cb56-20"><a href="#cb56-20" aria-hidden="true" tabindex="-1"></a>      self<span class="sc">$</span>market_value <span class="ot">=</span> market_value</span>
+<span id="cb56-21"><a href="#cb56-21" aria-hidden="true" tabindex="-1"></a>      self<span class="sc">$</span>aggressiveness <span class="ot">=</span> aggressiveness</span>
+<span id="cb56-22"><a href="#cb56-22" aria-hidden="true" tabindex="-1"></a>      self<span class="sc">$</span>team <span class="ot">=</span> team</span>
+<span id="cb56-23"><a href="#cb56-23" aria-hidden="true" tabindex="-1"></a>    },</span>
+<span id="cb56-24"><a href="#cb56-24" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb56-25"><a href="#cb56-25" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Stub two SoccerPlayer class methods...</span></span>
+<span id="cb56-26"><a href="#cb56-26" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ...one for scoring a goal in a game...</span></span>
+<span id="cb56-27"><a href="#cb56-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">scored_goal =</span> <span class="cf">function</span>() {</span>
+<span id="cb56-28"><a href="#cb56-28" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span> (<span class="fu">ifelse</span>(<span class="fu">runif</span>(<span class="dv">1</span>) <span class="sc">&lt;</span> self<span class="sc">$</span>accuracy, <span class="dv">1</span>, <span class="dv">0</span>))</span>
+<span id="cb56-29"><a href="#cb56-29" aria-hidden="true" tabindex="-1"></a>    },</span>
+<span id="cb56-30"><a href="#cb56-30" aria-hidden="true" tabindex="-1"></a>    <span class="co"># ...and one for getting a penalty in a game.</span></span>
+<span id="cb56-31"><a href="#cb56-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">get_penalty_on_play =</span> <span class="cf">function</span>() {</span>
+<span id="cb56-32"><a href="#cb56-32" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span> (<span class="fu">runif</span>(<span class="dv">1</span>) <span class="sc">&lt;</span> self<span class="sc">$</span>aggressiveness)</span>
+<span id="cb56-33"><a href="#cb56-33" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb56-34"><a href="#cb56-34" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb56-35"><a href="#cb56-35" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb56-36"><a href="#cb56-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-37"><a href="#cb56-37" aria-hidden="true" tabindex="-1"></a>Team <span class="ot">&lt;-</span> <span class="fu">R6Class</span>(<span class="st">"Team"</span>,</span>
+<span id="cb56-38"><a href="#cb56-38" aria-hidden="true" tabindex="-1"></a>                </span>
+<span id="cb56-39"><a href="#cb56-39" aria-hidden="true" tabindex="-1"></a>  <span class="at">public =</span> <span class="fu">list</span>(</span>
+<span id="cb56-40"><a href="#cb56-40" aria-hidden="true" tabindex="-1"></a>    <span class="at">name =</span> <span class="st">""</span>,</span>
+<span id="cb56-41"><a href="#cb56-41" aria-hidden="true" tabindex="-1"></a>    <span class="at">players =</span> <span class="fu">list</span>(),</span>
+<span id="cb56-42"><a href="#cb56-42" aria-hidden="true" tabindex="-1"></a>    <span class="at">wins =</span> <span class="dv">0</span>,</span>
+<span id="cb56-43"><a href="#cb56-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">ties =</span> <span class="dv">0</span>,</span>
+<span id="cb56-44"><a href="#cb56-44" aria-hidden="true" tabindex="-1"></a>    <span class="at">payroll =</span> <span class="dv">0</span>,</span>
+<span id="cb56-45"><a href="#cb56-45" aria-hidden="true" tabindex="-1"></a>    <span class="at">games_played =</span> <span class="dv">0</span>,</span>
+<span id="cb56-46"><a href="#cb56-46" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb56-47"><a href="#cb56-47" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Team name is required, with players optionally specified.</span></span>
+<span id="cb56-48"><a href="#cb56-48" aria-hidden="true" tabindex="-1"></a>    <span class="at">initialize =</span> <span class="cf">function</span>(name, <span class="at">players =</span> <span class="fu">list</span>()) {</span>
+<span id="cb56-49"><a href="#cb56-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-50"><a href="#cb56-50" aria-hidden="true" tabindex="-1"></a>      self<span class="sc">$</span>name <span class="ot">=</span> name</span>
+<span id="cb56-51"><a href="#cb56-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-52"><a href="#cb56-52" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Initialize players and payroll.</span></span>
+<span id="cb56-53"><a href="#cb56-53" aria-hidden="true" tabindex="-1"></a>      <span class="cf">for</span> (player <span class="cf">in</span> players) {</span>
+<span id="cb56-54"><a href="#cb56-54" aria-hidden="true" tabindex="-1"></a>        self<span class="sc">$</span>payroll <span class="ot">&lt;-</span> self<span class="sc">$</span>payroll <span class="sc">+</span> player<span class="sc">$</span>market_value</span>
+<span id="cb56-55"><a href="#cb56-55" aria-hidden="true" tabindex="-1"></a>        player<span class="sc">$</span>team <span class="ot">&lt;-</span> name</span>
+<span id="cb56-56"><a href="#cb56-56" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb56-57"><a href="#cb56-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb56-58"><a href="#cb56-58" aria-hidden="true" tabindex="-1"></a>      self<span class="sc">$</span>players <span class="ot">&lt;-</span> players</span>
+<span id="cb56-59"><a href="#cb56-59" aria-hidden="true" tabindex="-1"></a>    },</span>
+<span id="cb56-60"><a href="#cb56-60" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb56-61"><a href="#cb56-61" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add a player to the roster.</span></span>
+<span id="cb56-62"><a href="#cb56-62" aria-hidden="true" tabindex="-1"></a>    <span class="at">sign_player =</span> <span class="cf">function</span>(player) {</span>
+<span id="cb56-63"><a href="#cb56-63" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Add the player to the team.</span></span>
+<span id="cb56-64"><a href="#cb56-64" aria-hidden="true" tabindex="-1"></a>      self<span class="sc">$</span>players <span class="ot">&lt;-</span> <span class="fu">c</span>(players, player)</span>
+<span id="cb56-65"><a href="#cb56-65" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Update payroll.</span></span>
+<span id="cb56-66"><a href="#cb56-66" aria-hidden="true" tabindex="-1"></a>      self<span class="sc">$</span>payroll <span class="ot">&lt;-</span> self<span class="sc">$</span>payroll <span class="sc">+</span> player<span class="sc">$</span>market_value</span>
+<span id="cb56-67"><a href="#cb56-67" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Update the player's team to be this team's name.</span></span>
+<span id="cb56-68"><a href="#cb56-68" aria-hidden="true" tabindex="-1"></a>      player<span class="sc">$</span>team <span class="ot">&lt;-</span> self<span class="sc">$</span>name</span>
+<span id="cb56-69"><a href="#cb56-69" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb56-70"><a href="#cb56-70" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb56-71"><a href="#cb56-71" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>footballer <span class="ot">&lt;-</span> Footballer<span class="sc">$</span><span class="fu">new</span>(<span class="at">accuracy =</span> <span class="fl">0.5</span>)</span>
+<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>footballer<span class="sc">$</span><span class="fu">scored_goal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 1</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co"># sum(purrr::map_vec(1:10, \(.) p$scored_goal()))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We can define a function that simulates playing a football match where the team that scores more goals wins, or a tie if teams have the same score. We track penalties received but assume they don’t have an effect on the match outcome. We assume each player gets ten chances to score a goal. We leave it to the reader as an exercise to make use of the <code>Footballer$get_penalty_on_play()</code> method within the game to add penalties and consequences in the game (e.g., penalty kicks or something), and to use the <code>Team$sign_player()</code> add more players to each roster, which should increase the mean total scores in each game based on the simple way we’ve modeled gameplay in <code>play_match</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a function that models a football match.</span></span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a>play_match <span class="ot">&lt;-</span> <span class="cf">function</span>(team1, team2) {</span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Walk over each player to see how many scores they get, </span></span>
+<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># summing to get the total team score. </span></span>
+<span id="cb60-6"><a href="#cb60-6" aria-hidden="true" tabindex="-1"></a>  team1_score <span class="ot">&lt;-</span> <span class="fu">sum</span>(</span>
+<span id="cb60-7"><a href="#cb60-7" aria-hidden="true" tabindex="-1"></a>    purrr<span class="sc">::</span><span class="fu">map_vec</span>(</span>
+<span id="cb60-8"><a href="#cb60-8" aria-hidden="true" tabindex="-1"></a>      team1<span class="sc">$</span>players,</span>
+<span id="cb60-9"><a href="#cb60-9" aria-hidden="true" tabindex="-1"></a>      \(player) {</span>
+<span id="cb60-10"><a href="#cb60-10" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Calculate the total goals scored by the current player.</span></span>
+<span id="cb60-11"><a href="#cb60-11" aria-hidden="true" tabindex="-1"></a>        <span class="fu">sum</span>(purrr<span class="sc">::</span><span class="fu">map_vec</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, \(.) player<span class="sc">$</span><span class="fu">scored_goal</span>()))</span>
+<span id="cb60-12"><a href="#cb60-12" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb60-13"><a href="#cb60-13" aria-hidden="true" tabindex="-1"></a>    ) </span>
+<span id="cb60-14"><a href="#cb60-14" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb60-15"><a href="#cb60-15" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb60-16"><a href="#cb60-16" aria-hidden="true" tabindex="-1"></a>  team2_score <span class="ot">&lt;-</span> <span class="fu">sum</span>(</span>
+<span id="cb60-17"><a href="#cb60-17" aria-hidden="true" tabindex="-1"></a>    purrr<span class="sc">::</span><span class="fu">map_vec</span>(</span>
+<span id="cb60-18"><a href="#cb60-18" aria-hidden="true" tabindex="-1"></a>      team2<span class="sc">$</span>players,</span>
+<span id="cb60-19"><a href="#cb60-19" aria-hidden="true" tabindex="-1"></a>      \(player) {</span>
+<span id="cb60-20"><a href="#cb60-20" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Calculate the total goals scored by the current player.</span></span>
+<span id="cb60-21"><a href="#cb60-21" aria-hidden="true" tabindex="-1"></a>        <span class="fu">sum</span>(purrr<span class="sc">::</span><span class="fu">map_vec</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">10</span>, \(.) player<span class="sc">$</span><span class="fu">scored_goal</span>()))</span>
+<span id="cb60-22"><a href="#cb60-22" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb60-23"><a href="#cb60-23" aria-hidden="true" tabindex="-1"></a>    ) </span>
+<span id="cb60-24"><a href="#cb60-24" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb60-25"><a href="#cb60-25" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb60-26"><a href="#cb60-26" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (team1_score <span class="sc">==</span> team2_score) {</span>
+<span id="cb60-27"><a href="#cb60-27" aria-hidden="true" tabindex="-1"></a>    team1<span class="sc">$</span>ties <span class="ot">&lt;-</span> team1<span class="sc">$</span>ties <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb60-28"><a href="#cb60-28" aria-hidden="true" tabindex="-1"></a>    team2<span class="sc">$</span>ties <span class="ot">&lt;-</span> team2<span class="sc">$</span>ties <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb60-29"><a href="#cb60-29" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(<span class="st">"Tie game!</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb60-30"><a href="#cb60-30" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> <span class="cf">if</span> (team1_score <span class="sc">&gt;</span> team2_score) {</span>
+<span id="cb60-31"><a href="#cb60-31" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(team1<span class="sc">$</span>name, <span class="st">"wins!!!</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb60-32"><a href="#cb60-32" aria-hidden="true" tabindex="-1"></a>    team1<span class="sc">$</span>wins <span class="ot">&lt;-</span> team1<span class="sc">$</span>wins <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb60-33"><a href="#cb60-33" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb60-34"><a href="#cb60-34" aria-hidden="true" tabindex="-1"></a>    <span class="fu">cat</span>(team2<span class="sc">$</span>name, <span class="st">"wins!!!</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb60-35"><a href="#cb60-35" aria-hidden="true" tabindex="-1"></a>    team2<span class="sc">$</span>wins <span class="ot">&lt;-</span> team2<span class="sc">$</span>wins <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb60-36"><a href="#cb60-36" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb60-37"><a href="#cb60-37" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb60-38"><a href="#cb60-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(team1<span class="sc">$</span>name, <span class="st">": "</span>, team1_score, <span class="st">"   "</span>,  </span>
+<span id="cb60-39"><a href="#cb60-39" aria-hidden="true" tabindex="-1"></a>      team2<span class="sc">$</span>name, <span class="st">": "</span>, team2_score, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb60-40"><a href="#cb60-40" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb60-41"><a href="#cb60-41" aria-hidden="true" tabindex="-1"></a>  team1<span class="sc">$</span>games_played <span class="ot">&lt;-</span> team1<span class="sc">$</span>games_played <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb60-42"><a href="#cb60-42" aria-hidden="true" tabindex="-1"></a>  team2<span class="sc">$</span>games_played <span class="ot">&lt;-</span> team2<span class="sc">$</span>games_played <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb60-43"><a href="#cb60-43" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>First we need teams, which we create and to which we assign players using the constructor, <code>Team$new()</code> in the code below.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb61"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize two teams, Whales and Squirrels, each with two</span></span>
+<span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a><span class="co"># players. All players have identical default attributes.</span></span>
+<span id="cb61-3"><a href="#cb61-3" aria-hidden="true" tabindex="-1"></a>whales <span class="ot">&lt;-</span> Team<span class="sc">$</span><span class="fu">new</span>(</span>
+<span id="cb61-4"><a href="#cb61-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="st">"Whales"</span>, </span>
+<span id="cb61-5"><a href="#cb61-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">players =</span> <span class="fu">c</span>(Footballer<span class="sc">$</span><span class="fu">new</span>(), Footballer<span class="sc">$</span><span class="fu">new</span>())</span>
+<span id="cb61-6"><a href="#cb61-6" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb61-7"><a href="#cb61-7" aria-hidden="true" tabindex="-1"></a>squirrels <span class="ot">&lt;-</span> Team<span class="sc">$</span><span class="fu">new</span>(</span>
+<span id="cb61-8"><a href="#cb61-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">name =</span> <span class="st">"Squirrels"</span>, </span>
+<span id="cb61-9"><a href="#cb61-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">players =</span> <span class="fu">c</span>(Footballer<span class="sc">$</span><span class="fu">new</span>(), Footballer<span class="sc">$</span><span class="fu">new</span>())</span>
+<span id="cb61-10"><a href="#cb61-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb61-11"><a href="#cb61-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb61-12"><a href="#cb61-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Play three matches.</span></span>
+<span id="cb61-13"><a href="#cb61-13" aria-hidden="true" tabindex="-1"></a><span class="fu">play_match</span>(whales, squirrels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Whales wins!!!
+Whales :  4     Squirrels :  3 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">play_match</span>(squirrels, whales)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Squirrels wins!!!
+Squirrels :  5     Whales :  3 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="fu">play_match</span>(squirrels, whales)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Whales wins!!!
+Squirrels :  5     Whales :  6 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print how many games each time won.</span></span>
+<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">After three games..."</span>, <span class="st">"</span><span class="sc">\n</span><span class="st">The Whales have won"</span>, </span>
+<span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>    whales<span class="sc">$</span>wins, <span class="st">"games and the Squirrels have won"</span>, squirrels<span class="sc">$</span>wins)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+After three games... 
+The Whales have won 2 games and the Squirrels have won 1</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="an-aside-on-copy-vs-reference-semantics-in-r-assignment-and-mutation" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="an-aside-on-copy-vs-reference-semantics-in-r-assignment-and-mutation"><span class="header-section-number">2.5</span> An aside on copy vs reference semantics in R: assignment and mutation</h2>
+<p>When you change something in R, sometimes R makes a copy of the object so the original stays the same, and sometimes it changes the object by reference, meaning it updates the original directly. Understanding whether an operation creates a new copy or modifies an object in place (called mutation) is important because it affects whether you need to assign the result back to a variable or not. Even though this idea is usually taught in more advanced programming, it’s useful for beginners working with modeling and simulation because different parts of R (like data frames vs.&nbsp;agent-based models) follow different rules, and knowing which is which can help avoid confusing bugs.</p>
+<section id="the-underlying-tension-how-r-handles-object-copying-and-modification" class="level3" data-number="2.5.1">
+<h3 data-number="2.5.1" class="anchored" data-anchor-id="the-underlying-tension-how-r-handles-object-copying-and-modification"><span class="header-section-number">2.5.1</span> 1. The underlying tension: how R handles object copying and modification</h3>
+<p>At the heart of R’s behavior lies a subtle technical distinction: whether an object is <em>copied</em> or <em>modified in place</em> when you change it. By default, R uses <strong>copy-on-modify semantics</strong>, meaning that if you change an object, R creates a new copy behind the scenes and leaves the original unchanged. This protects your data from unintended side effects and reflects R’s origins as a functional programming language for statistics. But as R evolved to support more object-oriented programming and to interface with other languages like C and C++, it introduced types of objects—such as environments, external pointers, and R6 classes—that instead use <strong>reference semantics</strong>. With these objects, changes happen directly to the object itself without making a copy. Internally, R’s i nterpreter keeps track of when it needs to copy or reuse memory, but these mechanics aren’t always visible, which can lead to surprises when working with more complex objects.</p>
+</section>
+<section id="a-practical-guide-for-navigating-copy-and-reference-semantics" class="level3" data-number="2.5.2">
+<h3 data-number="2.5.2" class="anchored" data-anchor-id="a-practical-guide-for-navigating-copy-and-reference-semantics"><span class="header-section-number">2.5.2</span> 2. A practical guide for navigating copy and reference semantics</h3>
+<p>For most core R data types—vectors, lists, data frames—you can assume that R makes a copy whenever you modify an object. But for certain kinds of objects, especially environments, <strong>R6 classes</strong> (used in <code>socmod</code>), and graphs from the <strong>igraph</strong> package, the behavior is different: these follow <strong>reference semantics</strong>, meaning they’re modified directly. In <code>socmod</code>, all models and agents are implemented using R6 classes, so when you call something like <code>model$set_parameter("n_agents", 100)</code>, the model’s state is updated directly and immediately—no need to reassign <code>model &lt;- ...</code>. This makes working with simulations feel more natural, but it also means that habits from working with regular R objects don’t fully apply. A simple rule of thumb: if it’s an R6 object or a special object like an igraph graph, expect it to behave by reference; otherwise, expect copy-on-modify.</p>
+</section>
+<section id="how-igraph-fits-in-working-with-c-backed-graphs-in-r" class="level3" data-number="2.5.3">
+<h3 data-number="2.5.3" class="anchored" data-anchor-id="how-igraph-fits-in-working-with-c-backed-graphs-in-r"><span class="header-section-number">2.5.3</span> 3. How igraph fits in: working with C-backed graphs in R</h3>
+<p>Much of <strong>igraph</strong> isn’t written in R itself, but in another programming language called <strong>C</strong>. C allows developers to write code that’s much faster and more efficient than what’s possible in R alone. This efficiency is great for users—igraph can handle large networks quickly—but it also introduces a subtle complication to how we work with graphs in R. When you modify an igraph object, you’re actually asking C code to change the graph behind the scenes. But instead of directly changing the graph you already have, igraph’s functions usually return a <strong>new graph object</strong> with the changes applied. This means that even though igraph mostly follows <strong>reference semantics</strong> (where an object can be updated without copying everything), you still need to <strong>explicitly reassign the result of a modification</strong> to keep the updated graph. It’s different from how <code>socmod</code>’s models and agents work: those are built with R6 classes, which really do modify objects “in place” without needing reassignment.</p>
+</section>
+</section>
+<section id="agent-based-models-of-social-behavior" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="agent-based-models-of-social-behavior"><span class="header-section-number">2.6</span> Agent-based models of social behavior</h2>
+<p>Here we develop our first agent-based models of social behavior. We’ll start small, with the following four-household network of solar panel electrification using only success-biased learning (<a href="#fig-four-agent-example" class="quarto-xref">Figure&nbsp;<span>2.1</span></a>). Then we’ll do a detailed comparison of different social learning strategies with different parameterizations.</p>
+<div id="fig-four-agent-example" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-four-agent-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figures/four-agent-example.png" class="img-fluid figure-img" width="600">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-four-agent-example-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2.1: Example social network and sustainable adaptation diffusion problem.
+</figcaption>
+</figure>
+</div>
+<p>In the example, agent 2 has adopted rooftop solar. It has some adaptive fitness, which can be thought of as the financial gain from adopting a sustainable, adaptive behavior. We can directly create the social network using <code>igraph::make_graph()</code> then set it as the model’s social network, along with setting the learning strategy to be contagion learning.</p>
+<p>The <code>adoption_rate</code> parameter specifies how likely another agent is to adopt the adaptive behavior when exposed to it. The <code>drop_rate</code> is how likely an agent doing the adaptive behavior is to stop doing it and revert to the non-adaptive behavior.</p>
+<section id="example-1-time-series-of-adaptation-diffusion" class="level3" data-number="2.6.1">
+<h3 data-number="2.6.1" class="anchored" data-anchor-id="example-1-time-series-of-adaptation-diffusion"><span class="header-section-number">2.6.1</span> Example 1: Time series of adaptation diffusion</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a>adoption_rate <span class="ot">=</span> <span class="fl">0.8</span></span>
+<span id="cb69-2"><a href="#cb69-2" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Run model with </span></span>
+<span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a>g <span class="ot">&lt;-</span> igraph<span class="sc">::</span><span class="fu">make_graph</span>(<span class="sc">~</span> <span class="dv">1-2</span>, <span class="dv">1-3</span>, <span class="dv">1-4</span>, <span class="dv">3-2</span>)</span>
+<span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a>mps <span class="ot">&lt;-</span> <span class="fu">make_model_parameters</span>(</span>
+<span id="cb69-6"><a href="#cb69-6" aria-hidden="true" tabindex="-1"></a>  contagion_learning_strategy, <span class="at">graph =</span> g, <span class="at">adoption_rate =</span> <span class="fl">0.8</span>, <span class="at">drop_rate =</span> <span class="fl">0.1</span></span>
+<span id="cb69-7"><a href="#cb69-7" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb69-8"><a href="#cb69-8" aria-hidden="true" tabindex="-1"></a>cabm <span class="ot">&lt;-</span> <span class="fu">make_abm</span>(mps); </span>
+<span id="cb69-9"><a href="#cb69-9" aria-hidden="true" tabindex="-1"></a>cabm<span class="sc">$</span><span class="fu">get_agent</span>(<span class="dv">2</span>)<span class="sc">$</span><span class="fu">set_behavior</span>(<span class="st">"Adaptive"</span>); </span>
+<span id="cb69-10"><a href="#cb69-10" aria-hidden="true" tabindex="-1"></a>trial <span class="ot">&lt;-</span> <span class="fu">run_trial</span>(cabm, <span class="at">stop =</span> fixated)</span>
+<span id="cb69-11"><a href="#cb69-11" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_prevalence</span>(trial, <span class="at">tracked_behaviors =</span> <span class="fu">c</span>(<span class="st">"Adaptive"</span>, <span class="st">"Legacy"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="quantitative-techniques_files/figure-html/unnamed-chunk-24-1.png" class="img-fluid figure-img" width="456"></p>
+</figure>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Same, but now call the adaptive behavior "Baglowie" instead of "Adaptive".</span></span>
+<span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>g <span class="ot">&lt;-</span> igraph<span class="sc">::</span><span class="fu">make_graph</span>(<span class="sc">~</span> <span class="dv">1-2</span>, <span class="dv">1-3</span>, <span class="dv">1-4</span>, <span class="dv">3-2</span>)</span>
+<span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>mps <span class="ot">&lt;-</span> <span class="fu">make_model_parameters</span>(</span>
+<span id="cb70-4"><a href="#cb70-4" aria-hidden="true" tabindex="-1"></a>  contagion_learning_strategy, <span class="at">graph =</span> g, <span class="at">adoption_rate =</span> <span class="fl">0.8</span>, <span class="at">drop_rate =</span> <span class="fl">0.1</span></span>
+<span id="cb70-5"><a href="#cb70-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb70-6"><a href="#cb70-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-7"><a href="#cb70-7" aria-hidden="true" tabindex="-1"></a>cabm <span class="ot">&lt;-</span> <span class="fu">make_abm</span>(mps)</span>
+<span id="cb70-8"><a href="#cb70-8" aria-hidden="true" tabindex="-1"></a>cabm<span class="sc">$</span><span class="fu">get_agent</span>(<span class="dv">2</span>)<span class="sc">$</span><span class="fu">set_behavior</span>(<span class="st">"Baglowie"</span>); </span>
+<span id="cb70-9"><a href="#cb70-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb70-10"><a href="#cb70-10" aria-hidden="true" tabindex="-1"></a>trial <span class="ot">&lt;-</span> <span class="fu">run_trial</span>(cabm, <span class="at">stop =</span> fixated, <span class="at">adaptive_behavior =</span> <span class="st">"Baglowie"</span>)</span>
+<span id="cb70-11"><a href="#cb70-11" aria-hidden="true" tabindex="-1"></a><span class="fu">plot_prevalence</span>(trial, <span class="at">tracked_behaviors =</span> <span class="fu">c</span>(<span class="st">"Legacy"</span>, <span class="st">"Baglowie"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="quantitative-techniques_files/figure-html/unnamed-chunk-25-1.png" class="img-fluid figure-img" width="456"></p>
+</figure>
+</div>
+</div>
+</div>
+<!-- ### Example: comparison of learning strategies and parameters -->
+<!-- Agent-based models in `socmod` are composed of sub-models of cognition and social behavior and social networks. One component of agent cognition is its *social learning strategy*. Three social learning strategies are included in `socmod`: success-biased, frequency-biased, and contagion learning strategies [see ABM course notes for more details](https://css4s.github.io/abm-notes/intro.html#social-learning-strategies). -->
+<!-- Here we show how to compare the three learning strategies across different learning parameters. One parameter we systematically vary affects only success-biased learning, and the other we systematically vary affects only contagion learning. We will design computational experiments to understand their effects, and overall differences between the three learning strategies. -->
+<!-- ```{r} -->
+<!-- #| eval: false -->
+<!-- #| number-lines: true -->
+<!-- # Load ggplot2 to avoid writing it during plotting below. -->
+<!-- library(ggplot2) -->
+<!-- # Model generation function used in both computational experiments below. -->
+<!-- gen <- function(model_parameter_row) { -->
+<!--   # Extract adaptive_fitness to create agents. -->
+<!--   adaptive_fitness <- model_parameter_row$adaptive_fitness -->
+<!--   agent_1 <- socmod::Agent$new(1, behavior = "Legacy",  -->
+<!--                                fitness = 1.0, name = "a1") -->
+<!--   agent_2 <- socmod::Agent$new(2, behavior = "Adaptive",  -->
+<!--                                fitness = adaptive_fitness, name = "a2") -->
+<!--   agent_3 <- socmod::Agent$new(3, behavior = "Legacy",  -->
+<!--                                fitness = 1.0, name = "a3") -->
+<!--   agent_4 <- socmod::Agent$new(4, behavior = "Legacy",  -->
+<!--                                fitness = 1.0, name = "a4") -->
+<!--   agents <- list(agent_1, agent_2, agent_3, agent_4) -->
+<!--   graph <- igraph::make_graph(~ 1-2, 1-3, 1-4, 3-2) -->
+<!--   # Extract other necessary model parameters. -->
+<!--   learning_strategy <- model_parameter_row$learning_strategy -->
+<!--   drop_rate <- model_parameter_row$drop_rate -->
+<!--   adoption_rate <- model_parameter_row$adoption_rate -->
+<!--   # Make ModelParameters to encapsulate this model's parameters. -->
+<!--   model_parameters <- socmod::make_model_parameters( -->
+<!--     learning_strategy, graph, adaptive_fitness = adaptive_fitness,  -->
+<!--     adoption_rate = adoption_rate, drop_rate = drop_rate -->
+<!--   ) -->
+<!--   return ( -->
+<!--     socmod::make_abm( -->
+<!--       model_parameters, -->
+<!--       agents = agents -->
+<!--     ) -->
+<!--   ) -->
+<!-- } -->
+<!-- ``` -->
+<!-- #### Experiment over adaptive fitness values -->
+<!-- ```{r} -->
+<!-- #| eval: false -->
+<!-- #| number-lines: true -->
+<!-- # Run the adaptive fitness trials if there is not already a variable -->
+<!-- # name for it in the current environment. Change n_trials_per_param to -->
+<!-- # a small number like 2-20 for development purposes. -->
+<!-- if (!("trials_adaptive_fitness" %in% ls(all.names = TRUE))) { -->
+<!--   trials_adaptive_fitness <- socmod::run_trials( -->
+<!--     gen,  -->
+<!--     n_trials_per_param = 100,  # change to 2-20 for shorter runs -->
+<!--     stop = socmod::fixated,  -->
+<!--     syncfile = "trials-adaptive_fitness.RData", -->
+<!--     # overwrite = TRUE, -->
+<!--     learning_strategy = c(socmod::success_bias_learning_strategy, -->
+<!--                           socmod::frequency_bias_learning_strategy, -->
+<!--                           socmod::contagion_learning_strategy), -->
+<!--     adaptive_fitness = seq(0.8, 2.4, 0.2), -->
+<!--     adoption_rate = 0.6, -->
+<!--     drop_rate = 0.2 -->
+<!--   ) -->
+<!-- } -->
+<!-- trials_summary <- socmod::summarise_outcomes( -->
+<!--   trials_adaptive_fitness, c("learning_strategy", "adaptive_fitness") -->
+<!-- ) -->
+<!-- trials_success_rate <- dplyr::filter(trials_summary, Measure == "success_rate") -->
+<!-- ``` -->
+<!-- Now plot... -->
+<!-- ```{r} -->
+<!-- #| eval: false -->
+<!-- #| number-lines: true -->
+<!-- p <- ggplot(trials_success_rate,  -->
+<!--               aes(x=adaptive_fitness, y=Value,  -->
+<!--                   color=learning_strategy) -->
+<!-- ) + -->
+<!--   geom_line(linewidth=1.0) + geom_point(size=2.15) + -->
+<!--   ggsci::scale_color_aaas() + ggsci::scale_fill_aaas() + -->
+<!--   xlab("Adaptive fitness") + ylab("Success rate") + -->
+<!--   scale_x_continuous(breaks = sort( -->
+<!--     unique(trials_summary$adaptive_fitness) -->
+<!--   )) + -->
+<!--   theme_classic(base_size=14) + -->
+<!--   ylim(0, 1.0) + -->
+<!--   guides(color = guide_legend(title = "Learning strategy")) + -->
+<!--   ggtitle("Adoption rate = 0.6, drop rate = 0.2") -->
+<!-- ggsave("adaptive_fitness_experiment.png", p,  -->
+<!--        width = 5, height = 3) -->
+<!-- ``` -->
+<!-- ![Example computational experiment testing effect of adaptive fitness on success rate across the three learning strategies.](Figures/adaptive_fitness_experiment.png) -->
+<!-- #### Experiment over adoption rate values -->
+<!-- ```{r} -->
+<!-- #| eval: FALSE -->
+<!-- #| number-lines: TRUE -->
+<!-- if (!("trials_adoption" %in% ls(all.names = TRUE))) { -->
+<!--   trials_adoption <- socmod::run_trials( -->
+<!--     gen, -->
+<!--     n_trials_per_param = 100, -->
+<!--     stop = socmod::fixated,  -->
+<!--     syncfile = "trials-adoption-rate.RData", -->
+<!--     overwrite = TRUE, -->
+<!--     learning_strategy = c(socmod::success_bias_learning_strategy, -->
+<!--                           socmod::frequency_bias_learning_strategy, -->
+<!--                           socmod::contagion_learning_strategy), -->
+<!--     adaptive_fitness = 1.4, -->
+<!--     adoption_rate = c(0.05, 0.2, 0.4, 0.6, 0.8, 1.0), -->
+<!--     drop_rate = 0.2 -->
+<!--   ) -->
+<!-- } -->
+<!-- trials_summary <- socmod::summarise_by_parameters( -->
+<!--   trials_adoption, c("learning_strategy", "adoption_rate") -->
+<!-- ) -->
+<!-- trials_success_rate <- dplyr::filter( -->
+<!--   trials_summary, Measure == "success_rate" -->
+<!-- ) -->
+<!-- ``` -->
+<!-- ```{r} -->
+<!-- #| eval: false -->
+<!-- #| number-lines: true -->
+<!-- p <- ggplot(trials_success_rate,  -->
+<!--             aes(x=adoption_rate, y=Value, color=learning_strategy)) + -->
+<!--   geom_line(linewidth=1.0) + geom_point(size=2.15) + -->
+<!--   ggsci::scale_color_aaas() + ggsci::scale_fill_aaas() + -->
+<!--   xlab("Adoption rate") + ylab("Success rate") + -->
+<!--   scale_x_continuous(breaks = sort(unique(trials_summary$adoption_rate))) + -->
+<!--   theme_classic(base_size=14) + -->
+<!--   ylim(0, 1.0) + -->
+<!--   guides(color = guide_legend(title = "Learning strategy")) + -->
+<!--   ggtitle("Adaptive fitness = 1.4, drop rate = 0.2") -->
+<!-- ggsave("adoption_rate_experiment.png",  -->
+<!--        p, width=5, height=3) -->
+<!-- ``` -->
+<!-- ![Example computational experiment testing effect of adoption rate on success rate across the three learning strategies.](Figures/adoption_rate_experiment.png) -->
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    window.setColorSchemeToggle(window.hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link" aria-label="Introduction">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./diffusion.html" class="pagination-link" aria-label="Social Diffusion">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Social Diffusion</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

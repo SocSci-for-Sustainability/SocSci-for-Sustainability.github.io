@@ -42,9 +42,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-eac44e41018956f88012b5b01fb4b211.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d11c93216f89be20dcb0ae15b79eab0b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-c28864e76047d5d6c11eea1813adcefa.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-d11c93216f89be20dcb0ae15b79eab0b.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-0c073e481e47220cc03c14c6fb9ce08d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-30b6cae2a826812af03821681d41edc7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-0c073e481e47220cc03c14c6fb9ce08d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Welcome and preface</span></a>
+ <span class="menu-text">Preface</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -339,14 +339,20 @@ document.addEventListener('DOMContentLoaded', function () {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./quantitative-techniques.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Quantitative Techniques</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./diffusion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Diffusion</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Social Diffusion</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./cooperation.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Cooperative conservation</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Cooperative conservation</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -406,8 +412,20 @@ document.addEventListener('DOMContentLoaded', function () {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#course-overview" id="toc-course-overview" class="nav-link active" data-scroll-target="#course-overview">Course Overview</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#weekly-agenda" id="toc-weekly-agenda" class="nav-link" data-scroll-target="#weekly-agenda">Weekly agenda</a></li>
+  <li><a href="#format-and-access" id="toc-format-and-access" class="nav-link" data-scroll-target="#format-and-access">Format and Access</a></li>
+  <li><a href="#tools-and-resources" id="toc-tools-and-resources" class="nav-link" data-scroll-target="#tools-and-resources">Tools and Resources</a></li>
+  <li><a href="#placement-in-the-curriculum" id="toc-placement-in-the-curriculum" class="nav-link" data-scroll-target="#placement-in-the-curriculum">Placement in the Curriculum</a></li>
+  <li><a href="#join-for-free" id="toc-join-for-free" class="nav-link" data-scroll-target="#join-for-free">Join for Free</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -432,8 +450,163 @@ document.addEventListener('DOMContentLoaded', function () {
 </header>
 
 
+<p><em>Autumn 2025 (September 22 – December 20)</em></p>
+<p>This is the <strong>introductory course</strong> in the <em>Social Science for Sustainability</em> curriculum.<br>
+It combines theory, computational modeling, and case studies to help you understand how social processes shape sustainable futures — and how we can intervene.</p>
+<p>Enrollment is <strong>free</strong>. Just subscribe on <a href="https://matphd.substack.com">Substack</a> to receive weekly lectures and resources.</p>
+<p>The educational materials, the <code>socmod</code> R package, and any research we produce will always be <strong>openly available</strong>.</p>
+<section id="course-overview" class="level3">
+<h3 class="anchored" data-anchor-id="course-overview">Course Overview</h3>
+<p>This course develops a framework for understanding <strong>how collective behavior emerges</strong> and <strong>how adaptation spreads</strong> in human systems.<br>
+You’ll learn how to connect models of cultural evolution, cooperation, and coordination to sustainability challenges.</p>
+</section>
+<section id="learning-objectives" class="level3">
+<h3 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h3>
+<p>By the end of the course, you’ll be able to:</p>
+<ul>
+<li>Understand how different <strong>social learning processes</strong> can promote or inhibit the <strong>diffusion of adaptive behaviors</strong><br>
+</li>
+<li>Analyze how <strong>networks and social structure</strong> shape cooperation, coordination, and collective decision-making<br>
+</li>
+<li>Use agent-based and mathematical models to explore <strong>policy interventions</strong> for sustainability<br>
+</li>
+<li>Critically evaluate models and evidence to distinguish between robust findings and misleading results</li>
+</ul>
+</section>
+<section id="weekly-agenda" class="level3">
+<h3 class="anchored" data-anchor-id="weekly-agenda">Weekly agenda</h3>
+<div class="weekly-topics" data-tbl-colspan="4" data-tbl-colwidths="[7,21,32,40]">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 21%">
+<col style="width: 32%">
+<col style="width: 40%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: center;">Week</th>
+<th style="text-align: center;">Date Range</th>
+<th style="text-align: center;">Topic</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">Sep 22 – Sep 28</td>
+<td style="text-align: center;"><strong>Preview</strong></td>
+<td>Overview of course material</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">Sep 29 – Oct 5</td>
+<td style="text-align: center;"><strong>Introduction</strong></td>
+<td>Designing sustainable futures</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">Oct 6 – Oct 12</td>
+<td style="text-align: center;"><strong>Behavior Diffusion</strong></td>
+<td>Collective adaptation</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">Oct 13 – Oct 19</td>
+<td style="text-align: center;"><strong>Prevalence Dynamics</strong></td>
+<td>Tracking behavior adoption</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">Oct 20 – Oct 26</td>
+<td style="text-align: center;"><strong>Diffusion In Networks I</strong></td>
+<td>Regular and random networks</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">Oct 27 – Nov 2</td>
+<td style="text-align: center;"><strong>Opinion Dynamics</strong></td>
+<td>Influence, networks, change</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">Nov 3 – Nov 9</td>
+<td style="text-align: center;"><strong>Abstract+Outline</strong></td>
+<td>Exercise to start capstone project</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">Nov 10 – Nov 16</td>
+<td style="text-align: center;"><strong>Cooperative Management</strong></td>
+<td>Resource conservation in space</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">Nov 17 – Nov 23</td>
+<td style="text-align: center;"><strong>Promoting Fairness</strong></td>
+<td>Evolving women leaders</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">Dec 1 – Dec 7</td>
+<td style="text-align: center;"><strong>Diffusion In Networks II</strong></td>
+<td>Group-structured networks</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">Dec 8 – Dec 14</td>
+<td style="text-align: center;"><strong>Student Presentations</strong></td>
+<td>Share findings</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">Dec 15 – Dec 21</td>
+<td style="text-align: center;"><strong>Final Projects</strong></td>
+<td>Finish research articles</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>(Thanksgiving break: Nov 24 – Nov 30)</em></p>
+</section>
+<section id="format-and-access" class="level3">
+<h3 class="anchored" data-anchor-id="format-and-access">Format and Access</h3>
+<ul>
+<li><strong>Weekly lectures</strong> released via Substack<br>
+</li>
+<li><strong>Hands-on exercises</strong> in R</li>
+<li><strong>Interactive discussions</strong>: rolling enrollment lets new learners join anytime</li>
+</ul>
+</section>
+<section id="tools-and-resources" class="level3">
+<h3 class="anchored" data-anchor-id="tools-and-resources">Tools and Resources</h3>
+<ul>
+<li><strong>R + <code>socmod</code></strong>: Agent-based and equation-based modeling</li>
+<li><strong>Quarto</strong>: For reproducible documents and workflows</li>
+</ul>
+</section>
+<section id="placement-in-the-curriculum" class="level3">
+<h3 class="anchored" data-anchor-id="placement-in-the-curriculum">Placement in the Curriculum</h3>
+<p>This is the <strong>first course</strong> in the <em>Social Science for Sustainability</em> curriculum, next being offered Autumn 2025.</p>
+<ul>
+<li><strong>Winter 2026</strong> → <em>Agent-Based Modeling</em><br>
+</li>
+<li><strong>Spring 2026</strong> → <em>Opinion Change: Models and Measurement</em><br>
+</li>
+<li><strong>Summer 2026</strong> → TBD (short course)</li>
+</ul>
+</section>
+<section id="join-for-free" class="level3">
+<h3 class="anchored" data-anchor-id="join-for-free">Join for Free</h3>
+<div class="enroll-container">
+<p><a href="https://matphd.substack.com/subscribe" class="enroll-button" target="_blank" rel="noopener"> Subscribe on Substack to join the current course! </a> <button type="button" class="btn enroll-help-btn" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true" title="How subscription works" data-bs-content="<p> 
+New participants can join the current course at any time in the quarter 
+by subscribing to <em>Social Science for Sustainability by Matt
+Turner</em> on Substack.</p>"> ? </button></p>
+</div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
