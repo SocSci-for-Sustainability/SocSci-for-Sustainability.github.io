@@ -77,9 +77,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-eac44e41018956f88012b5b01fb4b211.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0c073e481e47220cc03c14c6fb9ce08d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-30b6cae2a826812af03821681d41edc7.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-0c073e481e47220cc03c14c6fb9ce08d.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-777448916f1903a55e20c6f02a4e1b3f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-f3060d337d3e36b718bebfc7148d8d27.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-777448916f1903a55e20c6f02a4e1b3f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -863,7 +863,7 @@ document.addEventListener('DOMContentLoaded', function () {
 <div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>footballer <span class="ot">&lt;-</span> Footballer<span class="sc">$</span><span class="fu">new</span>(<span class="at">accuracy =</span> <span class="fl">0.5</span>)</span>
 <span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>footballer<span class="sc">$</span><span class="fu">scored_goal</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 0</code></pre>
+<pre><code>[1] 1</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co"># sum(purrr::map_vec(1:10, \(.) p$scored_goal()))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
@@ -930,17 +930,17 @@ document.addEventListener('DOMContentLoaded', function () {
 <span id="cb61-13"><a href="#cb61-13" aria-hidden="true" tabindex="-1"></a><span class="fu">play_match</span>(whales, squirrels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Squirrels wins!!!
-Whales :  4     Squirrels :  7 </code></pre>
+Whales :  4     Squirrels :  5 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="fu">play_match</span>(squirrels, whales)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Squirrels wins!!!
-Squirrels :  7     Whales :  2 </code></pre>
+<pre><code>Whales wins!!!
+Squirrels :  3     Whales :  9 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="fu">play_match</span>(squirrels, whales)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Whales wins!!!
-Squirrels :  3     Whales :  4 </code></pre>
+<pre><code>Tie game!
+Squirrels :  5     Whales :  5 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print how many games each time won.</span></span>
 <span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">After three games..."</span>, <span class="st">"</span><span class="sc">\n</span><span class="st">The Whales have won"</span>, </span>
@@ -948,7 +948,7 @@ Squirrels :  3     Whales :  4 </code></pre>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 After three games... 
-The Whales have won 1 games and the Squirrels have won 2</code></pre>
+The Whales have won 1 games and the Squirrels have won 1</code></pre>
 </div>
 </div>
 </section>
@@ -992,7 +992,7 @@ Figure&nbsp;2.1: Example social network and sustainable adaptation diffusion pro
 <span id="cb69-3"><a href="#cb69-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Run model with </span></span>
 <span id="cb69-4"><a href="#cb69-4" aria-hidden="true" tabindex="-1"></a>g <span class="ot">&lt;-</span> igraph<span class="sc">::</span><span class="fu">make_graph</span>(<span class="sc">~</span> <span class="dv">1-2</span>, <span class="dv">1-3</span>, <span class="dv">1-4</span>, <span class="dv">3-2</span>)</span>
 <span id="cb69-5"><a href="#cb69-5" aria-hidden="true" tabindex="-1"></a>mps <span class="ot">&lt;-</span> <span class="fu">make_model_parameters</span>(</span>
-<span id="cb69-6"><a href="#cb69-6" aria-hidden="true" tabindex="-1"></a>  contagion_learning_strategy, <span class="at">graph =</span> g, <span class="at">adoption_rate =</span> <span class="fl">0.8</span>, <span class="at">drop_rate =</span> <span class="fl">0.1</span></span>
+<span id="cb69-6"><a href="#cb69-6" aria-hidden="true" tabindex="-1"></a>  contagion_model_dynamics, <span class="at">graph =</span> g, <span class="at">adoption_rate =</span> <span class="fl">0.8</span>, <span class="at">drop_rate =</span> <span class="fl">0.1</span></span>
 <span id="cb69-7"><a href="#cb69-7" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb69-8"><a href="#cb69-8" aria-hidden="true" tabindex="-1"></a>cabm <span class="ot">&lt;-</span> <span class="fu">make_abm</span>(mps); </span>
 <span id="cb69-9"><a href="#cb69-9" aria-hidden="true" tabindex="-1"></a>cabm<span class="sc">$</span><span class="fu">get_agent</span>(<span class="dv">2</span>)<span class="sc">$</span><span class="fu">set_behavior</span>(<span class="st">"Adaptive"</span>); </span>
@@ -1010,7 +1010,7 @@ Figure&nbsp;2.1: Example social network and sustainable adaptation diffusion pro
 <div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Same, but now call the adaptive behavior "Baglowie" instead of "Adaptive".</span></span>
 <span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>g <span class="ot">&lt;-</span> igraph<span class="sc">::</span><span class="fu">make_graph</span>(<span class="sc">~</span> <span class="dv">1-2</span>, <span class="dv">1-3</span>, <span class="dv">1-4</span>, <span class="dv">3-2</span>)</span>
 <span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>mps <span class="ot">&lt;-</span> <span class="fu">make_model_parameters</span>(</span>
-<span id="cb70-4"><a href="#cb70-4" aria-hidden="true" tabindex="-1"></a>  contagion_learning_strategy, <span class="at">graph =</span> g, <span class="at">adoption_rate =</span> <span class="fl">0.8</span>, <span class="at">drop_rate =</span> <span class="fl">0.1</span></span>
+<span id="cb70-4"><a href="#cb70-4" aria-hidden="true" tabindex="-1"></a>  contagion_model_dynamics, <span class="at">graph =</span> g, <span class="at">adoption_rate =</span> <span class="fl">0.8</span>, <span class="at">drop_rate =</span> <span class="fl">0.1</span></span>
 <span id="cb70-5"><a href="#cb70-5" aria-hidden="true" tabindex="-1"></a>)</span>
 <span id="cb70-6"><a href="#cb70-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb70-7"><a href="#cb70-7" aria-hidden="true" tabindex="-1"></a>cabm <span class="ot">&lt;-</span> <span class="fu">make_abm</span>(mps)</span>
