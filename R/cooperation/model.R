@@ -59,7 +59,7 @@ coop_model_step <- function(abm) {
 # For this normal game in this format we don't have individual partner selection 
 # and interaction steps. Instead all is handled in the model_step, 
 # i.e., coop_model_step defined below
-coop_game_strategy <- make_learning_strategy(
+coop_game_strategy <- make_model_dynamics(
   partner_selection = \(f, m) NULL,
   interaction = \(f, p, m) NULL,
   model_step = coop_model_step,

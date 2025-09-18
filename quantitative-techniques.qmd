@@ -424,7 +424,7 @@ adoption_rate = 0.8
 # Run model with 
 g <- igraph::make_graph(~ 1-2, 1-3, 1-4, 3-2)
 mps <- make_model_parameters(
-  contagion_learning_strategy, graph = g, adoption_rate = 0.8, drop_rate = 0.1
+  contagion_model_dynamics, graph = g, adoption_rate = 0.8, drop_rate = 0.1
 )
 cabm <- make_abm(mps); 
 cabm$get_agent(2)$set_behavior("Adaptive"); 
@@ -439,7 +439,7 @@ plot_prevalence(trial, tracked_behaviors = c("Adaptive", "Legacy"))
 # Same, but now call the adaptive behavior "Baglowie" instead of "Adaptive".
 g <- igraph::make_graph(~ 1-2, 1-3, 1-4, 3-2)
 mps <- make_model_parameters(
-  contagion_learning_strategy, graph = g, adoption_rate = 0.8, drop_rate = 0.1
+  contagion_model_dynamics, graph = g, adoption_rate = 0.8, drop_rate = 0.1
 )
 
 cabm <- make_abm(mps)
