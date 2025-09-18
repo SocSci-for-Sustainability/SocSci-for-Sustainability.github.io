@@ -371,3 +371,21 @@ table.weekly-topics {
   th:nth-child(4), td:nth-child(4) { width: 57%; }
 }
 
+
+
+// Force breadcrumb link color
+nav.quarto-page-breadcrumbs .breadcrumb-item {
+  color: #4a789b !important;
+  background-color: white !important;
+  &:hover {
+    color: #0d2a40 !important;
+  }
+}
+
+nav.quarto-secondary-nav {
+  background: white !important;
+}
+
+#quarto-header > nav.quarto-secondary-nav > div > nav > ol {
+  background-color: white !important;
+}

@@ -21,6 +21,7 @@ different disciplines based on their practical application
 to sustainability. Each chapter situates theory in problems of urgent concern, from climate action to cooperation over natural resources, from norm change to gender equity in leadership.
 
 Applications in later chapters include:
+
 - **Diffusion of sustainable practices**, including when conformity fails and when success-biased learning accelerates adoption.  
 - **Spatial agent-based models of cooperation**, exploring how migration and local interaction shape conservation outcomes.  
 - **Game-theoretic models of tipping points**, showing how social norm change
