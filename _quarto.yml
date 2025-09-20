@@ -26,12 +26,14 @@ book:
     right:
       - text: "Home"
         href: index.qmd
-      - text: "About"
-        href: about.qmd
-      - text: "Curriculum"
-        href: curriculum.qmd
+      - text: "Lecture Notes"
+        href: "https://SocSci-for-Sustainability.github.io/lecture-notes"
       - text: "Subscribe"
         href: "https://matphd.substack.com"
+      - text: "Curriculum"
+        href: curriculum.qmd
+      - text: "About"
+        href: about.qmd
     collapse: true
     pinned: true
     search: true
