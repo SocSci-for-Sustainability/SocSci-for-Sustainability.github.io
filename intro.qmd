@@ -12,9 +12,9 @@ Despite their effectiveness, adaptive practices like these often fail to spread
 widely. Instead, development agencies advocate for the construction of
 high-maintenance "grey infrastructure" like seawalls, even though seawalls can exacerbate flooding once breached [@Piggott-McKellar2020]. Inland forest management is beset by polarization among stakeholders [@Swette2023], resulting in devastating wildfires burning a buildup of fuels or greenhouse gas-intensive clearcuts. 
 
-> This is our puzzle (of adaptation—put down Sudoku ha): why do some reliably effective
-> sustainable practices fail to diffuse broadly,
-> but more costly ones do, often carrying more risk for more uncertain rewards
+> This is our puzzle (of adaptation—put down Sudoku ha): why do some reliably
+> effective sustainable practices fail to diffuse broadly, but more costly ones
+> do, often carrying more risk for more uncertain rewards
 > (@fig-puzzle-of-adaptation)? 
 
 ![**The puzzle of
@@ -133,8 +133,8 @@ in the real-world. It means flexibly adopting different assumptions in different
 cases, possibly sampling from different theories that, in a different context,
 might make contrary predictions. 
 
-![The VIBE system helps us identify how sustainability priorities can motivate
-new social science studies.](Figures/intro-sdg-vibe.png){#fig-sdg-vibe fig-align="center" width="950"}
+![**The VIBE system helps us identify how sustainability priorities can motivate
+new social science studies.**](Figures/intro-sdg-vibe.png){#fig-sdg-vibe fig-align="center" width="950"}
 
 
 ## Social learning models
