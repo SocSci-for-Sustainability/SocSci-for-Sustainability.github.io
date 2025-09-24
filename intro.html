@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.6.39">
+<meta name="generator" content="quarto-1.7.27">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -51,17 +51,20 @@ div.csl-indent {
 <meta name="quarto:offset" content="./">
 <link href="./quantitative-techniques.html" rel="next">
 <link href="./index.html" rel="prev">
-<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-50f792bb6489d9fd35268808da1062ac.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-0266a3854a12a4c572e0b4fea672f787.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-eac44e41018956f88012b5b01fb4b211.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-09d0fbc9ad20a915fa4847efc57a3950.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-eac44e41018956f88012b5b01fb4b211.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-877c8715723ebbeaed18b14f74051d3c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-b60a5dc78b9d5197f898d7ae6e50d491.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-777448916f1903a55e20c6f02a4e1b3f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-f3060d337d3e36b718bebfc7148d8d27.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-777448916f1903a55e20c6f02a4e1b3f.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -117,39 +120,170 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed">
+<body class="nav-sidebar floating nav-fixed slimcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    window.setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      window.setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    window.hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(darkModeDefault) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const darkModeDefault = false;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !window.hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+    };
+    // Switch to dark mode if need be
+    if (window.hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -307,21 +441,20 @@ window.Quarto = {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#sustainability-as-social-sciences-ethical-manhattan-project" id="toc-sustainability-as-social-sciences-ethical-manhattan-project" class="nav-link active" data-scroll-target="#sustainability-as-social-sciences-ethical-manhattan-project"><span class="header-section-number">1.1</span> Sustainability as Social Science’s (Ethical) “Manhattan Project”</a></li>
-  <li><a href="#social-science-for-sustainability" id="toc-social-science-for-sustainability" class="nav-link" data-scroll-target="#social-science-for-sustainability"><span class="header-section-number">1.2</span> Social Science for Sustainability</a></li>
-  <li><a href="#social-learning-strategies" id="toc-social-learning-strategies" class="nav-link" data-scroll-target="#social-learning-strategies"><span class="header-section-number">1.3</span> Social learning strategies</a>
+  <li><a href="#social-science-for-sustainability" id="toc-social-science-for-sustainability" class="nav-link active" data-scroll-target="#social-science-for-sustainability"><span class="header-section-number">1.1</span> Social Science for Sustainability</a></li>
+  <li><a href="#social-learning-models" id="toc-social-learning-models" class="nav-link" data-scroll-target="#social-learning-models"><span class="header-section-number">1.2</span> Social learning models</a></li>
+  <li><a href="#identity-homophily-and-social-networks-shape-viral-sustainability" id="toc-identity-homophily-and-social-networks-shape-viral-sustainability" class="nav-link" data-scroll-target="#identity-homophily-and-social-networks-shape-viral-sustainability"><span class="header-section-number">1.3</span> Identity, homophily, and social networks shape viral sustainability</a></li>
+  <li><a href="#we-dont-observe-opinions-why-opinion-influence-is-different-from-learning-behaviors" id="toc-we-dont-observe-opinions-why-opinion-influence-is-different-from-learning-behaviors" class="nav-link" data-scroll-target="#we-dont-observe-opinions-why-opinion-influence-is-different-from-learning-behaviors"><span class="header-section-number">1.4</span> We don’t observe “opinions”: Why opinion influence is different from learning behaviors</a>
   <ul class="collapse">
-  <li><a href="#social-learning-models-with-example" id="toc-social-learning-models-with-example" class="nav-link" data-scroll-target="#social-learning-models-with-example"><span class="header-section-number">1.3.1</span> Social learning models with example</a></li>
+  <li><a href="#models-and-measurements-of-opinion-change" id="toc-models-and-measurements-of-opinion-change" class="nav-link" data-scroll-target="#models-and-measurements-of-opinion-change"><span class="header-section-number">1.4.1</span> Models and measurements of opinion change</a></li>
   </ul></li>
-  <li><a href="#identity-and-influence" id="toc-identity-and-influence" class="nav-link" data-scroll-target="#identity-and-influence"><span class="header-section-number">1.4</span> Identity and Influence</a>
-  <ul class="collapse">
-  <li><a href="#social-networks-homophily-and-core-periphery-structure" id="toc-social-networks-homophily-and-core-periphery-structure" class="nav-link" data-scroll-target="#social-networks-homophily-and-core-periphery-structure"><span class="header-section-number">1.4.1</span> Social networks, homophily, and core-periphery structure</a></li>
-  </ul></li>
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion"><span class="header-section-number">1.5</span> Discussion</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
+
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -342,133 +475,122 @@ window.Quarto = {
 </header>
 
 
-<p>Indigenous, local peoples of the South Pacific Islands and other coastal habitats have sustainably managed mangrove forests to dissipate storm surges and prevent erosion, mitigating potential costs of climate change since long before the anthropocene <span class="citation" data-cites="Alongi2002 Nalau2018 Pearson2020 McNamara2020">(<a href="references.html#ref-Alongi2002" role="doc-biblioref">Alongi 2002</a>; <a href="references.html#ref-Nalau2018" role="doc-biblioref">Nalau et al. 2018</a>; <a href="references.html#ref-Pearson2020" role="doc-biblioref">Pearson, McNamara, and Nunn 2020</a>; <a href="references.html#ref-McNamara2020" role="doc-biblioref">McNamara et al. 2020</a>)</span>. First peoples of western North America have similarly practiced prescribed burns to prevent destructive wildfires during times of drought for millennia <span class="citation" data-cites="Eisenberg2019 Kolden2019">(<a href="references.html#ref-Eisenberg2019" role="doc-biblioref">Eisenberg et al. 2019</a>; <a href="references.html#ref-Kolden2019" role="doc-biblioref">Kolden 2019</a>)</span>. Despite their long-known effectiveness, adaptive practices like these often fail to spread widely. Instead, international development agencies frequently advocate for the construction of seawalls, for example, even though seawalls can exacerbate flooding once breached and incur high maintenance costs <span class="citation" data-cites="Piggott-McKellar2020">(<a href="references.html#ref-Piggott-McKellar2020" role="doc-biblioref">Piggott-McKellar et al. 2020</a>)</span>. Inland forest management is beset by polarization among stakeholders <span class="citation" data-cites="Swette2023">(<a href="references.html#ref-Swette2023" role="doc-biblioref">Swette, Huntsinger, and Lambin 2023</a>)</span>, resulting in devastating wildfires burning a buildup of fuels or greenhouse gas-intensive clearcuts.</p>
-<p>Here we introduce what we dub <em>the puzzle of diffusion</em>: why do some effective, sustainable practices like mangrove forest management fail to diffuse broadly, while other less effective or even maladaptive practices become widespread (<a href="#fig-puzzle-of-diffusion" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>)? To answer this, we answer some more basic questions along the way. First, how do people decide what to do, i.e., how does learning work? Second, what is the effect of identity on how well or how likely we are to learn from people of the same or different identity? Third, what is the effect of social structure, i.e., who knows whom, represented as a social network? Agent-based models are useful because they provide a framework for creating rigorous, mechanistic, concrete models of social diffusion of adaptations. They help us deal with the complexity of causation in the real world through strategic selection of causal input variables and model details, which, over several model time steps, lead to social emergent phenomena like the diffusion of climate change adaptations.</p>
-<div id="fig-puzzle-of-diffusion" class="quarto-float quarto-figure quarto-figure-center anchored">
+<p>Humans know how to adapt to climate change. Indigenous, local peoples of the South Pacific Islands and other coastal habitats have sustainably managed mangrove forests to dissipate storm surges and prevent erosion, mitigating potential costs of climate change since long before the anthropocene <span class="citation" data-cites="Alongi2002 Nalau2018 Pearson2020 McNamara2020">(<a href="references.html#ref-Alongi2002" role="doc-biblioref">Alongi 2002</a>; <a href="references.html#ref-Nalau2018" role="doc-biblioref">Nalau et al. 2018</a>; <a href="references.html#ref-Pearson2020" role="doc-biblioref">Pearson, McNamara, and Nunn 2020</a>; <a href="references.html#ref-McNamara2020" role="doc-biblioref">McNamara et al. 2020</a>)</span>. First peoples of western North America have similarly practiced prescribed burns to prevent destructive wildfires during times of drought for millennia <span class="citation" data-cites="Eisenberg2019 Kolden2019">(<a href="references.html#ref-Eisenberg2019" role="doc-biblioref">Eisenberg et al. 2019</a>; <a href="references.html#ref-Kolden2019" role="doc-biblioref">Kolden 2019</a>)</span>.</p>
+<p>Despite their effectiveness, adaptive practices like these often fail to spread widely. Instead, development agencies advocate for the construction of high-maintenance “grey infrastructure” like seawalls, even though seawalls can exacerbate flooding once breached <span class="citation" data-cites="Piggott-McKellar2020">(<a href="references.html#ref-Piggott-McKellar2020" role="doc-biblioref">Piggott-McKellar et al. 2020</a>)</span>. Inland forest management is beset by polarization among stakeholders <span class="citation" data-cites="Swette2023">(<a href="references.html#ref-Swette2023" role="doc-biblioref">Swette, Huntsinger, and Lambin 2023</a>)</span>, resulting in devastating wildfires burning a buildup of fuels or greenhouse gas-intensive clearcuts.</p>
+<blockquote class="blockquote">
+<p>This is our puzzle (of adaptation—put down Sudoku ha): why do some reliably effective sustainable practices fail to diffuse broadly, but more costly ones do, often carrying more risk for more uncertain rewards (<a href="#fig-puzzle-of-adaptation" class="quarto-xref">Figure&nbsp;<span>1.1</span></a>)?</p>
+</blockquote>
+<div id="fig-puzzle-of-adaptation" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-puzzle-of-diffusion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Figures/clipboard-1606391171.png" class="img-fluid figure-img" width="950">
+<div aria-describedby="fig-puzzle-of-adaptation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figures/clipboard-1606391171.png" class="img-fluid figure-img" width="600">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-puzzle-of-diffusion-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.1: Agent-based models can help us answer the puzzle of diffusion, i.e., why do certain adaptations widely diffuse socially and some do not, with maladaptations often taking their place?
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-puzzle-of-adaptation-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1.1: <strong>The puzzle of adaptation.</strong>
 </figcaption>
 </figure>
 </div>
-<p>The focus of this course is developing agent-based models that can help us simplify complex combinations of cognitive and social factors to represent only the most relevant ones, and observe the effect of these on simulated outcomes such as the proportion of people adopting adaptive behaviors, or opinion extremism and polarization.</p>
-<section id="sustainability-as-social-sciences-ethical-manhattan-project" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="sustainability-as-social-sciences-ethical-manhattan-project"><span class="header-section-number">1.1</span> Sustainability as Social Science’s (Ethical) “Manhattan Project”</h2>
-<p>The agent-based modeling approach developed in this course provides a structured way to test the effectiveness of social <em>interventions</em> aimed at promoting sustainable behavior. An intervention is some structured introduction of a sustainable practice through education or other means with the intention of sparking the endogenous diffusion of the practice after direct instruction has ended. For example, <span class="citation" data-cites="Airoldi2024">Airoldi and Christakis (<a href="references.html#ref-Airoldi2024" role="doc-biblioref">2024</a>)</span> developed a public health intervention to improve health outcomes for residents of villages in rural Ecuador far from hospitals. Airoldi and Christakis educated residents over an extended period of time about hand washing and warning signs of pregnancy complications, then surveyed residents to see if those not involved in the initial intervention had learned the information from the intervention. Airoldi and Christakis’s study was designed to test a hypothesis about whether the <em>friendship-nomination</em> strategy for forming the <em>seed set</em> of individuals selected for direct instruction from the intervention.</p>
-<p>By formalizing and testing our assumptions about social dynamics, agent-based modeling supports better design and evaluation of policies and programs aimed at driving real-world change. This deductive, experimental approach allows us to explore how cooperation, coordination, identity, homophily, and influence affect the likelihood that beneficial behaviors will spread. In the coming chapters and associated problem sets we will analyze social learning of behaviors and social influence of opinions in various contexts. This could save serious resources. We could use computational models to test the hypothesis from <span class="citation" data-cites="Airoldi2024">Airoldi and Christakis (<a href="references.html#ref-Airoldi2024" role="doc-biblioref">2024</a>)</span> that friendship nominated seed sets indeed better sparked endogenous diffusion in many different social networks with different group structures, which would give us a more comprehensive understanding of when friendship nomination does well or not.</p>
-<p>The goal is to build up a repertoire of agent-based modeling techniques for incorporating different assumptions about how social learning or influence work, whether group structure is important to these processes, and for modeling social network structure. This repertoire can then be applied to sustainability contexts of interest to understand how different sustainability intervention strategies, such as who should learn about sustainable adaptations first in an educational intervention or how best to assist stakeholder deliberations to reduce opinion polarization that can derail collective adaptation. To choose model components wisely requires an understanding of elements of sustainability, cognitive and social science, network science, and software engineering.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>The puzzle of adaptation</p>
+</div></div><p>Ultimately our goal is to develop design principles for educational campaigns to promote viral sustainability. Achieving this requires we understand how behavior and opinions spread between people. <em>Viral</em> sustainability means that sustainable practices or attitudes continue to spread in a population following an educational campaign directly instructing a set of individuals I call the <em>seed set</em>.</p>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>What I call the <em>seed set</em>, or just <em>seeds</em>, are often called the <em>targets</em> who are <em>targeted</em> for direct instruction. For one notable example, <span class="citation" data-cites="Airoldi2024">Airoldi and Christakis (<a href="references.html#ref-Airoldi2024" role="doc-biblioref">2024</a>)</span> in their study “target”ed residents of “176 villages in the isolated western highlands of Hondouras”! I prefer non-violent prose since our language shapes our thinking <span class="citation" data-cites="Lakoff1980 Cibelli2016 Regier2017">(<a href="references.html#ref-Lakoff1980" role="doc-biblioref">Lakoff and Johnson 1980</a>; <a href="references.html#ref-Cibelli2016" role="doc-biblioref">Cibelli et al. 2016</a>; <a href="references.html#ref-Regier2017" role="doc-biblioref">Regier and Xu 2017</a>)</span>.</p>
+</div></div><p>To predict how different educational campaign strategies affect outcomes we can delineate four guiding questions:</p>
+<ol type="1">
+<li>How do people decide what to do, i.e., how does learning work?</li>
+<li>How does identity affect social learning and influence?</li>
+<li>How do different social network structures affect adaptation diffusion?</li>
+<li>How to use computational modeling to deal with the complexity of social behavior?</li>
+</ol>
+<p>The focus of this course is developing technical and domain expertise in social science that can help us simplify complex combinations of cognitive and social factors that affect whether sustainability “goes viral”.</p>
+<section id="social-science-for-sustainability" class="level2" data-number="1.1">
+<h2 data-number="1.1" class="anchored" data-anchor-id="social-science-for-sustainability"><span class="header-section-number">1.1</span> Social Science for Sustainability</h2>
+<p>Social science is immensely broad and complex comprised of numerous traditional academic disciplines in their entirety, such as anthropology and sociology, with contributions from several other traditional disciplines, including cognitive science, engineering, and physics. We use the problem of promoting sustainable practices via <em>interventions</em> to structure this work. Sustainability interventions are eductaion campaigns to induce the diffusion of certain adaptive, sustainable behaviors, such as in public health <span class="citation" data-cites="Airoldi2024">(<a href="references.html#ref-Airoldi2024" role="doc-biblioref">Airoldi and Christakis 2024</a>)</span>, microfinance to support gender equality at work, home, and everywhere <span class="citation" data-cites="OConnor2018 Clydesdale2023">(<a href="references.html#ref-OConnor2018" role="doc-biblioref">O’Connor and Weatherall 2018</a>; <a href="references.html#ref-Clydesdale2023" role="doc-biblioref">Clydesdale and Shah 2023</a>)</span>, and climate change adaptation via ecosystem protection <span class="citation" data-cites="Brooks2018 McNamara2020">(<a href="references.html#ref-Brooks2018" role="doc-biblioref">Brooks et al. 2018</a>; <a href="references.html#ref-McNamara2020" role="doc-biblioref">McNamara et al. 2020</a>)</span>. Following the UN SDGs, we see that this is quite a broad range of potential behaviors, which is actually a good thing. It means that our conclusions could apply to a broad range of application domains.</p>
+<p>On reflection, social science for sustainability needs a science of how adaptive, sustainable behaviors, opinions, and other socially-transmitted items diffuse from person to person, throughout a population, over time. I don’t know for sure, but it seems like this may be <em>the</em> fundamental problem in social science, broadly understood. The puzzle of adaptation frames the overarching question of designing interventions: how best to jump-start a self-sustaining process diffusing adaptive sustainable behaviors?</p>
+<p>Computational social science is the use of mathematics and computers to understand and model the mechanisms underlying social diffusion phenomena, such as the adoption of sustainable practices or rising political extremism, and statistically analyze collective behavior data. We start here and for the first chapters of the book developing formal and generative models of promoting widespread behavior change. When we come to opinion change, we arrive at a natural transition point where theory necessarily meets practice to understand how to properly <em>measure</em> opinion change in the real world, which <em>requires</em> statistical inference since opinions are not directly measurable. We apply our techniques to show that</p>
+<p>Computational social science is a cognitive gadget to help us use social science theory for reasoning about the effect of different cognitive capacities (e.g., adaptive social learning), social processes (e.g., rising extremism), and social and natural environment constraints (e.g., social networks, wildfire risk). Too often in the history of social science, social science theory is not presented mathematically, with squishy verbal explanations of theories and their consequences instead of concrete, <em>rigorous</em> mathematical or computational statements, where rigorous means they are theoretically true under a set of explicitly-specified assumptions. This means that mechanisms have tended to be only vaguely specified, and changes in assumptions cannot be quantitatively, let alone systematically, explored <span class="citation" data-cites="Turner2022">(<a href="references.html#ref-Turner2022" role="doc-biblioref">Turner and Smaldino 2022</a>)</span>.</p>
 <p>The <a href="https://sdgs.un.org/">UN Sustainable Development Goals</a> help us focus and organize our work by providing concrete goals for evaluating progress towards sustainable development for all <a href="#fig-sdg-vibe" class="quarto-xref">Figure&nbsp;<span>1.2</span></a>. These goals include targets for institutional development that promotes basic conditions for human thriving (justice, equality, education, public health, and no poverty) so as to assemble and enable a critical mass of people to participate bringing about sustainable development. People cannot participate in sustainability if they suffer in poverty, from illness, or subjugation by authoritarians–all but the most zealous environmental defenders will fight on when these basic needs are unmet. Since progress has been slower than necessary.</p>
 <p>Sustainability, then, has several different dimensions, all of which contribute to climate action and environmental protection. I have organized these goals into the VIBE system to guide sustainability promotion where <em>Vibrant Institutions</em> meet the <em>Basic</em> needs, including <em>Environmental and Ecological</em> protection. The 17 goals and how they each help catch a VIBE are illustrated in <a href="#fig-sdg-vibe" class="quarto-xref">Figure&nbsp;<span>1.2</span></a>.</p>
 <p>Organizing and connecting our work to has two benefits. First, it helps us identify which cognitive and social factors are at work in different sustainability foci. Second, it expands the corpus of existing research on which we draw to consolidate our social and cognitive theories of behavior change that we will apply to sustainability interventions. While many of us in computational social science know our work is important as basic science partly because we are confident it can apply to real-world problems, it is not clear how. Part of this problem seems to stem from the lack of a clear goal for this science beyond evaluating alternative theories of social behavior.</p>
-<p><em>Sustainability</em> serves as a sort of never-ending Manhattan Project for social scientists, an ethically praiseworthy pursuit that will provide a selection pressure on social science frameworks or theories that theory-comparison goals cannot: our social science frameworks, theories, and models should be maximally useful to the long-term study of sustainability. That means simulations should be designed so the model parameters and outcome measures are observable and could reasonably be measured in the real-world. It means flexibly adopting different assumptions in different cases, possibly sampling from different theories that, in a different context, might make contrary predictions. In the next</p>
+<p><em>Sustainability</em> serves as a sort of never-ending Manhattan Project for social scientists, an ethically praiseworthy pursuit that will provide a selection pressure on social science frameworks or theories that theory-comparison goals cannot: our social science frameworks, theories, and models should be maximally useful to the long-term study of sustainability. That means simulations should be designed so the model parameters and outcome measures are observable and could reasonably be measured in the real-world. It means flexibly adopting different assumptions in different cases, possibly sampling from different theories that, in a different context, might make contrary predictions.</p>
 <div id="fig-sdg-vibe" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-sdg-vibe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="Figures/intro-sdg-vibe.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="950">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-sdg-vibe-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.2: The VIBE system helps us identify how sustainability priorities can motivate new social science studies.
+Figure&nbsp;1.2: <strong>The VIBE system helps us identify how sustainability priorities can motivate new social science studies.</strong>
 </figcaption>
 </figure>
 </div>
 </section>
-<section id="social-science-for-sustainability" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="social-science-for-sustainability"><span class="header-section-number">1.2</span> Social Science for Sustainability</h2>
-<p>Social science is immensely broad and complex comprised of numerous traditional academic disciplines in their entirety, such as anthropology and sociology, with contributions from several other traditional disciplines, including cognitive science, engineering, and physics. We use the problem of promoting sustainable practices via <em>interventions</em> to structure this work. Sustainability interventions are eductaion campaigns to induce the diffusion of certain adaptive, sustainable behaviors, such as in public health <span class="citation" data-cites="Airoldi2024">(<a href="references.html#ref-Airoldi2024" role="doc-biblioref">Airoldi and Christakis 2024</a>)</span>, microfinance to support gender equality at work, home, and everywhere <span class="citation" data-cites="OConnor2018 Clydesdale2023">(<a href="references.html#ref-OConnor2018" role="doc-biblioref">O’Connor and Weatherall 2018</a>; <a href="references.html#ref-Clydesdale2023" role="doc-biblioref"><strong>Clydesdale2023?</strong></a>)</span>, and climate change adaptation via ecosystem protection <span class="citation" data-cites="Brooks2018 McNamara2020">(<a href="references.html#ref-Brooks2018" role="doc-biblioref">Brooks et al. 2018</a>; <a href="references.html#ref-McNamara2020" role="doc-biblioref">McNamara et al. 2020</a>)</span>. Following the UN SDGs, we see that this is quite a broad range of potential behaviors, which is actually a good thing. It means that our conclusions could apply to a broad range of application domains.</p>
-<p>On reflection, social science for sustainability needs a science of how adaptive, sustainable behaviors, opinions, and other socially-transmitted items diffuse from person to person, throughout a population, over time. I don’t know for sure, but it seems like this may be <em>the</em> fundamental problem in social science, broadly understood. The puzzle of adaptation frames the overarching question of designing interventions: how best to jump-start a self-sustaining process diffusing adaptive sustainable behaviors?</p>
-<p>Computational social science is the use of mathematics and computers to understand and model the mechanisms underlying social diffusion phenomena, such as the adoption of sustainable practices or rising political extremism, and statistically analyze collective behavior data. We start here and for the first chapters of the book developing formal and generative models of promoting widespread behavior change. When we come to opinion change, we arrive at a natural transition point where theory necessarily meets practice to understand how to properly <em>measure</em> opinion change in the real world, which <em>requires</em> statistical inference since opinions are not directly measurable. We apply our techniques to show that</p>
-<p>Computational social science is a cognitive gadget to help us use social science theory for reasoning about the effect of different cognitive capacities (e.g., adaptive social learning), social processes (e.g., rising extremism), and social and natural environment constraints (e.g., social networks, wildfire risk). Too often in the history of social science, social science theory is not presented mathematically, with squishy verbal explanations of theories and their consequences instead of concrete, <em>rigorous</em> mathematical or computational statements, where rigorous means they are theoretically true under a set of explicitly-specified assumptions. This means that mechanisms have tended to be only vaguely specified, and changes in assumptions cannot be quantitatively, let alone systematically, explored <span class="citation" data-cites="Turner2022">(<a href="references.html#ref-Turner2022" role="doc-biblioref">Turner and Smaldino 2022</a>)</span>.</p>
-</section>
-<section id="social-learning-strategies" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="social-learning-strategies"><span class="header-section-number">1.3</span> Social learning strategies</h2>
-<p>Human kind is set apart by powerful learning and reasoning capabilities <span class="citation" data-cites="Witt2024">(<a href="references.html#ref-Witt2024" role="doc-biblioref">Witt et al. 2024</a>)</span> that enable cultural transmission and accumulation of technologies and practices no other species matches <span class="citation" data-cites="Henrich2015">(<a href="references.html#ref-Henrich2015" role="doc-biblioref">Henrich 2015</a>)</span>. For our sustainability models, we only need simple models of cognition and learning. It would never be practical to do psychological or cognitive tests in the context of sustainability interventions that targets large populations, for one thing, so we could never compare detailed cognitive assumptions or predictions with reality. For our purposes we will consider three general classes of learning strategy:</p>
+<section id="social-learning-models" class="level2" data-number="1.2">
+<h2 data-number="1.2" class="anchored" data-anchor-id="social-learning-models"><span class="header-section-number">1.2</span> Social learning models</h2>
+<p>Human kind is set apart by powerful learning and reasoning capabilities <span class="citation" data-cites="Witt2024">(<a href="references.html#ref-Witt2024" role="doc-biblioref">Witt et al. 2024</a>)</span> that enable cultural transmission and accumulation of technologies and practices no other species matches <span class="citation" data-cites="Henrich2015">(<a href="references.html#ref-Henrich2015" role="doc-biblioref">Henrich 2015</a>)</span>. For our sustainability models, we only need simple models of cognition and learning. It would never be practical to do psychological or cognitive tests in the context of sustainability interventions that targets large populations, for one thing, so we could never compare detailed cognitive assumptions or predictions with reality. For our purposes we will consider three general classes of learning strategy, with some liberty taken in switching up traditional terminologies in the pursuit of a leaner, more descriptive semantic system for this framework.</p>
+<p>We model the learning process as <em>contagion</em>, <em>conformity</em>, or <em>vicarity</em>:</p>
 <ol type="1">
-<li><strong>Success-biased learning</strong>: Individuals are more likely to adopt behaviors perceived to be successful or beneficial.</li>
-<li><strong>Frequency-biased learning</strong>: Individuals adopt behaviors because others are already doing them, creating a conformity effect.</li>
-<li><strong>Contagion</strong>: Individuals copy behaviors simply by observing others performing them.</li>
+<li><strong>Contagion</strong>: Someone observing a behavior copies that behavior at random with a given probability called the <em>adoption rate</em>.</li>
+<li><strong>Conformity</strong>: People prefer doing more popular behaviors to less popular ones.</li>
+<li><strong>Vicarity</strong>: People prefer learning from peers who are successful. “Success” here is strategically ambiguous—it could be in terms of happiness, mindfulness, spiritual connection, wealth, power, etc.</li>
 </ol>
-<p>In the mangrove versus seawall example, success-biased learning might favor seawalls if influential external actors, who seem successful or wealthy, advocate for them, even if seawalls are ultimately less effective. Mangrove forests might become widely adopted if, on the other hand, frequency-biased learning predominates and many communities have adopted that method.</p>
-<section id="social-learning-models-with-example" class="level3" data-number="1.3.1">
-<h3 data-number="1.3.1" class="anchored" data-anchor-id="social-learning-models-with-example"><span class="header-section-number">1.3.1</span> Social learning models with example</h3>
-<p>To make this more concrete, we <em>formalize</em> (i.e., <em>give formulas for</em>) these three learning strategies as follows using the example in <a href="#fig-learning-illustration" class="quarto-xref">Figure&nbsp;<span>1.3</span></a>. In the example, there is one <em>focal agent</em> who is the one doing the observing/learning, labelled with the ID <em>1</em>, and three social network neighbors with IDs <em>2, 3,</em> and <em>4.</em> The focal agent is deciding whether or not to install residential solar. One of his neighbors has installed it, 2. Based on 1’s perception, 2 is the wealthiest, represented by four dollar symbols. 3 is perceived to have one dollar and 4 has two dollars.</p>
-<div id="fig-learning-illustration" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-learning-illustration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Figures/clipboard-1340594084.png" class="img-fluid figure-img" width="700">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-learning-illustration-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.3: Agent 1, the focal agent, is considering whether to install residential solar. The probability agent 1 installs residential solar depends on its social learning strategy.
-</figcaption>
-</figure>
-</div>
-<section id="success-biased-learning" class="level4">
-<h4 class="anchored" data-anchor-id="success-biased-learning">Success-biased learning</h4>
-<p>In success-biased learning, learners first choose an interaction partner/teacher randomly weighted by observed fitness of their neighbors, which is a generic term for wealth, power, status, etc. In general for this case, the probability that learner <span class="math inline">\(i\)</span> chooses teacher <span class="math inline">\(j\)</span> is</p>
-<p><span class="math display">\[
-\Pr(i \text{ chooses } j) = \frac{f_j}{\sum_{k \in n_i} f_k}.
-\]</span></p>
-<p>The probability that <span class="math inline">\(i\)</span> adopts <span class="math inline">\(A\)</span> is then the sum of the probabilities of choosing each neighbor performing <span class="math inline">\(A\)</span> (contained in the set <span class="math inline">\(m_i\)</span>),</p>
-<p><span class="math display">\[
-\Pr(i \text{ adopts } A) = \frac{\sum_{j \in m_i} f_j}{\sum_{k \in n_i} f_k}.
-\]</span></p>
-<p>In our example, only one neighbor installed residential solar with a fitness (i.e.&nbsp;<em>wealth</em> in this example) of 4, while the others have finess 1 and 2. Therefore, <span class="math inline">\(\Pr(1 \text{ adopts } A) = \frac{4}{7}\)</span>.</p>
-</section>
-<section id="frequency-biased-learning" class="level4">
-<h4 class="anchored" data-anchor-id="frequency-biased-learning">Frequency-biased learning</h4>
-<p>In frequency-biased learning there is no interaction partner or teacher chosen. The probability of adoption is only given by the relative frequency of each behavior. The general expression is</p>
-<p><span class="math display">\[
-\Pr(i \text{ adopts } A) = \frac{|m_i|}{|n_i|}.
-\]</span></p>
-<p>In our example, then, the probability of installing residential solar under frequency-biased learning is <span class="math inline">\(\frac{1}{3}\)</span>.</p>
-</section>
-<section id="contagion-learning" class="level4">
-<h4 class="anchored" data-anchor-id="contagion-learning">Contagion learning</h4>
-<p>In the contagion learning model, the focal agent’s (i.e., the <em>learner</em>’s) <em>teacher</em> (i.e., interaction partner) is chosen at random. Then, the learner adopts the teacher’s behavior with probability <span class="math inline">\(\alpha\)</span>, the adoption rate. In this case, then, the probability that 1 adopts residential solar is</p>
-<p><span class="math display">\[
-\Pr(1 \text{ adopts solar}) = \alpha \Pr(1 \text{ selects 2 as teacher}) = \alpha \frac{1}{3}.
-\]</span></p>
-<p>More generally, for focal agent <span class="math inline">\(i\)</span> with the set of neighbors <span class="math inline">\(n_i\)</span> (<span class="math inline">\(n_1 = \{2, 3, 4\}\)</span> in the example), where <span class="math inline">\(m_i\)</span> is the set of neighbors who have adopted the adaptive behavior (<span class="math inline">\(m_i = \{2\}\)</span> in the example). We call the adaptive behavior <span class="math inline">\(A\)</span>. The general probability of adoption in contagion learning is therefore</p>
-<p><span class="math display">\[
-\Pr(i \text{ adopts } A) = \frac{\alpha |m_i|}{|n_i|},
-\]</span></p>
-<p>where the <span class="math inline">\(| \cdot |\)</span> operator counts the number of elements in a set.</p>
-</section>
-<section id="combinations-of-learning-models" class="level4">
-<h4 class="anchored" data-anchor-id="combinations-of-learning-models">Combinations of learning models</h4>
-<p>There is no reason different learning models cannot be combined. The software we will use in this class, <code>socmod</code>, provides flexibility to the user to define their own learning models. The simplest combination of the three learning models above is to add an adoption rate to either frequency- or success-biased learning. In this approach, one could call the behavior selected by the models above could be considered <em>prospective</em> or <em>candidate</em> behavior to learn, then is actually learned with probability <span class="math inline">\(\alpha\)</span>.</p>
-<p>For another potentially useful modification, <span class="math inline">\(\alpha\)</span> could be defined at the individual level, say <span class="math inline">\(\alpha_i\)</span>, or for <em>dyads</em> (i.e., a pair of interacting individuals) , <span class="math inline">\(\alpha_{ij}\)</span>, where <span class="math inline">\(i\)</span> is still the focal agent learner, but we have added <span class="math inline">\(j\)</span>, representing the selected teacher.</p>
-</section>
-</section>
-</section>
-<section id="identity-and-influence" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="identity-and-influence"><span class="header-section-number">1.4</span> Identity and Influence</h2>
-<p>Group identity critically influences social learning. Neuroscience research demonstrates that our brains distinctly respond to individuals identified as part of our group <span class="citation" data-cites="Cikara2014">(<a href="references.html#ref-Cikara2014" role="doc-biblioref">Cikara and Van Bavel 2014</a>)</span>, as revealed through fMRI neural imaging (<a href="#fig-cikara-mri-image" class="quarto-xref">Figure&nbsp;<span>1.4</span></a>). This ability likely evolved because when humans first emerged about two million years ago, it was much more important for survival to be able to rapidly identify whether someone was a friend or foe based on group markers. Although group membership can affect how we respond to information learned from others, group membership itself is quite plastic, meaning who belongs to which group can be rapidly reconfigured. For example, neural signals of race-based group perception was observed to be suppressed and overridden when individuals were in mixed-race groups created by experimenters that competed against other mixed-race groups in an psychological experimental task <span class="citation" data-cites="VanBavel2008">(<a href="references.html#ref-VanBavel2008" role="doc-biblioref">Van Bavel, Packer, and Cunningham 2008</a>)</span>.</p>
+<p>In the mangrove versus seawall example, vicarity could be harnessed to promote sustainable mangrove forest management if its benefits were widely known. If instead conformist attitudes prevailed within an echo chamber of pro-seawall actors, education may be of little help without stronger institutional support of free, democratic, and self-interested choice. ## Identity and Influence</p>
+<p>Group identity critically influences social learning. Neuroscience research demonstrates that our brains distinctly respond to individuals identified as part of our group <span class="citation" data-cites="Cikara2014">(<a href="references.html#ref-Cikara2014" role="doc-biblioref">Cikara and Van Bavel 2014</a>)</span>, as revealed through fMRI neural imaging (<a href="#fig-cikara-mri-image" class="quarto-xref">Figure&nbsp;<span>1.3</span></a>). This ability likely evolved because when humans first emerged about two million years ago, it was much more important for survival to be able to rapidly identify whether someone was a friend or foe based on group markers. Although group membership can affect how we respond to information learned from others, group membership itself is quite plastic, meaning who belongs to which group can be rapidly reconfigured. For example, neural signals of race-based group perception was observed to be suppressed and overridden when individuals were in mixed-race groups created by experimenters that competed against other mixed-race groups in an psychological experimental task <span class="citation" data-cites="VanBavel2008">(<a href="references.html#ref-VanBavel2008" role="doc-biblioref">Van Bavel, Packer, and Cunningham 2008</a>)</span>.</p>
 <div id="fig-cikara-mri-image" class="quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-cikara-mri-image-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="Figures/clipboard-735263139.png" class="img-fluid figure-img" width="800">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-cikara-mri-image-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1.4: Figure 1 reorganized with original caption from Cikara and Van Bavel (2014)
+Figure&nbsp;1.3: Figure 1 reorganized with original caption from Cikara and Van Bavel (2014)
 </figcaption>
 </figure>
 </div>
 <p>Studies further show that group identity can strongly influence behavioral choices. For instance, experimental evidence reveals people resist adopting beneficial behaviors if associated with opposing political identities <span class="citation" data-cites="EhretConstantino2022">(<a href="references.html#ref-EhretConstantino2022" role="doc-biblioref">Ehret et al. 2022</a>)</span>, emphasizing how identity can create substantial barriers to sustainability. This general effect of group membership interfering with learning is called <em>outgroup aversion</em> <span class="citation" data-cites="Smaldino2017Adoption">(<a href="references.html#ref-Smaldino2017Adoption" role="doc-biblioref">Smaldino et al. 2017</a>)</span>.</p>
-<section id="social-networks-homophily-and-core-periphery-structure" class="level3" data-number="1.4.1">
-<h3 data-number="1.4.1" class="anchored" data-anchor-id="social-networks-homophily-and-core-periphery-structure"><span class="header-section-number">1.4.1</span> Social networks, homophily, and core-periphery structure</h3>
+</section>
+<section id="identity-homophily-and-social-networks-shape-viral-sustainability" class="level2" data-number="1.3">
+<h2 data-number="1.3" class="anchored" data-anchor-id="identity-homophily-and-social-networks-shape-viral-sustainability"><span class="header-section-number">1.3</span> Identity, homophily, and social networks shape viral sustainability</h2>
 <p>Social structure can significantly impact behavioral diffusion, especially in core-periphery configurations. Core-periphery networks emerge as a response to risk and uncertainty, e.g., in food sharing networks <span class="citation" data-cites="Ready2018">(<a href="references.html#ref-Ready2018" role="doc-biblioref">Ready and Power 2018</a>)</span>, so they are hypothesized to also be important in climate change adaptation transmission networks <span class="citation" data-cites="Jones2021">(<a href="references.html#ref-Jones2021" role="doc-biblioref">Jones, Ready, and Pisor 2021</a>)</span>. Core-periphery networks can be created by setting appropriate group sizes and <em>homophily</em> levels in homophily network models <span class="citation" data-cites="Turner2023">(<a href="references.html#ref-Turner2023" role="doc-biblioref">Turner et al. 2023</a>)</span> or specifying certain connectivity probabilities to the <em>stochastic block matrix</em> algorithm for creating structured random graphs <span class="citation" data-cites="Rombach2014 Milzman2023">(<a href="references.html#ref-Rombach2014" role="doc-biblioref">Rombach et al. 2014</a>; <a href="references.html#ref-Milzman2023" role="doc-biblioref">Milzman and Moser 2023</a>)</span>. Homophily is the measure of how much more likely an individual is to socially connect within their own group versus with a member of a different group. Homophily can range from -1 to +1, where -1 represents no within-group connections and only between-group connections (i.e., <em>anti-homophily</em>); 0 represents an equal probability of within- and between-group connections, and +1 represents only within-group connections. We will define homophily as either a global or group-level variable, though homophily could vary individually as well. There are two types of homophily:</p>
 <ul>
 <li><strong>Choice Homophily</strong>: Individuals actively prefer interacting with similar others.</li>
 <li><strong>Induced Homophily</strong>: Social interactions limited by historical or external conditions like geography, profession, birthplace, etc.</li>
 </ul>
 <p>These structural elements can significantly limit the diffusion of sustainable practices from peripheries, like the mangrove management on smaller islands, to central cores. However, as colleagues and I have showed, this core-periphery structure, defined by moderately high majority-group homophily can actually <em>promote</em> the diffusion of adaptations, provided the adaptation is practiced by the minority group <span class="citation" data-cites="Turner2023">(<a href="references.html#ref-Turner2023" role="doc-biblioref">Turner et al. 2023</a>)</span>, as is the case for mangrove forest management or prescribed burns.</p>
-<p>Due to time restrictions we will not be able to analyze the effects of social networks in this tutorial.</p>
+</section>
+<section id="we-dont-observe-opinions-why-opinion-influence-is-different-from-learning-behaviors" class="level2" data-number="1.4">
+<h2 data-number="1.4" class="anchored" data-anchor-id="we-dont-observe-opinions-why-opinion-influence-is-different-from-learning-behaviors"><span class="header-section-number">1.4</span> We don’t observe “opinions”: Why opinion influence is different from learning behaviors</h2>
+<p>Opinions are not behaviors. They cannot be directly observed, only <em>inferred from</em> behavior. A person planting mangroves or conducting a prescribed burn produces a visible, specific, measurable action. An “opinion” is only constructed in relation to some prompt, like survey responses that political scientists use to poll the electorate on policies and politicians <span class="citation" data-cites="Zaller1992">(<a href="references.html#ref-Zaller1992" role="doc-biblioref">Zaller and Feldman 1992</a>)</span>. Cognitive scientists and psychologists developed other ways to access peoples’ opinions, such as through the timing of keypresses to reveal racial prejudice in an implicit bias test <span class="citation" data-cites="Greenwald2009">(<a href="references.html#ref-Greenwald2009" role="doc-biblioref">Greenwald et al. 2009</a>)</span>, or using computational linguistic analysis of sentiment analysis <span class="citation" data-cites="Cody2015">(<a href="references.html#ref-Cody2015" role="doc-biblioref">Cody et al. 2015</a>)</span>.</p>
+<p>Political polarization, when partisans radicalize, makes institutions freeze. Sustainability needs strong institutions to ensure basic needs are met and basic human rights are protected (see bottom row in <a href="#fig-sdg-vibe" class="quarto-xref">Figure&nbsp;<span>1.2</span></a>). To make things worse, polarization hampers sustainability debates, actively obscuring moderate, win-win solutions and elevating partisan policies.</p>
+<p>Indigenous practices we reviewed seem to be ignored at least partly because polarized opinions prevent their consideration and adoption. The same holds for coastal mangrove restoration, renewable energy policy, basic conservation, and in numerous other sustainability problems. People can be—and often are—openly hostile to sustainability for reasons that have little to do with evidence or experience. If opinions are the supposed bridge between psychology and large-scale social shifts, then building strategies on flawed opinion science is like trying to engineer a suspension bridge without knowing how steel bends.</p>
+<section id="models-and-measurements-of-opinion-change" class="level3" data-number="1.4.1">
+<h3 data-number="1.4.1" class="anchored" data-anchor-id="models-and-measurements-of-opinion-change"><span class="header-section-number">1.4.1</span> Models and measurements of opinion change</h3>
+<p>Opinion science needs, but currently lacks, a tight integration of theoretical and computational modeling and experimental design. Here I’ll explain what we need and how theory, modeling, and measurement complement one another through a case study applied to group polarization, which we expand on in more detail in the <a href="posts/opinion-change-models-measurement-2025-09-24/">opinion change post in the Lecture Notes</a>, soon to be another chapter in this online book.</p>
+<section id="models" class="level4">
+<h4 class="anchored" data-anchor-id="models">Models</h4>
+<p>On the modeling side, frameworks like DeGroot’s consensus model or Macy’s Hopfield adaptations generate elegant dynamics of attraction, repulsion, or indifference. But these are mechanisms acting on theoretical constructs, not on directly measurable behaviors. On the measurement side, researchers routinely treat ordinal data—Likert scales of “strongly agree” to “strongly disagree”—as if they were continuous. This sleight of hand allows ANOVAs and regressions to spit out “effects” that may be nothing more than statistical artifacts. Replications don’t fix this; they repeat the same errors. What we call “opinion change” is too often a reflection of our instruments, not of anything happening in people’s minds.</p>
+</section>
+<section id="measurements" class="level4">
+<h4 class="anchored" data-anchor-id="measurements">Measurements</h4>
+<ul>
+<li>To measure opinion change we need a rigorous method <span class="citation" data-cites="Liddell2018">(<a href="references.html#ref-Liddell2018" role="doc-biblioref">Liddell and Kruschke 2018</a>)</span></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="discussion" class="level2 page-columns page-full" data-number="1.5">
+<h2 data-number="1.5" class="anchored" data-anchor-id="discussion"><span class="header-section-number">1.5</span> Discussion</h2>
+<p>Let’s close this chapter by reviewing the dimensions of evaluating the metaphor of <em>viral sustainability</em> to describe the kind of self-sustaining diffusion we’re after. It’s worth unpacking this metaphor.</p>
+<p><em>Viral</em> here is intended to capture the familiar self-sustaining diffusion of fashions and fads. Friends and associates tell one another about what they’re up to and how it’s going. Sometimes they try out what each other are doing then keep doing it because it works for them. If this happens again and again over time, and more people are <em>starting</em> to do something more frequently than people are <em>stopping</em> doing it. The similarity of this process to the spread of pathogens in epidemiology is exactly where the term <em>viral</em>, in the parlance of our times, with apparently wide shared agreement about its meaning. Viruses and other pathogens spread when people interact, while also sometimes rapidly evolving to evade our efforts to stop them.</p>
+<p>(LARGELY AI GENERATED BELOW TO MARGIN COLUMN NOTE, ALSO AI GENERATED) In culture, virality is uneven and stochastic: some sparks flare out, while others cascade unexpectedly. In philosophy, viral processes blur agency—no one controls the spread, it emerges from many small acts. This makes <em>viral sustainability</em> a natural metaphor for the pluralism of social life: many hands, many voices, converging without central command into collective action.</p>
+<p>But <em>viral</em> is only one register. Evolutionary biologists might call the same thing <em>niche construction</em>: once behaviors spread, they reshape the ecological and social environment in ways that feed back to support further spread. Cultural theorists like Sperber would call the stable outcomes <em>cultural attractors</em>: convergent points that diffusion tends to settle on, even through noisy transmission. And systems theorists use <em>autopoiesis</em>—literally “self-making”—to describe when a practice or institution doesn’t just persist but actively reproduces the conditions of its own existence.</p>
+<p>These frames are not mutually exclusive and don’t need a strict mapping onto stages of a diffusion curve. Instead, they’re complementary lenses. <em>Viral</em> captures the ignition and pluralistic energy of spread; <em>niche construction</em> and <em>attractors</em> highlight how environments and cognition stabilize practices; <em>autopoiesis</em> emphasizes the long-term maintenance of systems that can regenerate themselves. Together, they give us a richer intuition for what it might mean for sustainable behaviors not only to diffuse but to take root and endure.</p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>(MOSTLY AI GENERATED) <em>Viral</em>, <em>niche construction</em>, and <em>autopoiesis</em> offer complementary lenses—ignition and pluralistic spread, stabilization through environment and cognition, and long-term self-maintenance—that together deepen our intuition for how sustainability can diffuse and endure.</p>
+</div></div><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
 <div id="ref-Airoldi2024" class="csl-entry" role="listitem">
 Airoldi, Edoardo M., and Nicholas A. Christakis. 2024. <span>“<span class="nocase">Induction of social contagion for diverse outcomes in structured experiments in isolated villages</span>.”</span> <em>Science</em> 384 (6695). <a href="https://doi.org/10.1126/science.adi5147">https://doi.org/10.1126/science.adi5147</a>.
 </div>
@@ -478,14 +600,26 @@ Alongi, Daniel M. 2002. <span>“<span class="nocase">Present state and future o
 <div id="ref-Brooks2018" class="csl-entry" role="listitem">
 Brooks, Jeremy S., Timothy M. Waring, Monique Borgerhoff Mulder, and Peter J. Richerson. 2018. <span>“<span class="nocase">Applying cultural evolution to sustainability challenges: an introduction to the special issue</span>.”</span> <em>Sustainability Science</em> 13 (1): 1–8. <a href="https://doi.org/10.1007/s11625-017-0516-3">https://doi.org/10.1007/s11625-017-0516-3</a>.
 </div>
+<div id="ref-Cibelli2016" class="csl-entry" role="listitem">
+Cibelli, Emily, Yang Xu, Joseph L. Austerweil, Thomas L. Griffiths, and Terry Regier. 2016. <span>“<span class="nocase">The Sapir-Whorf hypothesis and probabilistic inference: Evidence from the domain of color</span>.”</span> <em>PLoS ONE</em> 11 (7): 1–28. <a href="https://doi.org/10.1371/journal.pone.0158725">https://doi.org/10.1371/journal.pone.0158725</a>.
+</div>
 <div id="ref-Cikara2014" class="csl-entry" role="listitem">
 Cikara, Mina, and Jay J. Van Bavel. 2014. <span>“<span class="nocase">The Neuroscience of Intergroup Relations: An Integrative Review</span>.”</span> <em>Perspectives on Psychological Science</em> 9 (3): 245–74. <a href="https://doi.org/10.1177/1745691614527464">https://doi.org/10.1177/1745691614527464</a>.
+</div>
+<div id="ref-Clydesdale2023" class="csl-entry" role="listitem">
+Clydesdale, Heather, and Kajal Shah. 2023. <span>“<span class="nocase">Microfinance and Women: The Micro-Mystique</span>.”</span> <em>Asia Society: Education</em>. <a href="https://asiasociety.org/education/microfinance-and-women-micro-mystique">https://asiasociety.org/education/microfinance-and-women-micro-mystique</a>.
+</div>
+<div id="ref-Cody2015" class="csl-entry" role="listitem">
+Cody, Emily M., Andrew J. Reagan, Lewis Mitchell, Peter Sheridan Dodds, Christopher M. Danforth, and M Twain. 2015. <span>“<span class="nocase">Climate Change Sentiment on Twitter: An Unsolicited Public Opinion Poll</span>.”</span> Edited by Sune Lehmann. <em>PLOS ONE</em> 10 (8): e0136092. <a href="https://doi.org/10.1371/journal.pone.0136092">https://doi.org/10.1371/journal.pone.0136092</a>.
 </div>
 <div id="ref-EhretConstantino2022" class="csl-entry" role="listitem">
 Ehret, Sönke, Sara M. Constantino, Elke U. Weber, Charles Efferson, and Sonja Vogt. 2022. <span>“<span class="nocase">Group identities can undermine social tipping after intervention</span>.”</span> <em>Nature Human Behaviour</em>. <a href="https://doi.org/10.1038/s41562-022-01440-5">https://doi.org/10.1038/s41562-022-01440-5</a>.
 </div>
 <div id="ref-Eisenberg2019" class="csl-entry" role="listitem">
 Eisenberg, Cristina, Christopher L. Anderson, Adam Collingwood, Robert Sissons, Christopher J. Dunn, Garrett W. Meigs, Dave E. Hibbs, et al. 2019. <span>“<span class="nocase">Out of the Ashes: Ecological Resilience to Extreme Wildfire, Prescribed Burns, and Indigenous Burning in Ecosystems</span>.”</span> <em>Frontiers in Ecology and Evolution</em> 7 (November): 1–12. <a href="https://doi.org/10.3389/fevo.2019.00436">https://doi.org/10.3389/fevo.2019.00436</a>.
+</div>
+<div id="ref-Greenwald2009" class="csl-entry" role="listitem">
+Greenwald, Anthony G., T. Andrew Poehlman, Eric Luis Uhlmann, and Mahzarin R. Banaji. 2009. <span>“<span class="nocase">Understanding and using the Implicit Association Test: III. Meta-analysis of predictive validity.</span>”</span> <em>Journal of Personality and Social Psychology</em> 97 (1): 17–41. <a href="https://doi.org/10.1037/a0015575">https://doi.org/10.1037/a0015575</a>.
 </div>
 <div id="ref-Henrich2015" class="csl-entry" role="listitem">
 Henrich, Joseph. 2015. <em><span class="nocase">The secret of our success</span></em>. Princeton University Press.
@@ -495,6 +629,12 @@ Jones, James Holland, Elspeth Ready, and Anne C. Pisor. 2021. <span>“<span cla
 </div>
 <div id="ref-Kolden2019" class="csl-entry" role="listitem">
 Kolden, Crystal A. 2019. <span>“<span class="nocase">We’re not doing enough prescribed fire in the western united states to mitigate wildfire risk</span>.”</span> <em>Fire</em> 2 (2): 1–10. <a href="https://doi.org/10.3390/fire2020030">https://doi.org/10.3390/fire2020030</a>.
+</div>
+<div id="ref-Lakoff1980" class="csl-entry" role="listitem">
+Lakoff, George, and Mark Johnson. 1980. <em><a href="https://www.ncbi.nlm.nih.gov/pubmed/585821"><span>Metaphors We Live By</span></a></em>. Chicago: University of Chicago Press.
+</div>
+<div id="ref-Liddell2018" class="csl-entry" role="listitem">
+Liddell, Torrin M., and John K. Kruschke. 2018. <span>“<span class="nocase">Analyzing ordinal data with metric models: What could possibly go wrong?</span>”</span> <em>Journal of Experimental Social Psychology</em> 79: 328–48. <a href="https://doi.org/10.1016/j.jesp.2018.08.009">https://doi.org/10.1016/j.jesp.2018.08.009</a>.
 </div>
 <div id="ref-McNamara2020" class="csl-entry" role="listitem">
 McNamara, Karen E., Rachel Clissold, Ross Westoby, Annah E. Piggott-McKellar, Roselyn Kumar, Tahlia Clarke, Frances Namoumou, et al. 2020. <span>“<span class="nocase">An assessment of community-based adaptation initiatives in the Pacific Islands</span>.”</span> <em>Nature Climate Change</em> 10 (7): 628–39. <a href="https://doi.org/10.1038/s41558-020-0813-1">https://doi.org/10.1038/s41558-020-0813-1</a>.
@@ -517,6 +657,9 @@ Piggott-McKellar, Annah E, Patrick D Nunn, Karen E McNamara, and Seci T Sekinini
 <div id="ref-Ready2018" class="csl-entry" role="listitem">
 Ready, Elspeth, and Eleanor A. Power. 2018. <span>“<span class="nocase">Why wage earners hunt: Food sharing, social structure, and influence in an arctic mixed economy</span>.”</span> <em>Current Anthropology</em> 59 (1): 74–97. <a href="https://doi.org/10.1086/696018">https://doi.org/10.1086/696018</a>.
 </div>
+<div id="ref-Regier2017" class="csl-entry" role="listitem">
+Regier, Terry, and Yang Xu. 2017. <span>“<span class="nocase">The Sapir-Whorf hypothesis and inference under uncertainty</span>.”</span> <em>Wiley Interdisciplinary Reviews: Cognitive Science</em> 8 (6): 1–11. <a href="https://doi.org/10.1002/wcs.1440">https://doi.org/10.1002/wcs.1440</a>.
+</div>
 <div id="ref-Rombach2014" class="csl-entry" role="listitem">
 Rombach, M. Puck, Mason A. Porter, James H. Fowler, and Peter J. Mucha. 2014. <span>“<span class="nocase">Core-periphery structure in networks</span>.”</span> <em>SIAM Journal on Applied Mathematics</em> 74 (1): 167–90. <a href="https://doi.org/10.1137/120881683">https://doi.org/10.1137/120881683</a>.
 </div>
@@ -538,386 +681,263 @@ Van Bavel, Jay J, Dominic J Packer, and William A Cunningham. 2008. <span>“<sp
 <div id="ref-Witt2024" class="csl-entry" role="listitem">
 Witt, Alexandra, Wataru Toyokawa, Kevin N. Lala, Wolfgang Gaissmaier, and Charley M. Wu. 2024. <span>“<span class="nocase">Humans flexibly integrate social information despite interindividual differences in reward</span>.”</span> <em>Proceedings of the National Academy of Sciences</em> 121 (39). <a href="https://doi.org/10.1073/pnas.2404928121/-/DCSupplemental.Published">https://doi.org/10.1073/pnas.2404928121/-/DCSupplemental.Published</a>.
 </div>
+<div id="ref-Zaller1992" class="csl-entry" role="listitem">
+Zaller, John, and Stanley Feldman. 1992. <span>“<span class="nocase">A Simple Theory of the Survey Response : Answering Questions versus Revealing Preferences</span>.”</span> <em>American Journal of Political Science</em> 36 (3): 579–616.
 </div>
-</section>
+</div>
 </section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
     }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const disableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'prefetch';
-    }
-  }
-  const enableStylesheet = (stylesheets) => {
-    for (let i=0; i < stylesheets.length; i++) {
-      const stylesheet = stylesheets[i];
-      stylesheet.rel = 'stylesheet';
-    }
-  }
-  const manageTransitions = (selector, allowTransitions) => {
-    const els = window.document.querySelectorAll(selector);
-    for (let i=0; i < els.length; i++) {
-      const el = els[i];
-      if (allowTransitions) {
-        el.classList.remove('notransition');
-      } else {
-        el.classList.add('notransition');
+    window.setColorSchemeToggle(window.hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
       }
+      return false;
     }
-  }
-  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
-    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
-    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
-    let newTheme = '';
-    if(darkModeDefault) {
-      newTheme = isAlternate ? baseTheme : alternateTheme;
-    } else {
-      newTheme = isAlternate ? alternateTheme : baseTheme;
-    }
-    const changeGiscusTheme = () => {
-      // From: https://github.com/giscus/giscus/issues/336
-      const sendMessage = (message) => {
-        const iframe = document.querySelector('iframe.giscus-frame');
-        if (!iframe) return;
-        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
       }
-      sendMessage({
-        setConfig: {
-          theme: newTheme
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
         }
       });
     }
-    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
-    if (isGiscussLoaded) {
-      changeGiscusTheme();
-    }
-  }
-  const toggleColorMode = (alternate) => {
-    // Switch the stylesheets
-    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
-    manageTransitions('#quarto-margin-sidebar .nav-link', false);
-    if (alternate) {
-      enableStylesheet(alternateStylesheets);
-      for (const sheetNode of alternateStylesheets) {
-        if (sheetNode.id === "quarto-bootstrap") {
-          toggleBodyColorMode(sheetNode);
-        }
-      }
-    } else {
-      disableStylesheet(alternateStylesheets);
-      toggleBodyColorPrimary();
-    }
-    manageTransitions('#quarto-margin-sidebar .nav-link', true);
-    // Switch the toggles
-    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
-    for (let i=0; i < toggles.length; i++) {
-      const toggle = toggles[i];
-      if (toggle) {
-        if (alternate) {
-          toggle.classList.add("alternate");     
-        } else {
-          toggle.classList.remove("alternate");
-        }
-      }
-    }
-    // Hack to workaround the fact that safari doesn't
-    // properly recolor the scrollbar when toggling (#1455)
-    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
-      manageTransitions("body", false);
-      window.scrollTo(0, 1);
-      setTimeout(() => {
-        window.scrollTo(0, 0);
-        manageTransitions("body", true);
-      }, 40);  
-    }
-  }
-  const isFileUrl = () => { 
-    return window.location.protocol === 'file:';
-  }
-  const hasAlternateSentinel = () => {  
-    let styleSentinel = getColorSchemeSentinel();
-    if (styleSentinel !== null) {
-      return styleSentinel === "alternate";
-    } else {
-      return false;
-    }
-  }
-  const setStyleSentinel = (alternate) => {
-    const value = alternate ? "alternate" : "default";
-    if (!isFileUrl()) {
-      window.localStorage.setItem("quarto-color-scheme", value);
-    } else {
-      localAlternateSentinel = value;
-    }
-  }
-  const getColorSchemeSentinel = () => {
-    if (!isFileUrl()) {
-      const storageValue = window.localStorage.getItem("quarto-color-scheme");
-      return storageValue != null ? storageValue : localAlternateSentinel;
-    } else {
-      return localAlternateSentinel;
-    }
-  }
-  const darkModeDefault = false;
-  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
-  // Dark / light mode switch
-  window.quartoToggleColorScheme = () => {
-    // Read the current dark / light value 
-    let toAlternate = !hasAlternateSentinel();
-    toggleColorMode(toAlternate);
-    setStyleSentinel(toAlternate);
-    toggleGiscusIfUsed(toAlternate, darkModeDefault);
-  };
-  // Ensure there is a toggle, if there isn't float one in the top right
-  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
-    const a = window.document.createElement('a');
-    a.classList.add('top-right');
-    a.classList.add('quarto-color-scheme-toggle');
-    a.href = "";
-    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
-    const i = window.document.createElement("i");
-    i.classList.add('bi');
-    a.appendChild(i);
-    window.document.body.appendChild(a);
-  }
-  // Switch to dark mode if need be
-  if (hasAlternateSentinel()) {
-    toggleColorMode(true);
-  } else {
-    toggleColorMode(false);
-  }
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
-    };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
-        }
-      }
-    }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
         }
-        return container.innerHTML
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -925,185 +945,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./index.html" class="pagination-link" aria-label="Preface">
