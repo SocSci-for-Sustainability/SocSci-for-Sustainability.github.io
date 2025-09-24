@@ -1,53 +1,58 @@
 # Introduction
 
-Indigenous, local peoples of the South Pacific Islands and other coastal habitats have sustainably managed mangrove forests to dissipate storm surges and prevent erosion, mitigating potential costs of climate change since long before the anthropocene [@Alongi2002; @Nalau2018; @Pearson2020; @McNamara2020]. First peoples of western North America have similarly practiced prescribed burns to prevent destructive wildfires during times of drought for millennia [@Eisenberg2019; @Kolden2019]. Despite their long-known effectiveness, adaptive practices like these often fail to spread widely. Instead, international development agencies frequently advocate for the construction of seawalls, for example, even though seawalls can exacerbate flooding once breached and incur high maintenance costs [@Piggott-McKellar2020]. Inland forest management is beset by polarization among stakeholders [@Swette2023], resulting in devastating wildfires burning a buildup of fuels or greenhouse gas-intensive clearcuts.
+Humans know how to adapt to climate change. Indigenous, local peoples of the
+South Pacific Islands and other coastal habitats have sustainably managed
+mangrove forests to dissipate storm surges and prevent erosion, mitigating
+potential costs of climate change since long before the anthropocene
+[@Alongi2002; @Nalau2018; @Pearson2020; @McNamara2020]. First peoples of western
+North America have similarly practiced prescribed burns to prevent destructive
+wildfires during times of drought for millennia [@Eisenberg2019; @Kolden2019].
 
-Here we introduce what we dub *the puzzle of diffusion*: why do some effective, sustainable practices like mangrove forest management fail to diffuse broadly, while other less effective or even maladaptive practices become widespread (@fig-puzzle-of-diffusion)? To answer this, we answer some more basic questions along the way. First, how do people decide what to do, i.e., how does learning work? Second, what is the effect of identity on how well or how likely we are to learn from people of the same or different identity? Third, what is the effect of social structure, i.e., who knows whom, represented as a social network? Agent-based models are useful because they provide a framework for creating rigorous, mechanistic, concrete models of social diffusion of adaptations. They help us deal with the complexity of causation in the real world through strategic selection of causal input variables and model details, which, over several model time steps, lead to social emergent phenomena like the diffusion of climate change adaptations.
+Despite their effectiveness, adaptive practices like these often fail to spread
+widely. Instead, development agencies advocate for the construction of
+high-maintenance "grey infrastructure" like seawalls, even though seawalls can exacerbate flooding once breached [@Piggott-McKellar2020]. Inland forest management is beset by polarization among stakeholders [@Swette2023], resulting in devastating wildfires burning a buildup of fuels or greenhouse gas-intensive clearcuts. 
 
-![Agent-based models can help us answer the puzzle of diffusion, i.e., why do certain adaptations widely diffuse socially and some do not, with maladaptations often taking their place?](Figures/clipboard-1606391171.png){#fig-puzzle-of-diffusion width="950"}
+> This is our puzzle (of adaptation—put down Sudoku ha): why do some reliably effective
+> sustainable practices fail to diffuse broadly,
+> but more costly ones do, often carrying more risk for more uncertain rewards
+> (@fig-puzzle-of-adaptation)? 
 
-The focus of this course is developing agent-based models that can help us simplify complex combinations of cognitive and social factors to represent only the most relevant ones, and observe the effect of these on simulated outcomes such as the proportion of people adopting adaptive behaviors, or opinion extremism and polarization.
+![**The puzzle of
+adaptation.**](Figures/clipboard-1606391171.png){#fig-puzzle-of-adaptation width="600"}
 
-## Sustainability as Social Science's (Ethical) "Manhattan Project"
+::: {.column-margin}
+\vspace{-2em}
+The puzzle of adaptation
+:::
 
-The agent-based modeling approach developed in this course provides a structured way to test the effectiveness of social *interventions* aimed at promoting sustainable behavior. An intervention is some structured introduction of a sustainable practice through education or other means with the intention of sparking the endogenous diffusion of the practice after direct instruction has ended. For example, @Airoldi2024 developed a public health intervention to improve health outcomes for residents of villages in rural Ecuador far from hospitals. Airoldi and Christakis educated residents over an extended period of time about hand washing and warning signs of pregnancy complications, then surveyed residents to see if those not involved in the initial intervention had learned the information from the intervention. Airoldi and Christakis's study was designed to test a hypothesis about whether the *friendship-nomination* strategy for forming the *seed set* of individuals selected for direct instruction from the intervention.
+Ultimately our goal is to develop design principles for educational campaigns to
+promote viral sustainability. Achieving this requires we understand how behavior
+and opinions spread between people. 
+*Viral* sustainability means that sustainable practices or attitudes
+continue to spread in a population following an educational campaign directly
+instructing a set of individuals I call the *seed set*.
 
-By formalizing and testing our assumptions about social dynamics, agent-based modeling supports better design and evaluation of policies and programs aimed at driving real-world change. This deductive, experimental approach allows us to explore how cooperation, coordination, identity, homophily, and influence affect the likelihood that beneficial behaviors will spread. In the coming chapters and associated problem sets we will analyze social learning of behaviors and social influence of opinions in various contexts. This could save serious resources. We could use computational models to test the hypothesis from @Airoldi2024 that friendship nominated seed sets indeed better sparked endogenous diffusion in many different social networks with different group structures, which would give us a more comprehensive understanding of when friendship nomination does well or not.
+::: {.column-margin}
+What I call the *seed set*, or just *seeds*, are often called the *targets* who
+are *targeted* for direct instruction. For one notable example, @Airoldi2024 in
+their study "target"ed residents of "176 villages in the isolated western
+highlands of Hondouras"! I prefer non-violent prose since our language shapes
+our thinking [@Lakoff1980;@Cibelli2016;@Regier2017].
+:::
 
-The goal is to build up a repertoire of agent-based modeling techniques for incorporating different assumptions about how social learning or influence work, whether group structure is important to these processes, and for modeling social network structure. This repertoire can then be applied to sustainability contexts of interest to understand how different sustainability intervention strategies, such as who should learn about sustainable adaptations first in an educational intervention or how best to assist stakeholder deliberations to reduce opinion polarization that can derail collective adaptation. To choose model components wisely requires an understanding of elements of sustainability, cognitive and social science, network science, and software engineering.
+To predict how different educational campaign strategies affect outcomes we can
+delineate four guiding questions:
 
-The [UN Sustainable Development Goals](https://sdgs.un.org/) help us focus and organize our work by providing concrete goals for evaluating progress towards sustainable development for all [@fig-sdg-vibe]. These goals include targets for institutional development that promotes basic conditions for human thriving (justice, equality, education, public health, and no poverty) so as to assemble and enable a critical mass of people to participate bringing about sustainable development. People cannot participate in sustainability if they suffer in poverty, from illness, or subjugation by authoritarians–all but the most zealous environmental defenders will fight on when these basic needs are unmet. Since progress has been slower than necessary.
+1. How do people decide what to do, i.e., how does learning work?
+2. How does identity affect social learning and influence? 
+3. How do different social network structures affect adaptation diffusion? 
+4. How to use computational modeling to deal with the complexity of social
+   behavior?
 
-Sustainability, then, has several different dimensions, all of which contribute
-to climate action and environmental protection. I have organized these goals
-into the VIBE system to guide sustainability promotion where *Vibrant
-Institutions* meet the *Basic* needs, including *Environmental and Ecological*
-protection. The 17 goals and how they each help catch a VIBE are illustrated 
-in [@fig-sdg-vibe]. 
+The focus of this course is developing technical and domain expertise in social
+science that can help us simplify complex combinations of cognitive and social
+factors that affect whether sustainability "goes viral".
 
-Organizing and connecting our work to has two benefits. First, it helps us
-identify which cognitive and social factors are at work in different
-sustainability foci. Second, it expands the corpus of existing research on which
-we draw to consolidate our social and cognitive theories of behavior change that
-we will apply to sustainability interventions. While many of us in computational
-social science know our work is important as basic science partly because we are
-confident it can apply to real-world problems, it is not clear how. Part of this
-problem seems to stem from the lack of a clear goal for this science beyond
-evaluating alternative theories of social behavior. 
-
-*Sustainability* serves as a
-sort of never-ending Manhattan Project for social scientists, an ethically
-praiseworthy pursuit that will provide a selection pressure on social science
-frameworks or theories that theory-comparison goals cannot: our social science
-frameworks, theories, and models should be maximally useful to the long-term
-study of sustainability. That means simulations should be designed so the model
-parameters and outcome measures are observable and could reasonably be measured
-in the real-world. It means flexibly adopting different assumptions in different
-cases, possibly sampling from different theories that, in a different context,
-might make contrary predictions. In the next
-
-![The VIBE system helps us identify how sustainability priorities can motivate
-new social science studies.](Figures/intro-sdg-vibe.png){#fig-sdg-vibe fig-align="center" width="950"}
 
 ## Social Science for Sustainability
 
@@ -98,73 +103,68 @@ means that mechanisms have tended to be only vaguely specified,
 and changes in assumptions
 cannot be quantitatively, let alone systematically, explored [@Turner2022].
 
+The [UN Sustainable Development Goals](https://sdgs.un.org/) help us focus and organize our work by providing concrete goals for evaluating progress towards sustainable development for all [@fig-sdg-vibe]. These goals include targets for institutional development that promotes basic conditions for human thriving (justice, equality, education, public health, and no poverty) so as to assemble and enable a critical mass of people to participate bringing about sustainable development. People cannot participate in sustainability if they suffer in poverty, from illness, or subjugation by authoritarians–all but the most zealous environmental defenders will fight on when these basic needs are unmet. Since progress has been slower than necessary.
+
+Sustainability, then, has several different dimensions, all of which contribute
+to climate action and environmental protection. I have organized these goals
+into the VIBE system to guide sustainability promotion where *Vibrant
+Institutions* meet the *Basic* needs, including *Environmental and Ecological*
+protection. The 17 goals and how they each help catch a VIBE are illustrated 
+in [@fig-sdg-vibe]. 
+
+Organizing and connecting our work to has two benefits. First, it helps us
+identify which cognitive and social factors are at work in different
+sustainability foci. Second, it expands the corpus of existing research on which
+we draw to consolidate our social and cognitive theories of behavior change that
+we will apply to sustainability interventions. While many of us in computational
+social science know our work is important as basic science partly because we are
+confident it can apply to real-world problems, it is not clear how. Part of this
+problem seems to stem from the lack of a clear goal for this science beyond
+evaluating alternative theories of social behavior. 
+
+*Sustainability* serves as a
+sort of never-ending Manhattan Project for social scientists, an ethically
+praiseworthy pursuit that will provide a selection pressure on social science
+frameworks or theories that theory-comparison goals cannot: our social science
+frameworks, theories, and models should be maximally useful to the long-term
+study of sustainability. That means simulations should be designed so the model
+parameters and outcome measures are observable and could reasonably be measured
+in the real-world. It means flexibly adopting different assumptions in different
+cases, possibly sampling from different theories that, in a different context,
+might make contrary predictions. 
+
+![The VIBE system helps us identify how sustainability priorities can motivate
+new social science studies.](Figures/intro-sdg-vibe.png){#fig-sdg-vibe fig-align="center" width="950"}
 
 
+## Social learning models
 
-## Social learning strategies
+Human kind is set apart by powerful learning and reasoning capabilities
+[@Witt2024] that enable cultural transmission and accumulation of technologies
+and practices no other species matches [@Henrich2015]. For our sustainability
+models, we only need simple models of cognition and learning. It would never be
+practical to do psychological or cognitive tests in the context of
+sustainability interventions that targets large populations, for one thing, so
+we could never compare detailed cognitive assumptions or predictions with
+reality. For our purposes we will consider three general classes of learning
+strategy, with some liberty taken in switching up traditional terminologies in
+the pursuit of a leaner, more descriptive semantic system for this framework.
 
-Human kind is set apart by powerful learning and reasoning capabilities [@Witt2024] that enable cultural transmission and accumulation of technologies and practices no other species matches [@Henrich2015]. For our sustainability models, we only need simple models of cognition and learning. It would never be practical to do psychological or cognitive tests in the context of sustainability interventions that targets large populations, for one thing, so we could never compare detailed cognitive assumptions or predictions with reality. For our purposes we will consider three general classes of learning strategy:
+We model the learning process as *contagion*, *conformity*, or *vicarity*: 
 
-1.  **Success-biased learning**: Individuals are more likely to adopt behaviors perceived to be successful or beneficial.
-2.  **Frequency-biased learning**: Individuals adopt behaviors because others are already doing them, creating a conformity effect.
-3.  **Contagion**: Individuals copy behaviors simply by observing others performing them.
+1.  **Contagion**: Someone observing a behavior copies that behavior at random
+   with a given probability called the *adoption rate*.
+1.  **Conformity**: People prefer doing more popular behaviors to less popular
+   ones.
+1.  **Vicarity**: People prefer learning from peers who are successful.
+   "Success" here is strategically ambiguous—it could be in terms of happiness,
+   mindfulness, spiritual connection, wealth, power, etc.
 
-In the mangrove versus seawall example, success-biased learning might favor seawalls if influential external actors, who seem successful or wealthy, advocate for them, even if seawalls are ultimately less effective. Mangrove forests might become widely adopted if, on the other hand, frequency-biased learning predominates and many communities have adopted that method.
-
-### Social learning models with example
-
-To make this more concrete, we *formalize* (i.e., *give formulas for*) these three learning strategies as follows using the example in @fig-learning-illustration. In the example, there is one *focal agent* who is the one doing the observing/learning, labelled with the ID *1*, and three social network neighbors with IDs *2, 3,* and *4.* The focal agent is deciding whether or not to install residential solar. One of his neighbors has installed it, 2. Based on 1's perception, 2 is the wealthiest, represented by four dollar symbols. 3 is perceived to have one dollar and 4 has two dollars.
-
-![Agent 1, the focal agent, is considering whether to install residential solar. The probability agent 1 installs residential solar depends on its social learning strategy.](Figures/clipboard-1340594084.png){#fig-learning-illustration width="700"}
-
-#### Success-biased learning
-
-In success-biased learning, learners first choose an interaction partner/teacher randomly weighted by observed fitness of their neighbors, which is a generic term for wealth, power, status, etc. In general for this case, the probability that learner $i$ chooses teacher $j$ is
-
-$$
-\Pr(i \text{ chooses } j) = \frac{f_j}{\sum_{k \in n_i} f_k}.
-$$
-
-The probability that $i$ adopts $A$ is then the sum of the probabilities of choosing each neighbor performing $A$ (contained in the set $m_i$),
-
-$$
-\Pr(i \text{ adopts } A) = \frac{\sum_{j \in m_i} f_j}{\sum_{k \in n_i} f_k}.
-$$
-
-In our example, only one neighbor installed residential solar with a fitness (i.e. *wealth* in this example) of 4, while the others have finess 1 and 2. Therefore, $\Pr(1 \text{ adopts } A) = \frac{4}{7}$.
-
-#### Frequency-biased learning
-
-In frequency-biased learning there is no interaction partner or teacher chosen. The probability of adoption is only given by the relative frequency of each behavior. The general expression is
-
-$$
-\Pr(i \text{ adopts } A) = \frac{|m_i|}{|n_i|}.
-$$
-
-In our example, then, the probability of installing residential solar under frequency-biased learning is $\frac{1}{3}$.
-
-#### Contagion learning
-
-In the contagion learning model, the focal agent's (i.e., the *learner*'s) *teacher* (i.e., interaction partner) is chosen at random. Then, the learner adopts the teacher's behavior with probability $\alpha$, the adoption rate. In this case, then, the probability that 1 adopts residential solar is
-
-$$
-\Pr(1 \text{ adopts solar}) = \alpha \Pr(1 \text{ selects 2 as teacher}) = \alpha \frac{1}{3}.
-$$
-
-More generally, for focal agent $i$ with the set of neighbors $n_i$ ($n_1 = \{2, 3, 4\}$ in the example), where $m_i$ is the set of neighbors who have adopted the adaptive behavior ($m_i = \{2\}$ in the example). We call the adaptive behavior $A$. The general probability of adoption in contagion learning is therefore
-
-$$
-\Pr(i \text{ adopts } A) = \frac{\alpha |m_i|}{|n_i|},
-$$
-
-where the $| \cdot |$ operator counts the number of elements in a set.
-
-#### Combinations of learning models
-
-There is no reason different learning models cannot be combined. The software we will use in this class, `socmod`, provides flexibility to the user to define their own learning models. The simplest combination of the three learning models above is to add an adoption rate to either frequency- or success-biased learning. In this approach, one could call the behavior selected by the models above could be considered *prospective* or *candidate* behavior to learn, then is actually learned with probability $\alpha$.
-
-For another potentially useful modification, $\alpha$ could be defined at the individual level, say $\alpha_i$, or for *dyads* (i.e., a pair of interacting individuals) , $\alpha_{ij}$, where $i$ is still the focal agent learner, but we have added $j$, representing the selected teacher.
-
+In the mangrove versus seawall example, vicarity could be harnessed to promote 
+sustainable mangrove forest management if its benefits were widely known. If
+instead conformist attitudes prevailed within an echo chamber of pro-seawall
+actors, education may be of little help without stronger institutional support
+of free, democratic, and self-interested choice.
 ## Identity and Influence
 
 Group identity critically influences social learning. Neuroscience research demonstrates that our brains distinctly respond to individuals identified as part of our group [@Cikara2014], as revealed through fMRI neural imaging (@fig-cikara-mri-image). This ability likely evolved because when humans first emerged about two million years ago, it was much more important for survival to be able to rapidly identify whether someone was a friend or foe based on group markers. Although group membership can affect how we respond to information learned from others, group membership itself is quite plastic, meaning who belongs to which group can be rapidly reconfigured. For example, neural signals of race-based group perception was observed to be suppressed and overridden when individuals were in mixed-race groups created by experimenters that competed against other mixed-race groups in an psychological experimental task [@VanBavel2008].
@@ -173,7 +173,7 @@ Group identity critically influences social learning. Neuroscience research demo
 
 Studies further show that group identity can strongly influence behavioral choices. For instance, experimental evidence reveals people resist adopting beneficial behaviors if associated with opposing political identities [@EhretConstantino2022], emphasizing how identity can create substantial barriers to sustainability. This general effect of group membership interfering with learning is called *outgroup aversion* [@Smaldino2017Adoption].
 
-### Social networks, homophily, and core-periphery structure
+## Identity, homophily, and social networks shape viral sustainability
 
 Social structure can significantly impact behavioral diffusion, especially in core-periphery configurations. Core-periphery networks emerge as a response to risk and uncertainty, e.g., in food sharing networks [@Ready2018], so they are hypothesized to also be important in climate change adaptation transmission networks [@Jones2021]. Core-periphery networks can be created by setting appropriate group sizes and *homophily* levels in homophily network models [@Turner2023] or specifying certain connectivity probabilities to the *stochastic block matrix* algorithm for creating structured random graphs [@Rombach2014; @Milzman2023]. Homophily is the measure of how much more likely an individual is to socially connect within their own group versus with a member of a different group. Homophily can range from -1 to +1, where -1 represents no within-group connections and only between-group connections (i.e., *anti-homophily*); 0 represents an equal probability of within- and between-group connections, and +1 represents only within-group connections. We will define homophily as either a global or group-level variable, though homophily could vary individually as well. There are two types of homophily:
 
@@ -182,6 +182,111 @@ Social structure can significantly impact behavioral diffusion, especially in co
 
 These structural elements can significantly limit the diffusion of sustainable practices from peripheries, like the mangrove management on smaller islands, to central cores. However, as colleagues and I have showed, this core-periphery structure, defined by moderately high majority-group homophily can actually *promote* the diffusion of adaptations, provided the adaptation is practiced by the minority group [@Turner2023], as is the case for mangrove forest management or prescribed burns. 
 
-Due to time restrictions we will not be able to analyze the effects of social networks in this tutorial. 
+## We don't observe "opinions": Why opinion influence is different from learning behaviors
 
+Opinions are not behaviors. They cannot be directly observed, only *inferred
+from* behavior. A person planting mangroves or conducting a prescribed burn
+produces a visible, specific, measurable action. 
+An "opinion" is only constructed in relation to some prompt, like survey
+responses that political scientists use to poll the electorate on policies and
+politicians [@Zaller1992].
+Cognitive scientists and psychologists developed other ways to access peoples'
+opinions, such as through the timing of keypresses to reveal racial prejudice 
+in an implicit bias test [@Greenwald2009], or 
+using computational linguistic analysis of sentiment analysis [@Cody2015]. 
+
+Political polarization, when partisans radicalize, makes institutions freeze.
+Sustainability needs strong institutions to ensure basic needs are met and basic
+human rights are protected (see bottom row in @fig-sdg-vibe). 
+To make things worse, polarization hampers
+sustainability debates, actively obscuring moderate, win-win solutions and
+elevating partisan policies. 
+
+Indigenous practices we reviewed seem to be ignored at least partly 
+because polarized opinions prevent their consideration and adoption. 
+The same holds for coastal mangrove
+restoration, renewable energy policy, basic conservation, and in numerous other
+sustainability problems. People can
+be—and often are—openly hostile to sustainability for reasons that have little
+to do with evidence or experience. If opinions are the supposed bridge between
+psychology and large-scale social shifts, then building strategies on flawed
+opinion science is like trying to engineer a suspension bridge without knowing
+how steel bends.
+
+### Models and measurements of opinion change
+
+Opinion science needs, but currently lacks, a tight integration of theoretical
+and computational modeling and experimental design. Here I'll explain what we
+need and how theory, modeling, and measurement complement one another through 
+a case study applied to group polarization, which we expand on in more detail
+in the [opinion change post in the Lecture
+Notes](posts/opinion-change-models-measurement-2025-09-24/), soon to be another
+chapter in this online book.
+
+#### Models
+
+On the modeling side, frameworks like DeGroot’s
+consensus model or Macy’s Hopfield adaptations generate elegant dynamics of
+attraction, repulsion, or indifference. But these are mechanisms acting on
+theoretical constructs, not on directly measurable behaviors. On the measurement
+side, researchers routinely treat ordinal data—Likert scales of “strongly agree”
+to “strongly disagree”—as if they were continuous. This sleight of hand allows
+ANOVAs and regressions to spit out “effects” that may be nothing more than
+statistical artifacts. Replications don’t fix this; they repeat the same errors.
+What we call “opinion change” is too often a reflection of our instruments, not
+of anything happening in people’s minds.
+
+
+#### Measurements
+
+- To measure opinion change we need a rigorous method [@Liddell2018]
+
+
+## Discussion 
+
+Let's close this chapter by reviewing the dimensions of evaluating the metaphor of *viral sustainability* to describe the kind of
+self-sustaining diffusion we’re after. It's worth unpacking this metaphor.  
+
+*Viral* here is intended to capture the familiar self-sustaining diffusion of
+fashions and fads. Friends and associates tell one another about what they're
+up to and how it's going. Sometimes they try out what each other are doing then
+keep doing it because it works for them. If this happens again and again over
+time, and more people are *starting* to do something more frequently than people
+are *stopping* doing it. The similarity of this process to the spread of
+pathogens in epidemiology is exactly where the term *viral*, in the parlance of
+our times, with apparently wide shared agreement about its meaning.
+Viruses and other pathogens spread when people
+interact, while also sometimes rapidly evolving to evade our efforts to stop
+them. 
+
+(LARGELY AI GENERATED BELOW TO MARGIN COLUMN NOTE, ALSO AI GENERATED)
+In culture, virality is uneven and stochastic: some sparks
+flare out, while others cascade unexpectedly. 
+In philosophy, viral processes
+blur agency—no one controls the spread, it emerges from many small acts. This
+makes *viral sustainability* a natural metaphor for the pluralism of social
+life: many hands, many voices, converging without central command into
+collective action.  
+
+But *viral* is only one register. Evolutionary biologists might call the same
+thing *niche construction*: once behaviors spread, they reshape the ecological
+and social environment in ways that feed back to support further spread.
+Cultural theorists like Sperber would call the stable outcomes *cultural
+attractors*: convergent points that diffusion tends to settle on, even through
+noisy transmission. And systems theorists use *autopoiesis*—literally
+“self-making”—to describe when a practice or institution doesn’t just persist
+but actively reproduces the conditions of its own existence.  
+
+These frames are not mutually exclusive and don’t need a strict mapping onto
+stages of a diffusion curve. Instead, they’re complementary lenses. *Viral*
+captures the ignition and pluralistic energy of spread; *niche construction* and
+*attractors* highlight how environments and cognition stabilize practices;
+*autopoiesis* emphasizes the long-term maintenance of systems that can
+regenerate themselves. Together, they give us a richer intuition for what it
+might mean for sustainable behaviors not only to diffuse but to take root and
+endure.
+
+::: {.column-margin}
+(MOSTLY AI GENERATED) *Viral*, *niche construction*, and *autopoiesis* offer complementary lenses—ignition and pluralistic spread, stabilization through environment and cognition, and long-term self-maintenance—that together deepen our intuition for how sustainability can diffuse and endure. 
+:::
 
