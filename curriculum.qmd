@@ -2,7 +2,7 @@
 
 This curriculum presents the courses of the **Social Science for Sustainability** program
 currently offered by Matthew A Turner, PhD. The materials, including the
-companion book, `socmod` library, and all lecture resources, are **open and
+companion book, `socmod` library, and more, are **open and
 freely available online**. 
 
 Courses in the curriculum share conceptual foundations including harnessing 
@@ -12,29 +12,6 @@ Students develop highly transferable systems thinking skills; expertise in
 social, cognitive, and network science; and programming proficiency in R using
 *tidy* practices, which is in high demand especially for social scienctists.
 
-The program offers courses on a quarterly schedule, which leverage the
-persistent materials here. Courses are ten weeks of instruction in about twelve
-weeks that include course kick-off and finishing and presenting final projects
-if there are enough interested students.
-
-Please **Subscribe** in the program to access the course lectures and other
-synchronous material (click button below). This is also free. 
-You will receive lecture schedule reminders and links for easy access later;
-lecture previews and summaries; lecture scheduling
-reminders; video shorts on technical topics; and 
-opinions, news and reviews about research in social science and beyond.
-
-I use **Substack** to handle subscriptions and content publishing. When you click
-the button below to subscribe, you will be taken to my substack publication
-*Social Science for Sustainability by Matt Turner*.
-
-<!--[**Enroll for free any time by subscribing on
-Substack!**](https://matphd.substack.com){.btn .btn-primary .substack_background
-style="width: 100%; font-size: 1.1rem; padding: 0.8em;"}-->
-
-{{< include _subscribe-button.html >}}
-
----
 
 ### Courses {.unnumbered}
 
@@ -75,4 +52,4 @@ be openly available to the community**. Subscribing supports the delivery of
 this curriculum *and* the development of tools, datasets, and modeling frameworks that enable **independent scientific research**.
 
 
-{{< include _subscribe-button.html >}}
+<!-- {{< include _subscribe-button.html >}} -->

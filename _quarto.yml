@@ -26,9 +26,9 @@ book:
     right:
       - text: "Home"
         href: index.qmd
-      - text: "Lecture Notes"
-        href: "https://SocSci-for-Sustainability.github.io/lecture-notes"
-      - text: "Subscribe"
+      - text: "Course Notes"
+        href: "https://SocSci-for-Sustainability.github.io/course-notes"
+      - text: "Newsletter"
         href: "https://matphd.substack.com"
       - text: "Curriculum"
         href: curriculum.qmd
@@ -58,3 +58,4 @@ format:
     linestretch: 1.2
     number-sections: true
     number-depth: 3
+    code-tools: true

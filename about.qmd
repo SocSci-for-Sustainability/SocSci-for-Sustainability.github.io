@@ -1,5 +1,31 @@
 # About {.unnumbered}
 
+## About Matt Turner
+
+![](Figures/cafecito-pic.png){.float-left width="200px"} 
+
+I am a theoretical and computational social scientist dedicated to resilient, rigorous, and problem-focused social science. I combine the precision of physics and computation with the insight of behavioral science to make social systems more predictable, adaptable, and humane.
+
+I currently serve as a Lecturer in Environmental Social Sciences at the Stanford Doerr School of Sustainability, where I help organizations and institutions model and accelerate how innovations spread—turning social science into a competitive advantage for adaptation and growth.
+
+
+::: {.info-bar}
+- **Connect:**
+- [<i class="fa-solid fa-at"></i> Email](mailto:maturner@stanford.edu)
+- [<i class="fa-solid fa-newspaper"></i> Newsletter](https://ss4s.substack.com)
+- [<i class="fa-brands fa-linkedin"></i> LinkedIn](https://www.linkedin.com/in/mt-digital/)
+- [<i class="fa-brands fa-github"></i> GitHub](https://github.com/mt-digital)
+- [<i class="fa-brands fa-instagram"></i> Insta](https://instagram.com/matthewadamturnerphd)
+:::
+From my early training in physics and mathematics, I learned to use equations to describe complex dynamics—and developed an intuition for constructing mechanistic models of real systems. As a professional software developer, I strengthened my engineering toolkit and expanded into economics, environmental systems, and the earth sciences. During my PhD, I integrated these strands through rigorous training in social, cognitive, and behavioral science—building a quantitative foundation for modeling collective behavior and decision-making.
+
+As a Pandemic Preparedness Hub researcher, I founded Projeto Dourados, a transdisciplinary collaboration studying urban Indigenous infection dynamics in Brazil. The project reflects my broader commitment to scientific and cultural exchange between North and South America—particularly between Brazilians and Estadounidenses, who share the challenges of sustaining large, diverse democracies. My connection to Brazil began in 2008, when I learned Portuguese and conducted astrophysics research there.
+
+Before earning my PhD in Cognitive and Information Sciences in 2021, I deliberately pursued breadth—moving across disciplines, sectors, and institutions to understand how ideas propagate and evolve. While many peers specialized narrowly, I built synthesis: linking methods from the physical and computational sciences with insights from the behavioral and social sciences. The work presented in this Book, Curriculum, and related materials continues that synthesis.
+
+I am driven by a practical goal: to translate core principles of social science into scalable systems for innovation, adaptation, and coordination. This requires a working fluency in mathematics, computation, and theory—and the ability to build models that help organizations and institutions anticipate change and act effectively within it.
+
+
 ## About the Project
 
 *Social Science for Sustainability by Matt Turner* emerged from the need for a
@@ -13,59 +39,22 @@ online.
 I emphasize in the title that this only my take by including my name, *Matt Turner*. 
 I want this to be anti-colonial. I am trying to liberate social science from
 disciplinary gatekeepers, not trying to become a
-gatekeeper, myself. I want you to be inspired to create your own *Social Science
-for Sustainability by {Your Name Here}*. In some social science disciplines, 
-it seems there are some "holy
-books" that, convention states, must be cited and whose approach must be
-adopted. If my version of *Social Science* doesn't work for you, don't use it! 
-Make up your own and show how it helps. Or maybe suggest ideas for this version.
+gatekeeper myself. 
 
-That being said, I think the version in this project could be especially useful. 
+I want you to be inspired to create your own *Social Science
+for Sustainability by {Your Name Here}*. In some social science disciplines, 
+it seems there are some holy books that, convention states, must be cited and
+whose approach must be adopted. If my version of *Social Science* doesn't work
+for you, don't use it!  Make up your own and show how it helps. Or maybe suggest
+ideas for this version.
+
+That being said, I think the vision put forth in this project could be especially useful. 
 I have put years into trying to understand the details of how social
 science can help us in our existential crisis of accelerating unsustainability,
 which perhaps has already spiraled beyond all control. 
 
 
-## About the Author, Matt
-
-I am a scientist and educator dedicated to resilient, rigorous, and
-problem-focused social science. I am currently a Lecturer in Environmental Social
-Sciences at the Stanford Doerr School of Sustainability at Stanford University.
-
-In many ways my career has built up to this point. From my physics and mathematics training I learned to
-use equations to calculate and understand collective dynamics, and an intuition
-for how to construct mechanistic scientific models of reality. As a professional
-software developer I upgraded my programming technicques along with domain
-knowledge of economics and environmental and earth sciences. In my PhD training
-I began consolidating all this, along with a strenuous training in 
-social, cognitive, and behavioral sciences.
-
-Until receiving my PhD in Cognitive and Information Sciences in 2021, 
-I got my kicks cultivating a beginner's mind by switching majors, careers,
-disciplines, cities, and more. All the while, many peers focused their efforts towards
-developing deeper expertise in fewer topics. My PhD work was the beginning of
-the synthesis of my work up to that point. The work presented in this Book,
-Curriculum, and other materials, is a continuation and extention.
-
-This work was made possible by my time spent as a postdoctoral
-scholar mentored by James Holland Jones, with funding from a Stanford Medicine
-Pandemic Preparedness Hub Fellowship that enabled me to even kickstart a 
-project to cross even more disciplinary and international borders studying 
-urban Indigenous infection dynamics in Brazil. I hope to continue to build my
-collaboration with my Brazilian colleagues and expand my collaboration to
-include more scientists from the United States and Brazil for cultural and
-scientific exchange. People in these two countries face many similar cultural
-challenges as the largest democracies in the Americas. I myself got to spend 
-summer 2008 learning Portuguese and living and working on astrophysics research in
-Brazil.
-
-I am motivated by a deep and humbling sense of duty to present essential social science
-material with a minimum cognitive overhead a maximum real-world impact.
-This job requires a diverse background like mine to understand the science,
-mathematics, computation, and philosophy of all the various social science
-disciplines that have something to contribute.
-
-## Closing: Consilience
+## Closing Thought: Consilience
 
 This work implements a method of consilient, strategic curation of
 social science. Curation is a type of consolidation.
