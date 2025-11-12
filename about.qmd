@@ -4,9 +4,16 @@
 
 ![](Figures/cafecito-pic.png){.float-left width="200px"} 
 
-I am a theoretical and computational social scientist dedicated to resilient, rigorous, and problem-focused social science. I combine the precision of physics and computation with the insight of behavioral science to make social systems more predictable, adaptable, and humane.
+I am a social scientist who combines the precision of
+math with insights from across the cognitive and social sciences. I curate 
+social science to be a tool in the sustainability scientist's toolkit: unified enough to
+be intuitive, but respecting the inherent pluralism of behavioral sciences.
 
-I currently serve as a Lecturer in Environmental Social Sciences at the Stanford Doerr School of Sustainability, where I help organizations and institutions model and accelerate how innovations spread—turning social science into a competitive advantage for adaptation and growth.
+I currently serve as a Lecturer in Environmental Social Sciences at the Stanford
+Doerr School of Sustainability, where I train students how to use social science
+to help promote the adoption of sustainable practices. Students learn how to
+design social influence and educational campaigns to increase the chances that
+sustainability *goes viral*.
 
 
 ::: {.info-bar}
