@@ -1,6 +1,8 @@
 # About {.unnumbered}
 
+
 ## About Matt Turner
+
 
 ![](Figures/cafecito-pic.png){.float-left width="200px"} 
 
@@ -22,7 +24,6 @@ sustainability *goes viral*.
 - [<i class="fa-solid fa-newspaper"></i> Newsletter](https://ss4s.substack.com)
 - [<i class="fa-brands fa-linkedin"></i> LinkedIn](https://www.linkedin.com/in/mt-digital/)
 - [<i class="fa-brands fa-github"></i> GitHub](https://github.com/mt-digital)
-- [<i class="fa-brands fa-instagram"></i> Insta](https://instagram.com/matthewadamturnerphd)
 :::
 From my early training in physics and mathematics, I learned to use equations to describe complex dynamics—and developed an intuition for constructing mechanistic models of real systems. As a professional software developer, I strengthened my engineering toolkit and expanded into economics, environmental systems, and the earth sciences. During my PhD, I integrated these strands through rigorous training in social, cognitive, and behavioral science—building a quantitative foundation for modeling collective behavior and decision-making.
 
@@ -43,37 +44,76 @@ cognitive science topics sustainability practicioners need to know because they
 matter for decision making in partnerships, institutions, in governments, and
 online.
 
-I emphasize in the title that this only my take by including my name, *Matt Turner*. 
+I emphasize in the title that this is only my take, by including my name, *Matt Turner*. 
 I want this to be anti-colonial. I am trying to liberate social science from
-disciplinary gatekeepers, not trying to become a
-gatekeeper myself. 
+disciplinary gatekeepers, not trying to become a gatekeeper myself. Still, I
+think my formulation may be useful, so I want to share it and see what others do
+with it.
 
-I want you to be inspired to create your own *Social Science
-for Sustainability by {Your Name Here}*. In some social science disciplines, 
-it seems there are some holy books that, convention states, must be cited and
-whose approach must be adopted. If my version of *Social Science* doesn't work
-for you, don't use it!  Make up your own and show how it helps. Or maybe suggest
-ideas for this version.
+I want you to be inspired to create your own *Social Science for Sustainability
+by {Your Name Here}*.  If my version of *Social Science* doesn't work for you,
+don't use it!  Make up your own and teach us about it, if you would, please.
 
-That being said, I think the vision put forth in this project could be especially useful. 
-I have put years into trying to understand the details of how social
-science can help us in our existential crisis of accelerating unsustainability,
-which perhaps has already spiraled beyond all control. 
+Also, please share any feedback, positive or negative, with me [via
+email!](mailto:matt@mat.phd)
+
+<br>
+
+---------------------------------------
 
 
-## Closing Thought: Consilience
+### Closing note on goals and principles: Consilience and Counterinduction for Sustainability
 
-This work implements a method of consilient, strategic curation of
-social science. Curation is a type of consolidation.
-In terms of scientific theories, this means the theory uses fewer types of
-imagined things, processes, or situations to predict real-world observations. 
-For example, the theory of quantum mechanics consolidates physics research,
-helping us understand research in atomic physics and chemistry can be explained
-by a common set of mathematical models and computational tools.
+My goal with *Social Science for Sustainability* is to create a consilient,
+strategic curation of social science. Curation is a type of consolidation.  In
+terms of scientific theories, consolidation means the theory uses fewer types of
+imagined (or *theoretical*) things and processes to model the real world.
 
-When we consolidtate theories, in social science or physics, we get a default
-benefit of having fewer ideas, or mental "things", we have to keep track of 
-in our limited working memory. *Consilience* is the added benefit that
-we often see unpredictably useful and aesthetically beautiful connections between 
-what seemed to be disconnected scientific phenomena. In other words, 
-a consilient theory is more than just the sum of its parts.
+For example, the theory of quantum mechanics
+consolidated once-disparate physics and chemistry research, helping us
+understand atoms, molecules, minerals, and biology in terms of a small set of
+principles and processes, expressed in a few equations.
+
+When we consolidtate science theories, whether social science or physics, we get
+a default benefit of having fewer ideas, or mental "things", we have to track
+with our limited working memory—and we need fewer words or mathematical
+characters to communicate
+our ideas to others. 
+
+*Consilience* is the added benefit that
+as we consolidate, we often gain useful and aesthetically pleasing connections
+between what seemed to be disconnected scientific phenomena. In other words, a
+consilient theory is more than just the sum of its parts.
+
+So, consilience includes a sense of *aesthetics*, which serve a practical
+purpose: they train our gut instincts, which really matter for scientific
+insight.  Aesthetics are a way to represent and study human *energies* or
+*impulses* that scientists have always used as a guide, beyond mere rationalism.
+I believe these impulses can be trained to make our work more satisfying and
+impactful.
+
+My scientific work, for example, is energized by a dissatisfaction with
+conformity to arbitrary, unexamined norms or other social expectations. I enjoy
+uncovering how the hidden assumptions in theories, models, and experimental
+methods change our interpretation of social science
+research, and sometimes even our basic perceptions of reality. 
+
+I apply my impulse to examine the unexamined in my
+research: for example, in a soon-to-be released paper I show that it's possible
+that measurements of a group's average opinion over time can appear like it
+was radicalized, even if the true average opinion doesn't change. It turns out 
+that commonly-used opinion change measurement designs can clip changes in more 
+extreme opinions, which can make mere agreement look like radicalization.
+
+Philosopher of science Paul Feyerabend calls this the *counterinductive* method:
+we deduce, using math or simulation—or infer, experimentally—the consequences of making assumptions that are contrary to prevailing ones. Feyerabend identifies this impulse 
+as the same one that fuels the Dada movement, and general impulse, in art. For
+scientists, I think the first Dada artist to check out would be the
+mystic, mathematical, and challenging works of [Max
+Ernst](https://pavlopoulos.wordpress.com/2010/12/27/the-mathematics-of-max-ernst/).
+
+I have been a fan of Dada art for years, as well as a scientific contrarian.
+Only recently did I read Feyerabend's (1975;2005) *Against Method* and realize
+that I was not the only one who felt that Dada and the "counterinductive" method
+in science are animated from the same human impulse to challenge the arbitrary 
+status quo.
